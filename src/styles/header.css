@@ -1,0 +1,276 @@
+/* ===========================================
+   HEADER - JORGERATV
+=========================================== */
+
+.header{
+
+    position:fixed;
+
+    top:0;
+    left:0;
+
+    width:100%;
+
+    height:90px;
+
+    z-index:9999;
+
+    background:rgba(8,8,10,.62);
+
+    backdrop-filter:blur(18px);
+
+    -webkit-backdrop-filter:blur(18px);
+
+    border-bottom:1px solid rgba(255,255,255,.05);
+
+    transition:.35s ease;
+
+}
+
+.header:hover{
+
+    background:rgba(8,8,10,.82);
+
+}
+
+.nav{
+
+    height:90px;
+
+    display:flex;
+
+    justify-content:space-between;
+
+    align-items:center;
+
+}
+
+/* ===========================================
+   LOGO
+=========================================== */
+
+.brand{
+
+    display:flex;
+
+    align-items:center;
+
+    gap:18px;
+
+}
+
+.brand img{
+
+    width:64px;
+
+    transition:.35s;
+
+    filter:
+        drop-shadow(0 0 8px rgba(214,31,38,.35));
+
+}
+
+.brand:hover img{
+
+    transform:rotate(-5deg) scale(1.08);
+
+}
+
+.brand-text{
+
+    display:flex;
+
+    flex-direction:column;
+
+}
+
+.title{
+
+    color:white;
+
+    font-size:26px;
+
+    font-weight:900;
+
+    letter-spacing:2px;
+
+    line-height:1;
+
+}
+
+.subtitle{
+
+    margin-top:6px;
+
+    color:#9f9f9f;
+
+    font-size:12px;
+
+    letter-spacing:1px;
+
+    text-transform:uppercase;
+
+}
+
+/* ===========================================
+   MENU
+=========================================== */
+
+.menu{
+
+    display:flex;
+
+    align-items:center;
+
+    gap:34px;
+
+}
+
+.menu a{
+
+    position:relative;
+
+    color:#d0d0d0;
+
+    font-size:16px;
+
+    font-weight:600;
+
+    transition:.25s;
+
+}
+
+.menu a:hover{
+
+    color:white;
+
+}
+
+/* Linha animada */
+
+.menu a:not(.support)::after{
+
+    content:"";
+
+    position:absolute;
+
+    left:0;
+
+    bottom:-8px;
+
+    width:0;
+
+    height:2px;
+
+    background:var(--primary);
+
+    transition:.30s;
+
+}
+
+.menu a:not(.support):hover::after{
+
+    width:100%;
+
+}
+
+/* ===========================================
+   BOTÃO APOIE
+=========================================== */
+
+.support{
+
+    display:flex;
+
+    align-items:center;
+
+    justify-content:center;
+
+    width:170px;
+
+    height:48px;
+
+    border-radius:12px;
+
+    background:linear-gradient(
+        135deg,
+        #d61f26,
+        #a31319
+    );
+
+    color:white;
+
+    font-weight:700;
+
+    box-shadow:
+        0 12px 30px rgba(214,31,38,.28);
+
+    transition:.30s;
+
+}
+
+.support:hover{
+
+    transform:translateY(-3px);
+
+    background:linear-gradient(
+        135deg,
+        #f03039,
+        #d61f26
+    );
+
+    box-shadow:
+        0 18px 45px rgba(214,31,38,.45);
+
+}
+
+/* ===========================================
+   HEADER AO ROLAR
+=========================================== */
+
+.header.scrolled{
+
+    background:rgba(8,8,10,.92);
+
+    border-bottom:1px solid rgba(214,31,38,.18);
+
+    box-shadow:
+        0 10px 35px rgba(0,0,0,.45);
+
+}
+
+/* ===========================================
+   RESPONSIVO
+=========================================== */
+
+@media(max-width:1100px){
+
+.menu{
+
+gap:24px;
+
+}
+
+}
+
+@media(max-width:900px){
+
+.brand-text{
+
+display:none;
+
+}
+
+.menu{
+
+display:none;
+
+}
+
+.brand img{
+
+width:58px;
+
+}
+
+}

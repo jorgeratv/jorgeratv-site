@@ -1,0 +1,135 @@
+---
+import "../styles/global.css";
+
+interface Props {
+    title?: string;
+    description?: string;
+}
+
+const {
+    title = "JorgeraTV | Gameplays, Aventuras e Bate-Papo",
+    description = "Canal oficial da JorgeraTV. Gameplays, lives, tecnologia, Battlefield 6, aventuras, reviews, setup gamer e muito bate-papo."
+} = Astro.props;
+---
+
+<!DOCTYPE html>
+
+<html lang="pt-BR">
+
+<head>
+
+    <!-- =======================================
+         META
+    ======================================== -->
+
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0">
+
+    <meta
+        name="description"
+        content={description}>
+
+    <meta
+        name="author"
+        content="George Matiazzo">
+
+    <meta
+        name="theme-color"
+        content="#d61f26">
+
+    <meta
+        name="robots"
+        content="index,follow">
+
+    <!-- =======================================
+         TITLE
+    ======================================== -->
+
+    <title>{title}</title>
+
+    <!-- =======================================
+         GOOGLE FONTS
+    ======================================== -->
+
+    <link
+        rel="preconnect"
+        href="https://fonts.googleapis.com">
+
+    <link
+        rel="preconnect"
+        href="https://fonts.gstatic.com"
+        crossorigin>
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap"
+        rel="stylesheet">
+
+    <!-- =======================================
+         FAVICON
+    ======================================== -->
+
+    <link
+        rel="icon"
+        href="/favicon.png"
+        type="image/png">
+
+    <!-- =======================================
+         OPEN GRAPH
+    ======================================== -->
+
+    <meta
+        property="og:type"
+        content="website">
+
+    <meta
+        property="og:title"
+        content={title}>
+
+    <meta
+        property="og:description"
+        content={description}>
+
+    <meta
+        property="og:image"
+        content="/social.jpg">
+
+    <meta
+        property="og:url"
+        content="https://jorgeratv.com.br">
+
+    <meta
+        property="og:site_name"
+        content="JorgeraTV">
+
+    <!-- =======================================
+         TWITTER / X
+    ======================================== -->
+
+    <meta
+        name="twitter:card"
+        content="summary_large_image">
+
+    <meta
+        name="twitter:title"
+        content={title}>
+
+    <meta
+        name="twitter:description"
+        content={description}>
+
+    <meta
+        name="twitter:image"
+        content="/social.jpg">
+
+</head>
+
+<body>
+
+    <slot />
+
+</body>
+
+</html>
