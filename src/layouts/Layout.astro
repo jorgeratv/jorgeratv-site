@@ -34,7 +34,7 @@ const {
 
     <meta
         name="author"
-        content="George Matiazzo">
+        content="JorgeraTV">
 
     <meta
         name="theme-color"
@@ -44,11 +44,13 @@ const {
         name="robots"
         content="index,follow">
 
+
     <!-- =======================================
          TITLE
     ======================================== -->
 
     <title>{title}</title>
+
 
     <!-- =======================================
          GOOGLE FONTS
@@ -67,14 +69,16 @@ const {
         href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap"
         rel="stylesheet">
 
+
     <!-- =======================================
          FAVICON
     ======================================== -->
 
     <link
         rel="icon"
-        href="/favicon.png"
-        type="image/png">
+        href="/favicon.svg"
+        type="image/svg+xml">
+
 
     <!-- =======================================
          OPEN GRAPH
@@ -104,6 +108,7 @@ const {
         property="og:site_name"
         content="JorgeraTV">
 
+
     <!-- =======================================
          TWITTER / X
     ======================================== -->
@@ -124,7 +129,33 @@ const {
         name="twitter:image"
         content="/social.jpg">
 
+
+    <!-- =======================================
+         METRICOOL ANALYTICS
+    ======================================== -->
+
+    <script>
+        function loadScript(a) {
+            var b = document.getElementsByTagName("head")[0];
+            var c = document.createElement("script");
+
+            c.type = "text/javascript";
+            c.src = "https://tracker.metricool.com/resources/be.js";
+            c.onreadystatechange = a;
+            c.onload = a;
+
+            b.appendChild(c);
+        }
+
+        loadScript(function () {
+            beTracker.t({
+                hash: "d788cbb66e1dccd11ee61cd6ec12a64b"
+            });
+        });
+    </script>
+
 </head>
+
 
 <body>
 
