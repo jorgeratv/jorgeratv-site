@@ -1,24 +1,577 @@
 ---
-import Layout from "../layouts/Layout.astro";
 
-import Header from "../components/Header.astro";
-import About from "../components/About.astro";
-import Footer from "../components/Footer.astro";
 ---
 
-<Layout
-    title="Sobre | JorgeraTV"
-    description="Conheça a história, a paixão pelos videogames e a proposta da JorgeraTV."
->
+<section class="about" id="sobre">
 
-    <Header />
+    <div class="about-container">
 
-    <main>
+        <!-- ==========================================
+             CABEÇALHO
+        =========================================== -->
 
-        <About />
+        <div class="about-header">
 
-    </main>
+            <span class="section-badge">
+                🎮 SOBRE A JORGERATV
+            </span>
 
-    <Footer />
+            <h2>
+                Mais do que jogar.
+                <span>É viver a experiência.</span>
+            </h2>
 
-</Layout>
+        </div>
+
+
+        <!-- ==========================================
+             CONTEÚDO PRINCIPAL
+        =========================================== -->
+
+        <div class="about-main">
+
+
+            <!-- IMAGEM -->
+            <div class="about-image">
+
+                <div class="image-glow"></div>
+
+                <img
+                    src="/logo.png"
+                    alt="JorgeraTV"
+                />
+
+            </div>
+
+
+            <!-- TEXTO -->
+            <div class="about-text">
+
+                <p>
+                    Dos tempos das lan houses até hoje,
+                    os videogames sempre fizeram parte da minha história.
+                </p>
+
+                <p>
+                    A JorgeraTV nasceu para compartilhar essa paixão,
+                    descobrir coisas novas e, principalmente,
+                    transformar cada partida em uma boa resenha.
+                </p>
+
+                <div class="about-highlight">
+                    🎮 Sem personagem. Sem complicação.
+                    <strong>
+                        Só diversão, resenha e vontade de compartilhar.
+                    </strong>
+                </div>
+
+            </div>
+
+        </div>
+
+
+        <!-- ==========================================
+             LINHA DO TEMPO
+        =========================================== -->
+
+        <div class="timeline">
+
+            <div class="timeline-item">
+
+                <div class="timeline-icon">
+                    🕹️
+                </div>
+
+                <div>
+                    <strong>Lan Houses</strong>
+                    <span>Onde tudo começou.</span>
+                </div>
+
+            </div>
+
+
+            <div class="timeline-line"></div>
+
+
+            <div class="timeline-item">
+
+                <div class="timeline-icon">
+                    🎮
+                </div>
+
+                <div>
+                    <strong>Consoles</strong>
+                    <span>Anos de jogos e histórias.</span>
+                </div>
+
+            </div>
+
+
+            <div class="timeline-line"></div>
+
+
+            <div class="timeline-item">
+
+                <div class="timeline-icon">
+                    💻
+                </div>
+
+                <div>
+                    <strong>Tecnologia</strong>
+                    <span>Setup, hardware e criação.</span>
+                </div>
+
+            </div>
+
+
+            <div class="timeline-line"></div>
+
+
+            <div class="timeline-item">
+
+                <div class="timeline-icon">
+                    🔴
+                </div>
+
+                <div>
+                    <strong>JorgeraTV</strong>
+                    <span>Agora compartilhando tudo isso.</span>
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<style>
+
+    /* ==========================================
+       SEÇÃO
+    =========================================== */
+
+    .about {
+
+        position: relative;
+
+        padding: 90px 20px;
+
+        background:
+            radial-gradient(
+                circle at 50% 20%,
+                rgba(120, 0, 0, 0.18),
+                transparent 55%
+            ),
+            #080607;
+
+        overflow: hidden;
+
+    }
+
+
+    .about-container {
+
+        width: min(1100px, 100%);
+
+        margin: 0 auto;
+
+    }
+
+
+    /* ==========================================
+       CABEÇALHO
+    =========================================== */
+
+    .about-header {
+
+        text-align: center;
+
+        margin-bottom: 55px;
+
+    }
+
+
+    .section-badge {
+
+        display: inline-block;
+
+        padding: 7px 16px;
+
+        border: 1px solid rgba(255, 40, 40, 0.45);
+
+        border-radius: 999px;
+
+        color: #ff3b3b;
+
+        font-size: 12px;
+
+        font-weight: 700;
+
+        letter-spacing: 1px;
+
+    }
+
+
+    .about-header h2 {
+
+        margin: 18px 0 0;
+
+        font-size: clamp(36px, 5vw, 58px);
+
+        line-height: 1.05;
+
+        color: #ffffff;
+
+        font-weight: 800;
+
+        letter-spacing: -2px;
+
+    }
+
+
+    .about-header h2 span {
+
+        display: block;
+
+        color: #ff3030;
+
+    }
+
+
+    /* ==========================================
+       CONTEÚDO PRINCIPAL
+    =========================================== */
+
+    .about-main {
+
+        display: grid;
+
+        grid-template-columns: 0.9fr 1.1fr;
+
+        align-items: center;
+
+        gap: 70px;
+
+        max-width: 950px;
+
+        margin: 0 auto 75px;
+
+    }
+
+
+    /* ==========================================
+       IMAGEM
+    =========================================== */
+
+    .about-image {
+
+        position: relative;
+
+        display: flex;
+
+        justify-content: center;
+
+        align-items: center;
+
+        min-height: 300px;
+
+    }
+
+
+    .about-image img {
+
+        position: relative;
+
+        z-index: 2;
+
+        width: min(330px, 100%);
+
+        height: auto;
+
+        filter:
+            drop-shadow(0 20px 35px rgba(0,0,0,0.7))
+            drop-shadow(0 0 30px rgba(255,0,0,0.12));
+
+    }
+
+
+    .image-glow {
+
+        position: absolute;
+
+        width: 240px;
+
+        height: 240px;
+
+        border-radius: 50%;
+
+        background: rgba(180, 0, 0, 0.18);
+
+        filter: blur(70px);
+
+    }
+
+
+    /* ==========================================
+       TEXTO
+    =========================================== */
+
+    .about-text {
+
+        color: #c5c5c5;
+
+        font-size: 17px;
+
+        line-height: 1.7;
+
+    }
+
+
+    .about-text p {
+
+        margin: 0 0 22px;
+
+    }
+
+
+    .about-highlight {
+
+        margin-top: 28px;
+
+        padding: 18px 20px;
+
+        border-left: 3px solid #ff3030;
+
+        background: rgba(255,255,255,0.025);
+
+        border-radius: 0 10px 10px 0;
+
+        color: #d5d5d5;
+
+    }
+
+
+    .about-highlight strong {
+
+        display: block;
+
+        margin-top: 5px;
+
+        color: #ffffff;
+
+    }
+
+
+    /* ==========================================
+       LINHA DO TEMPO
+    =========================================== */
+
+    .timeline {
+
+        display: flex;
+
+        align-items: center;
+
+        justify-content: center;
+
+        gap: 22px;
+
+        padding: 28px 25px;
+
+        border-top: 1px solid rgba(255,255,255,0.07);
+
+        border-bottom: 1px solid rgba(255,255,255,0.07);
+
+    }
+
+
+    .timeline-item {
+
+        display: flex;
+
+        align-items: center;
+
+        gap: 12px;
+
+        min-width: 0;
+
+    }
+
+
+    .timeline-icon {
+
+        width: 46px;
+
+        height: 46px;
+
+        flex-shrink: 0;
+
+        display: flex;
+
+        align-items: center;
+
+        justify-content: center;
+
+        border-radius: 12px;
+
+        background: rgba(255,255,255,0.04);
+
+        border: 1px solid rgba(255,255,255,0.08);
+
+        font-size: 21px;
+
+    }
+
+
+    .timeline-item strong {
+
+        display: block;
+
+        color: #ffffff;
+
+        font-size: 14px;
+
+    }
+
+
+    .timeline-item span {
+
+        display: block;
+
+        margin-top: 3px;
+
+        color: #888;
+
+        font-size: 11px;
+
+        white-space: nowrap;
+
+    }
+
+
+    .timeline-line {
+
+        width: 35px;
+
+        height: 1px;
+
+        background: rgba(255, 40, 40, 0.35);
+
+        flex-shrink: 0;
+
+    }
+
+
+    /* ==========================================
+       RESPONSIVO
+    =========================================== */
+
+    @media (max-width: 850px) {
+
+        .about {
+
+            padding: 70px 20px;
+
+        }
+
+
+        .about-main {
+
+            grid-template-columns: 1fr;
+
+            gap: 30px;
+
+            margin-bottom: 55px;
+
+        }
+
+
+        .about-image {
+
+            min-height: 220px;
+
+        }
+
+
+        .about-image img {
+
+            width: 270px;
+
+        }
+
+
+        .about-text {
+
+            text-align: center;
+
+            font-size: 16px;
+
+        }
+
+
+        .about-highlight {
+
+            text-align: left;
+
+        }
+
+
+        .timeline {
+
+            flex-direction: column;
+
+            align-items: stretch;
+
+            gap: 14px;
+
+        }
+
+
+        .timeline-line {
+
+            width: 1px;
+
+            height: 18px;
+
+            margin-left: 23px;
+
+        }
+
+    }
+
+
+    @media (max-width: 500px) {
+
+        .about-header {
+
+            margin-bottom: 35px;
+
+        }
+
+
+        .about-header h2 {
+
+            font-size: 36px;
+
+        }
+
+
+        .about-text {
+
+            font-size: 15px;
+
+        }
+
+
+        .timeline-item span {
+
+            white-space: normal;
+
+        }
+
+    }
+
+</style>
