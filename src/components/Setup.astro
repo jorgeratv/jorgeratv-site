@@ -1,172 +1,492 @@
 ---
 import "../styles/setup.css";
+
+const categories = [
+    {
+        id: "computador",
+        eyebrow: "A CENTRAL DE COMANDO",
+        title: "Computador",
+        description:
+            "O coração tecnológico da JorgeraTV. Onde gameplay, captura, edição e transmissão se encontram.",
+        items: [
+            {
+                name: "Dell G15 5515",
+                model: "Ryzen Edition • RTX 3060 • 32 GB RAM",
+                description:
+                    "Minha máquina principal para criação, streaming, captura e tecnologia.",
+                image: "/setup/dell-g15.webp",
+                url: "https://www.dell.com/en-au/shop/dell-laptops/g15-ryzen-edition-gaming-laptop/spd/g-series-15-5515-laptop/smhng551507au",
+                tags: ["Ryzen 7 5800H", "RTX 3060 6 GB", "32 GB RAM"]
+            }
+        ]
+    },
+
+    {
+        id: "video",
+        eyebrow: "ONDE A IMAGEM GANHA VIDA",
+        title: "Imagem & Vídeo",
+        description:
+            "Tudo aquilo que transforma gameplay em conteúdo.",
+        items: [
+            {
+                name: "Samsung Odyssey G5 32\"",
+                model: "QHD • 165 Hz • 1 ms • 1000R",
+                description:
+                    "Meu monitor principal para jogar e trabalhar.",
+                image: "/setup/samsung-odyssey-g5.webp",
+                url: "https://www.samsung.com/br/monitors/gaming/odyssey-g5-g55c-32-inch-165hz-curved-qhd-ls32cg552elmzd/",
+                tags: ["32\"", "QHD", "165 Hz", "1000R"]
+            },
+
+            {
+                name: "PlayStation 5 Slim",
+                model: "Com leitor de discos",
+                description:
+                    "Meu console principal para a geração atual.",
+                image: "/setup/ps5-slim.webp",
+                url: "https://direct.playstation.com/pt-pt/buy-consoles/playstation5-console-model-group-slim",
+                tags: ["PS5", "Slim", "1 TB", "Blu-ray"]
+            }
+        ]
+    },
+
+    {
+        id: "audio",
+        eyebrow: "OUVIR TAMBÉM É JOGAR",
+        title: "Áudio",
+        description:
+            "Equipamentos escolhidos para ouvir, comunicar e criar com qualidade.",
+        items: [
+            {
+                name: "FiiO K7",
+                model: "DAC + Amplificador de Fones",
+                description:
+                    "O centro do meu sistema de áudio de alta fidelidade.",
+                image: "/setup/fiio-k7.webp",
+                url: "https://fiio.com/k7",
+                tags: ["Dual AK4493SEQ", "THX AAA 788+", "4.4 mm", "6.35 mm"]
+            },
+
+            {
+                name: "HIFIMAN Ananda",
+                model: "Over-Ear • Planar Magnetic",
+                description:
+                    "Meu fone principal para uma experiência sonora mais detalhada e imersiva.",
+                image: "/setup/hifiman-ananda.webp",
+                url: "https://hifiman.com/products",
+                tags: ["Planar", "Open-Back", "Over-Ear"]
+            },
+
+            {
+                name: "RAPTGO Bridge",
+                model: "IEM • In-Ear",
+                description:
+                    "Meu fone intra-auricular para escuta detalhada e mobilidade.",
+                image: "/setup/raptgo-bridge.webp",
+                url: "https://www.linsoul.com/products/raptgo-bridge",
+                tags: ["2BA + 2DD + PZT", "IEM", "Hi-Fi"]
+            },
+
+            {
+                name: "Tribit XSound Go",
+                model: "2 unidades • L/R",
+                description:
+                    "Duas caixas formando meu sistema estéreo de mesa.",
+                image: "/setup/tribit-xsound-go.webp",
+                url: "https://tribit.com/products/Tribit-XSound-Go-Bluetooth-Speakers",
+                tags: ["2 unidades", "Bluetooth", "16 W"]
+            },
+
+            {
+                name: "Hollyland LARK M2",
+                model: "Microfone sem fio",
+                description:
+                    "Meu microfone sem fio para voz e criação de conteúdo.",
+                image: "/setup/hollyland-lark-m2.webp",
+                url: "https://www.hollyland.com/pt-br/product/lark-m2",
+                tags: ["48 kHz", "24-bit", "ENC", "300 m"]
+            }
+        ]
+    },
+
+    {
+        id: "controles",
+        eyebrow: "CONTROLE TOTAL",
+        title: "Controles & Periféricos",
+        description:
+            "Ferramentas para jogar do meu jeito — seja no teclado, mouse ou controle.",
+        items: [
+            {
+                name: "Machenike L8 Pro",
+                model: "Gaming Mouse",
+                description:
+                    "Mouse principal para jogos e uso diário.",
+                image: "/setup/machenike-l8-pro.webp",
+                url: "https://global.machenike.com/pt-br/products/l8pro",
+                tags: ["PAW3395", "2.4 GHz", "Bluetooth 5.1"]
+            },
+
+            {
+                name: "RAGNOK ErgoStrike7",
+                model: "FPS Gaming Mouse • Recoil",
+                description:
+                    "Um dos periféricos mais diferentes do setup — mouse vertical com feedback de recuo.",
+                image: "/setup/ragnok-ergostrike7.webp",
+                url: "https://ragnok.com/pt/products/ergostrike7-fps-gaming-mouse-gun-recoil",
+                tags: ["PAW3395", "26.000 DPI", "Recoil"]
+            },
+
+            {
+                name: "Machenike KT68",
+                model: "Teclado Mecânico",
+                description:
+                    "Meu teclado mecânico principal.",
+                image: "/setup/machenike-kt68.webp",
+                url: "https://global.machenike.com/pt-br/products/kt68",
+                tags: ["68 teclas", "Hot-swap", "2.4 GHz"]
+            },
+
+            {
+                name: "Razer Tartarus V2",
+                model: "Gaming Keypad",
+                description:
+                    "Meu keypad dedicado para comandos e jogos.",
+                image: "/setup/razer-tartarus-v2.webp",
+                url: "https://www.razer.com/br-pt/gaming-keypads/razer-tartarus-v2",
+                tags: ["32 teclas", "Chroma RGB", "Macros"]
+            },
+
+            {
+                name: "8BitDo Ultimate 2.4G",
+                model: "Wireless • Preto • Dock",
+                description:
+                    "Controle sem fio para jogar no PC e aproveitar diferentes estilos de gameplay.",
+                image: "/setup/8bitdo-ultimate-24g.webp",
+                url: "https://www.8bitdo.com/ultimate-2.4g-wireless-controller/",
+                tags: ["2.4 GHz", "Dock", "Hall Effect"]
+            }
+        ]
+    },
+
+    {
+        id: "streaming",
+        eyebrow: "A MÁQUINA DE TRANSFORMAR GAMEPLAY EM CONTEÚDO",
+        title: "Streaming & Captura",
+        description:
+            "O núcleo responsável por capturar, controlar e transmitir tudo o que acontece na JorgeraTV.",
+        items: [
+            {
+                name: "Elgato Facecam MK.2",
+                model: "2 unidades",
+                description:
+                    "Duas câmeras para diferentes ângulos durante as transmissões.",
+                image: "/setup/elgato-facecam-mk2.webp",
+                url: "https://www.elgato.com/pt/pt/p/facecam-mk2",
+                tags: ["1080p60", "Sony STARVIS", "84°"]
+            },
+
+            {
+                name: "Elgato 4K X",
+                model: "Game Capture",
+                description:
+                    "Minha placa de captura principal para o PlayStation 5.",
+                image: "/setup/elgato-4k-x.webp",
+                url: "https://www.elgato.com/pt/pt/p/game-capture-4k-x",
+                tags: ["HDMI 2.1", "4K144", "VRR", "HDR10"]
+            },
+
+            {
+                name: "Elgato Stream Deck MK.2",
+                model: "15 teclas LCD",
+                description:
+                    "Meu painel de controle para cenas, comandos e automações.",
+                image: "/setup/elgato-stream-deck.webp",
+                url: "https://www.elgato.com/pt/pt/p/stream-deck",
+                tags: ["15 teclas", "LCD", "USB-C"]
+            },
+
+            {
+                name: "Elgato Stream Deck Pedal",
+                model: "Controle hands-free",
+                description:
+                    "Comandos aos pés para não precisar tirar as mãos do jogo.",
+                image: "/setup/elgato-stream-pedal.webp",
+                url: "https://www.elgato.com/ww/pt/p/stream-deck-pedal",
+                tags: ["3 pedais", "USB-C", "Macros"]
+            }
+        ]
+    },
+
+    {
+        id: "conectividade",
+        eyebrow: "TUDO CONECTADO",
+        title: "Conectividade",
+        description:
+            "Porque um setup moderno precisa de portas, velocidade e organização.",
+        items: [
+            {
+                name: "CQR HS070",
+                model: "Hub USB 3.1 • 10 portas",
+                description:
+                    "Hub USB de alta velocidade usado para expandir a conectividade do setup.",
+                image: "/setup/cqr-hs070.webp",
+                url: "https://lista.mercadolivre.com.br/hub-usb-3.1-com-fonte",
+                tags: ["10 portas", "10 Gbps", "USB 3.1"]
+            }
+        ]
+    },
+
+    {
+        id: "iluminacao",
+        eyebrow: "A ATMOSFERA TAMBÉM FAZ PARTE",
+        title: "Iluminação",
+        description:
+            "Luz para transformar o ambiente e dar identidade visual às transmissões.",
+        items: [
+            {
+                name: "Govee Gaming Light Bars",
+                model: "RGBIC Wi-Fi • H6047",
+                description:
+                    "Iluminação RGBIC usada para criar a atmosfera do setup.",
+                image: "/setup/govee-h6047.webp",
+                url: "https://eu.govee.com/products/govee-rgbic-wi-fi-gaming-light-bars-with-smart-controller",
+                tags: ["RGBIC", "Wi-Fi", "H6047"]
+            }
+        ]
+    },
+
+    {
+        id: "estrutura",
+        eyebrow: "ONDE TUDO ACONTECE",
+        title: "Mesa & Estrutura",
+        description:
+            "A base física que mantém todo o setup no lugar.",
+        items: [
+            {
+                name: "North Bayou NB-F80",
+                model: "Braço articulado com pistão a gás",
+                description:
+                    "Suporte articulado para posicionamento do monitor.",
+                image: "/setup/nb-f80.webp",
+                url: "https://pauta.com.br/suporte-monitor-north-bayou-articulado-17-a-30-com-pistao-a-gas-f80-nb",
+                tags: ["Pistão a gás", "VESA", "Articulado"]
+            },
+
+            {
+                name: "North Bayou NBH-2",
+                model: "Bandeja para notebook",
+                description:
+                    "Bandeja acoplável ao sistema de suporte para posicionar o notebook.",
+                image: "/setup/nbh-2.webp",
+                url: "https://www.kabum.com.br/produto/335087/bandeja-central-suportes-apoio-notebook-acoplavel-a-suporte-de-pistao-nbh-2",
+                tags: ["Notebook", "VESA", "Ajustável"]
+            },
+
+            {
+                name: "Hayonik Pirate Play",
+                model: "Preto e Vermelho • 86708",
+                description:
+                    "A mesa que serve de base para toda a estação JorgeraTV.",
+                image: "/setup/hayonik-pirate.webp",
+                url: "https://origin.hayonik.com.br/",
+                tags: ["Aço", "MDF", "150 kg"]
+            }
+        ]
+    }
+];
 ---
 
-<section class="setup" id="setup">
+<section class="setup-page">
 
-    <div class="container">
+    <!-- HERO -->
 
-        <span class="section-title">
-            MEU SETUP
-        </span>
+    <header class="setup-hero">
 
-        <h2>
-            Os equipamentos que utilizo nas lives
-        </h2>
+        <div class="setup-hero__inner">
 
-        <p class="setup-description">
-            Todo o conteúdo da JorgeraTV é produzido utilizando equipamentos
-            cuidadosamente escolhidos para oferecer excelente qualidade de
-            imagem, áudio e desempenho.
-        </p>
+            <span class="setup-eyebrow">
+                🎮 O SETUP DA JORGERATV
+            </span>
 
-        <div class="setup-grid">
+            <h1>
+                A tecnologia
+                <span>por trás da tela.</span>
+            </h1>
 
-            <article class="setup-card">
+            <p>
+                Cada equipamento tem uma função.
+                Cada escolha faz parte da experiência.
+                Aqui está a estrutura que transforma
+                gameplay em conteúdo.
+            </p>
 
-                <span class="emoji">💻</span>
+            <div class="setup-hero__stats">
 
-                <h3>Dell G15</h3>
+                <div>
+                    <strong>21</strong>
+                    <span>equipamentos</span>
+                </div>
 
-                <p>
-                    Notebook Gamer
-                </p>
+                <div>
+                    <strong>08</strong>
+                    <span>categorias</span>
+                </div>
 
-            </article>
+                <div>
+                    <strong>01</strong>
+                    <span>setup</span>
+                </div>
 
-            <article class="setup-card">
-
-                <span class="emoji">🖥️</span>
-
-                <h3>Samsung Odyssey G5</h3>
-
-                <p>
-                    Monitor Gamer
-                </p>
-
-            </article>
-
-            <article class="setup-card">
-
-                <span class="emoji">🎥</span>
-
-                <h3>Elgato 4K X</h3>
-
-                <p>
-                    Placa de Captura
-                </p>
-
-            </article>
-
-            <article class="setup-card">
-
-                <span class="emoji">📷</span>
-
-                <h3>Facecam MK.2</h3>
-
-                <p>
-                    Webcam Principal
-                </p>
-
-            </article>
-
-            <article class="setup-card">
-
-                <span class="emoji">🎙️</span>
-
-                <h3>Hollyland Lark M2</h3>
-
-                <p>
-                    Microfone Sem Fio
-                </p>
-
-            </article>
-
-            <article class="setup-card">
-
-                <span class="emoji">🎧</span>
-
-                <h3>HIFIMAN Ananda</h3>
-
-                <p>
-                    Headphone Hi-Fi
-                </p>
-
-            </article>
-
-            <article class="setup-card">
-
-                <span class="emoji">🎛️</span>
-
-                <h3>FiiO K7</h3>
-
-                <p>
-                    DAC / Amplificador
-                </p>
-
-            </article>
-
-            <article class="setup-card">
-
-                <span class="emoji">🎮</span>
-
-                <h3>PlayStation 5 Slim</h3>
-
-                <p>
-                    Console Principal
-                </p>
-
-            </article>
-
-            <article class="setup-card">
-
-                <span class="emoji">⌨️</span>
-
-                <h3>Machenike KT68</h3>
-
-                <p>
-                    Teclado Mecânico
-                </p>
-
-            </article>
-
-            <article class="setup-card">
-
-                <span class="emoji">🖱️</span>
-
-                <h3>Logitech G502 Hero</h3>
-
-                <p>
-                    Mouse Gamer
-                </p>
-
-            </article>
-
-            <article class="setup-card">
-
-                <span class="emoji">🎚️</span>
-
-                <h3>Stream Deck MK2</h3>
-
-                <p>
-                    Controle de Lives
-                </p>
-
-            </article>
-
-            <article class="setup-card">
-
-                <span class="emoji">💡</span>
-
-                <h3>Govee RGBIC</h3>
-
-                <p>
-                    Iluminação do Estúdio
-                </p>
-
-            </article>
+            </div>
 
         </div>
+
+    </header>
+
+
+    <!-- CATEGORIAS -->
+
+    <div class="setup-content">
+
+        {categories.map((category, categoryIndex) => (
+
+            <section
+                class:list={[
+                    "setup-category",
+                    categoryIndex % 2 === 1 && "setup-category--alt"
+                ]}
+                id={category.id}
+            >
+
+                <div class="setup-category__heading">
+
+                    <span class="setup-eyebrow">
+                        {category.eyebrow}
+                    </span>
+
+                    <h2>
+                        {category.title}
+                    </h2>
+
+                    <p>
+                        {category.description}
+                    </p>
+
+                </div>
+
+
+                <div class="setup-grid">
+
+                    {category.items.map((item) => (
+
+                        <a
+                            class="setup-card"
+                            href={item.url}
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            aria-label={`Conhecer ${item.name}`}
+                        >
+
+                            <!-- FOTO -->
+
+                            <div class="setup-card__image">
+
+                                <img
+                                    src={item.image}
+                                    alt={item.name}
+                                    loading="lazy"
+                                />
+
+                                <span class="setup-card__external">
+                                    ↗
+                                </span>
+
+                            </div>
+
+
+                            <!-- CONTEÚDO -->
+
+                            <div class="setup-card__body">
+
+                                <span class="setup-card__model">
+                                    {item.model}
+                                </span>
+
+                                <h3>
+                                    {item.name}
+                                </h3>
+
+                                <p>
+                                    {item.description}
+                                </p>
+
+                                <div class="setup-card__tags">
+
+                                    {item.tags.map((tag) => (
+                                        <span>
+                                            {tag}
+                                        </span>
+                                    ))}
+
+                                </div>
+
+                            </div>
+
+
+                            <!-- FOOTER -->
+
+                            <div class="setup-card__footer">
+
+                                <span>
+                                    Fabricante / produto
+                                </span>
+
+                                <strong>
+                                    Conhecer →
+                                </strong>
+
+                            </div>
+
+                        </a>
+
+                    ))}
+
+                </div>
+
+            </section>
+
+        ))}
+
+
+        <!-- FECHAMENTO -->
+
+        <section class="setup-ending">
+
+            <span class="setup-eyebrow">
+                MAIS DO QUE EQUIPAMENTOS
+            </span>
+
+            <h2>
+                O setup muda.
+                <span>A vontade de jogar continua.</span>
+            </h2>
+
+            <p>
+                Hardware pode mudar.
+                Consoles podem mudar.
+                Tecnologias novas vão aparecer.
+                Mas o motivo de tudo isso continua sendo o mesmo:
+                jogar, criar, conversar e compartilhar.
+            </p>
+
+            <a
+                href="/sobre"
+                class="setup-ending__button"
+            >
+                ← Conheça minha história
+            </a>
+
+        </section>
 
     </div>
 
