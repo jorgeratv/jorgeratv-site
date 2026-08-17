@@ -109,7 +109,7 @@ import "../styles/footer.css";
                      CONTATO PROFISSIONAL
                 ====================================== -->
 
-                <div>
+                <div class="footer-contact">
 
                     <h3>Contato profissional</h3>
 
@@ -128,7 +128,8 @@ import "../styles/footer.css";
 
                     <p class="footer-contact-description">
                         Criadores, marcas e projetos:
-                        vamos criar algo juntos.
+                        bora fazer acontecer, porque uma boa ideia
+                        pode virar uma grande história.
                     </p>
 
                 </div>
@@ -165,3 +166,119 @@ import "../styles/footer.css";
     </div>
 
 </footer>
+
+
+<style>
+
+    /* =====================================================
+       CONTATO PROFISSIONAL
+    ====================================================== */
+
+    .footer-contact {
+        min-width: 0;
+    }
+
+
+    /* =====================================================
+       CATEGORIAS DE CONTATO
+    ====================================================== */
+
+    .footer-contact-label {
+        margin: 0 0 14px;
+
+        color: #a7a7a7;
+
+        font-size: 14px;
+
+        line-height: 1.65;
+    }
+
+
+    /* =====================================================
+       E-MAIL
+    ====================================================== */
+
+    .footer-contact-email {
+        display: inline-block;
+
+        margin: 2px 0 14px;
+
+        color: #ff343a !important;
+
+        font-size: 17px !important;
+
+        font-weight: 700;
+
+        line-height: 1.4;
+
+        text-decoration: none;
+
+        transition:
+            color .25s ease,
+            text-shadow .25s ease;
+    }
+
+
+    .footer-contact-email:hover {
+        color: #ff555b !important;
+
+        text-shadow:
+            0 0 18px rgba(255, 52, 58, .25);
+    }
+
+
+    /* =====================================================
+       FRASE FINAL
+    ====================================================== */
+
+    .footer-contact-description {
+        max-width: 330px;
+
+        margin: 0;
+
+        color: #777;
+
+        font-size: 13px;
+
+        line-height: 1.7;
+    }
+
+
+    /* =====================================================
+       DESKTOP
+    ====================================================== */
+
+    @media (min-width: 701px) {
+
+        .footer-contact-label {
+            white-space: nowrap;
+        }
+
+    }
+
+
+    /* =====================================================
+       MOBILE
+    ====================================================== */
+
+    @media (max-width: 700px) {
+
+        .footer-contact-label {
+            white-space: normal;
+        }
+
+
+        .footer-contact-email {
+            font-size: 16px !important;
+
+            overflow-wrap: anywhere;
+        }
+
+
+        .footer-contact-description {
+            max-width: 100%;
+        }
+
+    }
+
+</style>
