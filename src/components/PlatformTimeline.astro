@@ -1,1274 +1,646 @@
 ---
+import "../styles/platform-timeline.css";
+
+const eras = [
+    {
+        number: "01",
+        label: "ERA 01",
+        title: "OS PRIMEIROS PIXELS",
+        description:
+            "Foi aqui que tudo começou. Os primeiros videogames, os primeiros controles e as primeiras lembranças que ajudaram a construir minha relação com os jogos.",
+
+        platforms: [
+            {
+                year: "1990",
+                type: "CONSOLE • 8-BIT",
+                platform: "ATARI 2600",
+                description:
+                    "Foi aqui que tudo começou. Meu primeiro contato com videogames e a primeira porta para um universo que nunca mais deixou de fazer parte da minha vida.",
+                games: [
+                    "Pitfall!",
+                    "River Raid",
+                    "Enduro",
+                    "Frogger",
+                    "Pac-Man",
+                    "Adventure",
+                    "H.E.R.O."
+                ]
+            },
+
+            {
+                year: "1993",
+                type: "CONSOLE • 8-BIT",
+                platform: "MASTER SYSTEM",
+                description:
+                    "Não tive um Master System, mas meus amigos tinham. Foi através deles que conheci alguns dos grandes clássicos da Sega.",
+                highlight: "EXPERIÊNCIA ATRAVÉS DE AMIGOS",
+                games: [
+                    "Alex Kidd",
+                    "Sonic",
+                    "Shinobi",
+                    "Golden Axe",
+                    "Double Dragon"
+                ]
+            },
+
+            {
+                year: "1993",
+                type: "CONSOLE • 8-BIT",
+                platform: "NINTENDO NES",
+                description:
+                    "O Nintendo 8-bit marcou uma nova fase da minha infância e trouxe alguns dos personagens e franquias que continuam comigo até hoje.",
+                games: [
+                    "Super Mario Bros.",
+                    "Contra",
+                    "DuckTales",
+                    "Mega Man 2",
+                    "Castlevania",
+                    "Battletoads"
+                ]
+            }
+        ]
+    },
+
+    {
+        number: "02",
+        label: "ERA 02",
+        title: "A ERA 16-BIT",
+        description:
+            "Uma geração que elevou os videogames a outro nível. Gráficos melhores, trilhas memoráveis e alguns dos jogos que mais marcaram minha infância.",
+
+        platforms: [
+            {
+                year: "1993",
+                type: "CONSOLE • 16-BIT",
+                platform: "MEGA DRIVE",
+                description:
+                    "Não tive um Mega Drive. Meus primos tinham e eu aproveitava cada oportunidade para jogar.",
+                highlight: "EXPERIÊNCIA ATRAVÉS DE PRIMOS",
+                games: [
+                    "Altered Beast",
+                    "Streets of Rage",
+                    "Ghouls 'n Ghosts",
+                    "Earthworm Jim"
+                ]
+            },
+
+            {
+                year: "1994",
+                type: "PC • WINDOWS 3.1",
+                platform: "PC 486",
+                description:
+                    "Meu pai tinha o computador, mas deixava eu brincar. Foi quando videogames e tecnologia começaram a andar juntos na minha cabeça.",
+                games: [
+                    "DOOM",
+                    "Wolfenstein 3D",
+                    "Duke Nukem",
+                    "Hexen",
+                    "Blood",
+                    "Prince of Persia",
+                    "Stunts",
+                    "Monkey Island",
+                    "Full Throttle"
+                ]
+            },
+
+            {
+                year: "1994",
+                type: "CONSOLE • 16-BIT",
+                platform: "SUPER NINTENDO",
+                description:
+                    "Uma das fases mais marcantes da minha vida gamer. O Super Nintendo abriu um universo enorme de aventuras, lutas, RPGs, corridas e exploração.",
+                games: [
+                    "Donkey Kong Country",
+                    "Super Mario World",
+                    "Mortal Kombat",
+                    "Street Fighter II",
+                    "Chrono Trigger",
+                    "Final Fantasy",
+                    "Contra III",
+                    "Top Gear",
+                    "International Superstar Soccer Deluxe",
+                    "Final Fight",
+                    "Sunset Riders",
+                    "Aladdin",
+                    "Legend of Mana",
+                    "Super Metroid",
+                    "Demon's Crest"
+                ]
+            }
+        ]
+    },
+
+    {
+        number: "03",
+        label: "ERA 03",
+        title: "A REVOLUÇÃO 3D",
+        description:
+            "Os videogames começaram a ganhar uma nova dimensão. Arcades, locadoras e consoles que ajudaram a transformar a experiência de jogar.",
+
+        platforms: [
+            {
+                year: "1995",
+                type: "CONSOLE • 32-BIT",
+                platform: "3DO",
+                description:
+                    "Não tive um 3DO, mas conheci a plataforma em uma locadora. Eu pagava por hora e aproveitava cada minuto para descobrir aquela tecnologia diferente.",
+                highlight: "CONTATO ATRAVÉS DE LOCADORA",
+                games: [
+                    "Road Rash",
+                    "The Need for Speed",
+                    "Alone in the Dark",
+                    "Gex",
+                    "FIFA International Soccer",
+                    "Super Street Fighter II Turbo"
+                ]
+            },
+
+            {
+                year: "1995",
+                type: "CONSOLE • 32-BIT",
+                platform: "NEO GEO CD",
+                description:
+                    "Outra experiência de locadora que ficou marcada. O Neo Geo era praticamente um sonho para quem gostava dos arcades.",
+                highlight: "CONTATO ATRAVÉS DE LOCADORA",
+                games: [
+                    "The King of Fighters '95",
+                    "The King of Fighters '96",
+                    "Metal Slug",
+                    "Samurai Shodown II",
+                    "Fatal Fury Special",
+                    "Super Sidekicks 3"
+                ]
+            },
+
+            {
+                year: "1997",
+                type: "CONSOLE • 64-BIT",
+                platform: "NINTENDO 64",
+                description:
+                    "O Nintendo 64 foi uma verdadeira revolução. Foi uma das primeiras vezes em que senti que os mundos dos videogames estavam realmente ganhando outra dimensão.",
+                games: [
+                    "Super Mario 64",
+                    "Mario Kart 64",
+                    "Banjo-Kazooie",
+                    "GoldenEye 007",
+                    "Donkey Kong 64",
+                    "Star Fox 64",
+                    "1080 Snowboarding",
+                    "Wave Race 64"
+                ]
+            },
+
+            {
+                year: "1997",
+                type: "PC • WINDOWS 95",
+                platform: "PC PENTIUM II",
+                description:
+                    "Meu primeiro computador exclusivamente meu. A partir daqui, o PC passou a ocupar um espaço cada vez maior na minha vida.",
+                games: [
+                    "DOOM II",
+                    "Quake II",
+                    "Carmageddon",
+                    "Diablo",
+                    "Heroes of Might and Magic III",
+                    "Age of Empires",
+                    "Command & Conquer: Red Alert"
+                ]
+            },
+
+            {
+                year: "1998",
+                type: "CONSOLE • 32-BIT",
+                platform: "PLAYSTATION 1",
+                description:
+                    "O PlayStation trouxe uma quantidade absurda de experiências diferentes e ajudou a consolidar ainda mais minha paixão por videogames.",
+                games: [
+                    "Resident Evil",
+                    "Resident Evil 2",
+                    "Resident Evil 3",
+                    "Dino Crisis",
+                    "Medal of Honor",
+                    "Gran Turismo 2",
+                    "Castlevania: Symphony of the Night",
+                    "Metal Gear Solid",
+                    "Tekken 3"
+                ]
+            }
+        ]
+    },
+
+    {
+        number: "04",
+        label: "ERA 04",
+        title: "A GERAÇÃO 128-BIT",
+        description:
+            "Uma geração que trouxe mundos maiores, experiências mais cinematográficas e uma nova forma de viver os videogames.",
+
+        platforms: [
+            {
+                year: "2000",
+                type: "CONSOLE • 128-BIT",
+                platform: "PLAYSTATION 2",
+                description:
+                    "O PlayStation 2 acompanhou uma das épocas mais importantes da indústria dos videogames e trouxe alguns dos jogos que mais me marcaram.",
+                games: [
+                    "Gran Turismo",
+                    "God of War",
+                    "GTA",
+                    "Metal Gear Solid",
+                    "Resident Evil"
+                ]
+            },
+
+            {
+                year: "2001",
+                type: "CONSOLE",
+                platform: "XBOX",
+                description:
+                    "A chegada da Microsoft aos consoles trouxe uma nova experiência para minha jornada gamer.",
+                games: [
+                    "Halo",
+                    "Halo 2",
+                    "Forza Motorsport",
+                    "Fable",
+                    "Ninja Gaiden"
+                ]
+            },
+
+            {
+                year: "2001",
+                type: "PC • WINDOWS XP",
+                platform: "PC ATHLON XP",
+                description:
+                    "Foi onde conheci Half-Life e seus mods e também a época em que comecei a frequentar LAN houses.",
+                games: [
+                    "Half-Life",
+                    "Team Fortress",
+                    "Counter-Strike 1.5",
+                    "Counter-Strike 1.6",
+                    "Quake III Arena",
+                    "Call of Duty",
+                    "Max Payne",
+                    "Age of Mythology"
+                ]
+            }
+        ]
+    },
+
+    {
+        number: "05",
+        label: "ERA 05",
+        title: "A ERA HD",
+        description:
+            "A alta definição mudou a maneira de enxergar os videogames e trouxe uma nova geração de experiências online.",
+
+        platforms: [
+            {
+                year: "2006",
+                type: "CONSOLE • HD",
+                platform: "PLAYSTATION 3",
+                description:
+                    "Uma geração marcada por grandes aventuras, mundos abertos e experiências cinematográficas.",
+                games: [
+                    "The Last of Us",
+                    "God of War III",
+                    "Grand Theft Auto V",
+                    "Assassin's Creed III",
+                    "Killzone 3",
+                    "Battlefield 4",
+                    "Far Cry 3",
+                    "Ultimate Marvel vs. Capcom 3"
+                ]
+            },
+
+            {
+                year: "2007",
+                type: "CONSOLE • HD",
+                platform: "XBOX 360",
+                description:
+                    "O Xbox 360 trouxe uma nova geração de gráficos, multiplayer e experiências que definiram uma época.",
+                games: [
+                    "Gears of War",
+                    "Halo 3",
+                    "Forza Motorsport 4",
+                    "Batman: Arkham City",
+                    "Red Dead Redemption",
+                    "Call of Duty: Modern Warfare"
+                ]
+            },
+
+            {
+                year: "2010",
+                type: "PC • WINDOWS 7",
+                platform: "PC AMD PHENOM II X4",
+                description:
+                    "Uma nova fase do PC, acompanhando a evolução dos jogos e das tecnologias que passaram a fazer parte da minha experiência gamer.",
+                games: [
+                    "Call of Duty: Modern Warfare 2",
+                    "Left 4 Dead 2",
+                    "Fallout 3",
+                    "GTA IV",
+                    "Age of Empires III",
+                    "Crysis",
+                    "The Elder Scrolls V: Skyrim"
+                ]
+            }
+        ]
+    },
+
+    {
+        number: "06",
+        label: "ERA 06",
+        title: "A GERAÇÃO ATUAL",
+        description:
+            "Hoje, videogames, tecnologia, criação de conteúdo e novas formas de jogar fazem parte da mesma experiência.",
+
+        platforms: [
+            {
+                year: "2013",
+                type: "CONSOLE",
+                platform: "PLAYSTATION 4",
+                description:
+                    "O PlayStation 4 trouxe uma combinação incrível de mundos abertos, histórias cinematográficas, ação e experiências multiplayer.",
+                games: [
+                    "Red Dead Redemption 2",
+                    "Grand Theft Auto V",
+                    "The Last of Us Part II",
+                    "God of War",
+                    "Resident Evil 7",
+                    "Mortal Kombat X",
+                    "The Witcher 3",
+                    "Uncharted 4",
+                    "Ace Combat 7"
+                ]
+            },
+
+            {
+                year: "2020",
+                type: "CONSOLE • CURRENT GEN",
+                platform: "XBOX SERIES S",
+                description:
+                    "Uma entrada mais compacta na nova geração, mantendo minha paixão por Xbox e seus grandes exclusivos e multiplataformas.",
+                games: [
+                    "Gears 5",
+                    "DOOM Eternal",
+                    "Halo Infinite",
+                    "Forza Horizon 5",
+                    "Far Cry 5"
+                ]
+            },
+
+            {
+                year: "2020",
+                type: "PORTÁTIL • CURRENT GEN",
+                platform: "NINTENDO SWITCH LITE",
+                description:
+                    "Uma forma diferente de continuar conectado aos universos da Nintendo, agora em uma experiência portátil.",
+                games: [
+                    "Super Mario 3D World + Bowser's Fury",
+                    "Super Mario Odyssey",
+                    "Mario Kart 8 Deluxe",
+                    "Donkey Kong Country: Tropical Freeze",
+                    "The Legend of Zelda: Tears of the Kingdom"
+                ]
+            },
+
+            {
+                year: "2024",
+                type: "PC GAMER",
+                platform: "DELL G15",
+                description:
+                    "Meu PC gamer atual. É nele que a experiência gamer se encontra com criação de conteúdo, gravação, transmissões e produção da JorgeraTV.",
+                games: [
+                    "Battlefield 6",
+                    "DOOM: The Dark Ages",
+                    "Counter-Strike 2",
+                    "Cyberpunk 2077"
+                ]
+            },
+
+            {
+                year: "2024",
+                type: "CONSOLE • CURRENT GEN",
+                platform: "PLAYSTATION 5 SLIM",
+                description:
+                    "Meu console atual e uma das principais plataformas da minha experiência gamer hoje.",
+                games: [
+                    "God of War Ragnarök",
+                    "Resident Evil 4 Remake",
+                    "Battlefield 6",
+                    "Metal Gear Solid Delta",
+                    "The Callisto Protocol"
+                ]
+            }
+        ]
+    }
+];
 ---
 
-<section class="jorgera-timeline" id="historia-gamer">
+<section class="platform-timeline">
 
-  <!-- =========================================================
-       ERA 01 — 8 BITS
-  ========================================================== -->
+    <!-- =========================================================
+         HERO
+    ========================================================== -->
 
-  <section class="timeline-era">
+    <div class="platform-timeline__hero">
+        <div class="platform-timeline__hero-inner">
 
-    <div class="era-header">
-      <span class="era-number">01</span>
+            <span class="platform-timeline__eyebrow">
+                JORGERATV • MINHA HISTÓRIA GAMER
+            </span>
 
-      <div class="era-heading">
-        <span class="era-label">ERA 01</span>
+            <h1>
+                MINHA JORNADA
+                <span>PELOS VIDEOGAMES.</span>
+            </h1>
 
-        <h2>OS PRIMEIROS PIXELS</h2>
+            <p>
+                De um Atari 2600 ao PlayStation 5 Slim e ao Dell G15.
+                Mais de três décadas atravessando gerações, tecnologias,
+                amizades e histórias que ficaram para sempre.
+            </p>
+
+            <div class="platform-timeline__stats">
+
+                <div>
+                    <strong>
+                        {eras.reduce(
+                            (total, era) => total + era.platforms.length,
+                            0
+                        )}
+                    </strong>
+                    <span>PLATAFORMAS</span>
+                </div>
+
+                <div>
+                    <strong>1990</strong>
+                    <span>INÍCIO DA JORNADA</span>
+                </div>
+
+                <div>
+                    <strong>2024</strong>
+                    <span>FASE ATUAL</span>
+                </div>
+
+            </div>
+
+        </div>
+    </div>
+
+
+    <!-- =========================================================
+         INTRO
+    ========================================================== -->
+
+    <div class="platform-timeline__intro">
+
+        <span>UMA HISTÓRIA EM GERAÇÕES</span>
+
+        <h2>
+            Cada plataforma
+            <strong>conta uma parte da minha história.</strong>
+        </h2>
 
         <p>
-          Foi aqui que tudo começou. Os primeiros videogames, os primeiros
-          controles e as primeiras lembranças que ajudaram a construir
-          minha relação com os jogos.
+            Alguns fizeram parte diretamente da minha vida.
+            Outros chegaram através de amigos, primos, meu pai
+            ou das locadoras que fizeram parte daquela época.
+            Mas todos deixaram alguma lembrança.
         </p>
-      </div>
+
     </div>
 
 
-    <div class="platform-grid">
+    <!-- =========================================================
+         ERAS — TODAS EM ORDEM CRONOLÓGICA
+    ========================================================== -->
 
-      <!-- ATARI 2600 -->
+    <div class="platform-timeline__container">
 
-      <article class="platform-card">
+        {eras.map((era) => (
 
-        <div class="platform-top">
-          <span class="platform-year">1990</span>
-          <span class="platform-type">CONSOLE • 8-BIT</span>
-        </div>
+            <section class="timeline-era">
 
-        <h3>ATARI 2600</h3>
+                <div class="timeline-era__header">
 
-        <p class="platform-description">
-          Foi aqui que tudo começou. Meu primeiro contato com videogames
-          e a primeira porta para um universo que nunca mais deixou
-          de fazer parte da minha vida.
-        </p>
+                    <div class="timeline-era__number">
+                        {era.number}
+                    </div>
 
-        <div class="games">
-          <span class="games-title">JOGOS QUE MARCARAM ESSA FASE</span>
+                    <div class="timeline-era__heading">
 
-          <div class="game-list">
-            <span>Pitfall!</span>
-            <span>River Raid</span>
-            <span>Enduro</span>
-            <span>Frogger</span>
-            <span>Pac-Man</span>
-            <span>Adventure</span>
-            <span>H.E.R.O.</span>
-          </div>
-        </div>
+                        <span class="timeline-era__label">
+                            {era.label}
+                        </span>
 
-      </article>
+                        <h2>
+                            {era.title}
+                        </h2>
 
+                        <p>
+                            {era.description}
+                        </p>
 
-      <!-- MASTER SYSTEM -->
+                    </div>
 
-      <article class="platform-card">
-
-        <div class="platform-top">
-          <span class="platform-year">1993</span>
-          <span class="platform-type">CONSOLE • 8-BIT</span>
-        </div>
-
-        <h3>MASTER SYSTEM</h3>
-
-        <p class="platform-description">
-          Não tive um Master System, mas meus amigos tinham.
-          Foi através deles que conheci alguns dos grandes clássicos
-          da Sega.
-        </p>
-
-        <div class="contact-note">
-          EXPERIÊNCIA ATRAVÉS DE AMIGOS
-        </div>
-
-        <div class="games">
-          <span class="games-title">JOGOS QUE MARCARAM ESSA FASE</span>
-
-          <div class="game-list">
-            <span>Alex Kidd</span>
-            <span>Sonic</span>
-            <span>Shinobi</span>
-            <span>Golden Axe</span>
-            <span>Double Dragon</span>
-          </div>
-        </div>
-
-      </article>
+                </div>
 
 
-      <!-- NES -->
+                <div class="timeline-era__grid">
 
-      <article class="platform-card">
+                    {era.platforms.map((item) => (
 
-        <div class="platform-top">
-          <span class="platform-year">1993</span>
-          <span class="platform-type">CONSOLE • 8-BIT</span>
-        </div>
+                        <article class="timeline-card">
 
-        <h3>NINTENDO NES</h3>
+                            <div class="timeline-card__top">
 
-        <p class="platform-description">
-          O Nintendo 8-bit marcou uma nova fase da minha infância
-          e trouxe alguns dos personagens e franquias que continuam
-          comigo até hoje.
-        </p>
+                                <span class="timeline-card__year">
+                                    {item.year}
+                                </span>
 
-        <div class="games">
-          <span class="games-title">JOGOS QUE MARCARAM ESSA FASE</span>
+                                <span class="timeline-card__type">
+                                    {item.type}
+                                </span>
 
-          <div class="game-list">
-            <span>Super Mario Bros.</span>
-            <span>Contra</span>
-            <span>DuckTales</span>
-            <span>Mega Man 2</span>
-            <span>Castlevania</span>
-            <span>Battletoads</span>
-          </div>
-        </div>
+                            </div>
 
-      </article>
+
+                            <h3>
+                                {item.platform}
+                            </h3>
+
+
+                            <p class="timeline-card__description">
+                                {item.description}
+                            </p>
+
+
+                            {item.highlight && (
+
+                                <div class="timeline-card__highlight">
+                                    {item.highlight}
+                                </div>
+
+                            )}
+
+
+                            <div class="timeline-games">
+
+                                <div class="timeline-games__title">
+                                    JOGOS QUE MARCARAM ESSA FASE
+                                </div>
+
+                                <div class="timeline-games__list">
+
+                                    {item.games.map((game) => (
+
+                                        <span class="timeline-game">
+                                            {game}
+                                        </span>
+
+                                    ))}
+
+                                </div>
+
+                            </div>
+
+                        </article>
+
+                    ))}
+
+                </div>
+
+            </section>
+
+        ))}
 
     </div>
 
-  </section>
 
+    <!-- =========================================================
+         FINAL
+    ========================================================== -->
 
-  <!-- =========================================================
-       ERA 02 — 16 BITS
-  ========================================================== -->
+    <div class="platform-timeline__ending">
 
-  <section class="timeline-era">
+        <small>
+            E AINDA NÃO TERMINOU
+        </small>
 
-    <div class="era-header">
-      <span class="era-number">02</span>
-
-      <div class="era-heading">
-        <span class="era-label">ERA 02</span>
-
-        <h2>A ERA 16-BIT</h2>
+        <h2>
+            A história continua.
+            <span>Próxima fase...</span>
+        </h2>
 
         <p>
-          Uma geração que elevou os videogames a outro nível.
-          Gráficos melhores, trilhas memoráveis e alguns dos jogos
-          que mais marcaram minha infância.
+            De um Atari 2600 até o PlayStation 5, passando por
+            locadoras, LAN houses, computadores, consoles e milhares
+            de horas de diversão. A tecnologia mudou.
+            Os jogos mudaram.
+            Mas aquela paixão de quando tudo começou continua aqui.
         </p>
-      </div>
-    </div>
-
-
-    <div class="platform-grid">
-
-      <!-- MEGA DRIVE -->
-
-      <article class="platform-card">
-
-        <div class="platform-top">
-          <span class="platform-year">1993</span>
-          <span class="platform-type">CONSOLE • 16-BIT</span>
-        </div>
-
-        <h3>MEGA DRIVE</h3>
-
-        <p class="platform-description">
-          Não tive um Mega Drive. Meus primos tinham e eu aproveitava
-          cada oportunidade para jogar.
-        </p>
-
-        <div class="contact-note">
-          EXPERIÊNCIA ATRAVÉS DE PRIMOS
-        </div>
-
-        <div class="games">
-          <span class="games-title">JOGOS QUE MARCARAM ESSA FASE</span>
-
-          <div class="game-list">
-            <span>Altered Beast</span>
-            <span>Streets of Rage</span>
-            <span>Ghouls 'n Ghosts</span>
-            <span>Earthworm Jim</span>
-          </div>
-        </div>
-
-      </article>
-
-
-      <!-- SUPER NINTENDO -->
-
-      <article class="platform-card">
-
-        <div class="platform-top">
-          <span class="platform-year">1994</span>
-          <span class="platform-type">CONSOLE • 16-BIT</span>
-        </div>
-
-        <h3>SUPER NINTENDO</h3>
-
-        <p class="platform-description">
-          Uma das fases mais marcantes da minha vida gamer.
-          O Super Nintendo abriu um universo enorme de aventuras,
-          lutas, RPGs, corridas e exploração.
-        </p>
-
-        <div class="games">
-          <span class="games-title">JOGOS QUE MARCARAM ESSA FASE</span>
-
-          <div class="game-list">
-            <span>Donkey Kong Country</span>
-            <span>Super Mario World</span>
-            <span>Mortal Kombat</span>
-            <span>Street Fighter II</span>
-            <span>Chrono Trigger</span>
-            <span>Final Fantasy</span>
-            <span>Contra III</span>
-            <span>Top Gear</span>
-            <span>International Superstar Soccer Deluxe</span>
-            <span>Final Fight</span>
-            <span>Sunset Riders</span>
-            <span>Aladdin</span>
-            <span>Legend of Mana</span>
-            <span>Super Metroid</span>
-            <span>Demon's Crest</span>
-          </div>
-        </div>
-
-      </article>
 
     </div>
-
-  </section>
-
-
-  <!-- =========================================================
-       ERA 03 — 32 / 64 BITS
-  ========================================================== -->
-
-  <section class="timeline-era">
-
-    <div class="era-header">
-      <span class="era-number">03</span>
-
-      <div class="era-heading">
-        <span class="era-label">ERA 03</span>
-
-        <h2>A REVOLUÇÃO 3D</h2>
-
-        <p>
-          Os videogames começaram a ganhar uma nova dimensão.
-          Arcades, locadoras e consoles que ajudaram a transformar
-          a experiência de jogar.
-        </p>
-      </div>
-    </div>
-
-
-    <div class="platform-grid">
-
-      <!-- 3DO -->
-
-      <article class="platform-card">
-
-        <div class="platform-top">
-          <span class="platform-year">1995</span>
-          <span class="platform-type">CONSOLE • 32-BIT</span>
-        </div>
-
-        <h3>3DO</h3>
-
-        <p class="platform-description">
-          Não tive um 3DO, mas conheci a plataforma em uma locadora.
-          Eu pagava por hora e aproveitava cada minuto para descobrir
-          aquela tecnologia diferente.
-        </p>
-
-        <div class="contact-note">
-          CONTATO ATRAVÉS DE LOCADORA
-        </div>
-
-        <div class="games">
-          <span class="games-title">JOGOS QUE MARCARAM ESSA FASE</span>
-
-          <div class="game-list">
-            <span>Road Rash</span>
-            <span>The Need for Speed</span>
-            <span>Alone in the Dark</span>
-            <span>Gex</span>
-            <span>FIFA International Soccer</span>
-            <span>Super Street Fighter II Turbo</span>
-          </div>
-        </div>
-
-      </article>
-
-
-      <!-- NEO GEO CD -->
-
-      <article class="platform-card">
-
-        <div class="platform-top">
-          <span class="platform-year">1995</span>
-          <span class="platform-type">CONSOLE • 32-BIT</span>
-        </div>
-
-        <h3>NEO GEO CD</h3>
-
-        <p class="platform-description">
-          Outra experiência de locadora que ficou marcada.
-          O Neo Geo era praticamente um sonho para quem gostava
-          dos arcades.
-        </p>
-
-        <div class="contact-note">
-          CONTATO ATRAVÉS DE LOCADORA
-        </div>
-
-        <div class="games">
-          <span class="games-title">JOGOS QUE MARCARAM ESSA FASE</span>
-
-          <div class="game-list">
-            <span>The King of Fighters '95</span>
-            <span>The King of Fighters '96</span>
-            <span>Metal Slug</span>
-            <span>Samurai Shodown II</span>
-            <span>Fatal Fury Special</span>
-            <span>Super Sidekicks 3</span>
-          </div>
-        </div>
-
-      </article>
-
-
-      <!-- NINTENDO 64 -->
-
-      <article class="platform-card">
-
-        <div class="platform-top">
-          <span class="platform-year">1997</span>
-          <span class="platform-type">CONSOLE • 64-BIT</span>
-        </div>
-
-        <h3>NINTENDO 64</h3>
-
-        <p class="platform-description">
-          O Nintendo 64 foi uma verdadeira revolução.
-          Foi uma das primeiras vezes em que senti que os mundos
-          dos videogames estavam realmente ganhando outra dimensão.
-        </p>
-
-        <div class="games">
-          <span class="games-title">JOGOS QUE MARCARAM ESSA FASE</span>
-
-          <div class="game-list">
-            <span>Super Mario 64</span>
-            <span>Mario Kart 64</span>
-            <span>Banjo-Kazooie</span>
-            <span>GoldenEye 007</span>
-            <span>Donkey Kong 64</span>
-            <span>Star Fox 64</span>
-            <span>1080 Snowboarding</span>
-            <span>Wave Race 64</span>
-          </div>
-        </div>
-
-      </article>
-
-    </div>
-
-  </section>
-
-
-  <!-- =========================================================
-       ERA 04 — PCS
-  ========================================================== -->
-
-  <section class="timeline-era">
-
-    <div class="era-header">
-      <span class="era-number">04</span>
-
-      <div class="era-heading">
-        <span class="era-label">ERA 04</span>
-
-        <h2>A ERA DOS PCS</h2>
-
-        <p>
-          O computador deixou de ser apenas uma máquina de trabalho
-          e passou a ser também uma das grandes plataformas da
-          minha vida.
-        </p>
-      </div>
-    </div>
-
-
-    <div class="platform-grid">
-
-      <!-- PC 486 -->
-
-      <article class="platform-card">
-
-        <div class="platform-top">
-          <span class="platform-year">1994</span>
-          <span class="platform-type">PC • WINDOWS 3.1</span>
-        </div>
-
-        <h3>PC 486</h3>
-
-        <p class="platform-description">
-          Meu pai tinha o computador, mas deixava eu brincar.
-          Foi quando videogames e tecnologia começaram a andar
-          juntos na minha cabeça.
-        </p>
-
-        <div class="games">
-          <span class="games-title">JOGOS QUE MARCARAM ESSA FASE</span>
-
-          <div class="game-list">
-            <span>DOOM</span>
-            <span>Wolfenstein 3D</span>
-            <span>Duke Nukem</span>
-            <span>Hexen</span>
-            <span>Blood</span>
-            <span>Prince of Persia</span>
-            <span>Stunts</span>
-            <span>Monkey Island</span>
-            <span>Full Throttle</span>
-          </div>
-        </div>
-
-      </article>
-
-
-      <!-- PENTIUM II -->
-
-      <article class="platform-card">
-
-        <div class="platform-top">
-          <span class="platform-year">1997</span>
-          <span class="platform-type">PC • WINDOWS 95</span>
-        </div>
-
-        <h3>PC PENTIUM II</h3>
-
-        <p class="platform-description">
-          Meu primeiro computador exclusivamente meu.
-          A partir daqui, o PC passou a ocupar um espaço cada vez
-          maior na minha vida.
-        </p>
-
-        <div class="games">
-          <span class="games-title">JOGOS QUE MARCARAM ESSA FASE</span>
-
-          <div class="game-list">
-            <span>DOOM II</span>
-            <span>Quake II</span>
-            <span>Carmageddon</span>
-            <span>Diablo</span>
-            <span>Heroes of Might and Magic II</span>
-            <span>Age of Empires</span>
-            <span>Command & Conquer: Red Alert</span>
-          </div>
-        </div>
-
-      </article>
-
-
-      <!-- ATHLON XP -->
-
-      <article class="platform-card">
-
-        <div class="platform-top">
-          <span class="platform-year">2001</span>
-          <span class="platform-type">PC • WINDOWS XP</span>
-        </div>
-
-        <h3>PC ATHLON XP</h3>
-
-        <p class="platform-description">
-          Foi onde conheci Half-Life e seus mods e também a época
-          em que comecei a frequentar LAN houses.
-        </p>
-
-        <div class="games">
-          <span class="games-title">JOGOS QUE MARCARAM ESSA FASE</span>
-
-          <div class="game-list">
-            <span>Half-Life</span>
-            <span>Team Fortress</span>
-            <span>Counter-Strike 1.5</span>
-            <span>Counter-Strike 1.6</span>
-            <span>Quake 3</span>
-            <span>Call of Duty</span>
-            <span>Max Payne</span>
-            <span>Age of Mythology</span>
-          </div>
-        </div>
-
-      </article>
-
-
-      <!-- PHENOM II -->
-
-      <article class="platform-card">
-
-        <div class="platform-top">
-          <span class="platform-year">2010</span>
-          <span class="platform-type">PC • WINDOWS 7</span>
-        </div>
-
-        <h3>PC AMD PHENOM II X4</h3>
-
-        <p class="platform-description">
-          Uma nova fase do PC, acompanhando a evolução dos jogos
-          e das tecnologias que passaram a fazer parte da minha
-          experiência gamer.
-        </p>
-
-      </article>
-
-    </div>
-
-  </section>
-
-
-  <!-- =========================================================
-       ERA 05 — 128 BITS
-  ========================================================== -->
-
-  <section class="timeline-era">
-
-    <div class="era-header">
-      <span class="era-number">05</span>
-
-      <div class="era-heading">
-        <span class="era-label">ERA 05</span>
-
-        <h2>A GERAÇÃO 128-BIT</h2>
-
-        <p>
-          Uma geração que trouxe mundos maiores, experiências mais
-          cinematográficas e uma nova forma de viver os videogames.
-        </p>
-      </div>
-    </div>
-
-
-    <div class="platform-grid">
-
-      <!-- PLAYSTATION 2 -->
-
-      <article class="platform-card">
-
-        <div class="platform-top">
-          <span class="platform-year">2000</span>
-          <span class="platform-type">CONSOLE • 128-BIT</span>
-        </div>
-
-        <h3>PLAYSTATION 2</h3>
-
-        <div class="games">
-          <span class="games-title">JOGOS QUE MARCARAM ESSA FASE</span>
-
-          <div class="game-list">
-            <span>Gran Turismo</span>
-            <span>God of War</span>
-            <span>GTA</span>
-            <span>Metal Gear Solid</span>
-            <span>Resident Evil</span>
-          </div>
-        </div>
-
-      </article>
-
-
-      <!-- XBOX -->
-
-      <article class="platform-card">
-
-        <div class="platform-top">
-          <span class="platform-year">2001</span>
-          <span class="platform-type">CONSOLE</span>
-        </div>
-
-        <h3>XBOX</h3>
-
-      </article>
-
-    </div>
-
-  </section>
-
-
-  <!-- =========================================================
-       ERA 06 — HD
-  ========================================================== -->
-
-  <section class="timeline-era">
-
-    <div class="era-header">
-      <span class="era-number">06</span>
-
-      <div class="era-heading">
-        <span class="era-label">ERA 06</span>
-
-        <h2>A ERA HD</h2>
-
-        <p>
-          A alta definição mudou a maneira de enxergar os videogames
-          e trouxe uma nova geração de experiências online.
-        </p>
-      </div>
-    </div>
-
-
-    <div class="platform-grid">
-
-      <!-- XBOX 360 -->
-
-      <article class="platform-card">
-
-        <div class="platform-top">
-          <span class="platform-year">2007</span>
-          <span class="platform-type">CONSOLE • HD</span>
-        </div>
-
-        <h3>XBOX 360</h3>
-
-        <p class="platform-description">
-          O Xbox 360 trouxe uma nova geração de gráficos,
-          multiplayer e experiências que definiram uma época.
-        </p>
-
-        <div class="games">
-          <span class="games-title">JOGOS QUE MARCARAM ESSA FASE</span>
-
-          <div class="game-list">
-            <span>Gears of War</span>
-            <span>Halo 3</span>
-            <span>Forza Motorsport 4</span>
-            <span>Batman: Arkham City</span>
-            <span>Red Dead Redemption</span>
-            <span>Call of Duty: Modern Warfare</span>
-          </div>
-        </div>
-
-      </article>
-
-
-      <!-- PLAYSTATION 3 -->
-
-      <article class="platform-card">
-
-        <div class="platform-top">
-          <span class="platform-year">2006</span>
-          <span class="platform-type">CONSOLE • HD</span>
-        </div>
-
-        <h3>PLAYSTATION 3</h3>
-
-      </article>
-
-    </div>
-
-  </section>
-
-
-  <!-- =========================================================
-       ERA 07 — ATUAL
-  ========================================================== -->
-
-  <section class="timeline-era">
-
-    <div class="era-header">
-      <span class="era-number">07</span>
-
-      <div class="era-heading">
-        <span class="era-label">ERA 07</span>
-
-        <h2>A GERAÇÃO ATUAL</h2>
-
-        <p>
-          Hoje, videogames, tecnologia, criação de conteúdo e
-          novas formas de jogar fazem parte da mesma experiência.
-        </p>
-      </div>
-    </div>
-
-
-    <div class="platform-grid">
-
-      <!-- PLAYSTATION 4 -->
-
-      <article class="platform-card">
-
-        <div class="platform-top">
-          <span class="platform-year">2013</span>
-          <span class="platform-type">CONSOLE</span>
-        </div>
-
-        <h3>PLAYSTATION 4</h3>
-
-      </article>
-
-
-      <!-- XBOX SERIES S -->
-
-      <article class="platform-card">
-
-        <div class="platform-top">
-          <span class="platform-year">2020</span>
-          <span class="platform-type">CONSOLE • CURRENT GEN</span>
-        </div>
-
-        <h3>XBOX SERIES S</h3>
-
-      </article>
-
-
-      <!-- NINTENDO SWITCH LITE -->
-
-      <article class="platform-card">
-
-        <div class="platform-top">
-          <span class="platform-year">2020</span>
-          <span class="platform-type">PORTÁTIL • CURRENT GEN</span>
-        </div>
-
-        <h3>NINTENDO SWITCH LITE</h3>
-
-      </article>
-
-
-      <!-- DELL G15 -->
-
-      <article class="platform-card">
-
-        <div class="platform-top">
-          <span class="platform-year">2024</span>
-          <span class="platform-type">PC GAMER</span>
-        </div>
-
-        <h3>DELL G15</h3>
-
-        <p class="platform-description">
-          Meu PC gamer atual. É nele que a experiência gamer se
-          encontra com criação de conteúdo, gravação, transmissões
-          e produção da JorgeraTV.
-        </p>
-
-      </article>
-
-
-      <!-- PLAYSTATION 5 -->
-
-      <article class="platform-card">
-
-        <div class="platform-top">
-          <span class="platform-year">2024</span>
-          <span class="platform-type">CONSOLE • CURRENT GEN</span>
-        </div>
-
-        <h3>PLAYSTATION 5 SLIM</h3>
-
-        <p class="platform-description">
-          Meu console atual e uma das principais plataformas da
-          minha experiência gamer hoje.
-        </p>
-
-        <div class="games">
-          <span class="games-title">JOGOS QUE MARCAM ESSA FASE</span>
-
-          <div class="game-list">
-            <span>Battlefield</span>
-            <span>Doom</span>
-            <span>Ace Combat</span>
-            <span>Baldur's Gate 3</span>
-            <span>Indiana Jones</span>
-          </div>
-        </div>
-
-      </article>
-
-    </div>
-
-  </section>
-
-
-  <!-- =========================================================
-       ENCERRAMENTO
-  ========================================================== -->
-
-  <section class="timeline-end">
-
-    <span>JOGOS • TECNOLOGIA • HISTÓRIAS</span>
-
-    <h2>
-      E a história<br />
-      continua.
-    </h2>
-
-    <p>
-      Cada geração deixou alguma coisa.
-      Algumas viraram lembranças, outras viraram amizades,
-      e algumas continuam presentes até hoje.
-    </p>
-
-  </section>
 
 </section>
-
-
-<style>
-  /* =========================================================
-     BASE
-  ========================================================== */
-
-  .jorgera-timeline {
-    position: relative;
-    width: 100%;
-    box-sizing: border-box;
-
-    /*
-     * IMPORTANTE:
-     * O Header do site é fixo.
-     * Este espaço impede que ele fique por cima
-     * do início da timeline.
-     */
-    padding-top: 120px;
-    padding-bottom: 120px;
-
-    background:
-      radial-gradient(
-        circle at 50% 15%,
-        rgba(120, 0, 15, 0.12),
-        transparent 38%
-      ),
-      #050505;
-
-    color: #f5f1eb;
-  }
-
-
-  /* =========================================================
-     ERAS
-  ========================================================== */
-
-  .timeline-era {
-    width: min(1120px, calc(100% - 80px));
-    margin: 0 auto;
-    padding: 110px 0;
-  }
-
-
-  .timeline-era + .timeline-era {
-    border-top: 1px solid rgba(255, 255, 255, 0.06);
-  }
-
-
-  /* =========================================================
-     CABEÇALHO DA ERA
-  ========================================================== */
-
-  .era-header {
-    display: grid;
-    grid-template-columns: 90px 1fr;
-    gap: 45px;
-    align-items: start;
-
-    margin-bottom: 65px;
-  }
-
-
-  .era-number {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-
-    width: 58px;
-    height: 58px;
-
-    border: 1px solid rgba(255, 40, 50, 0.55);
-    border-radius: 50%;
-
-    color: #ff3038;
-    font-size: 15px;
-    font-weight: 800;
-    letter-spacing: 0.08em;
-  }
-
-
-  .era-label {
-    display: block;
-
-    margin-bottom: 15px;
-
-    color: #ff3038;
-
-    font-size: 13px;
-    font-weight: 800;
-    letter-spacing: 0.18em;
-    text-transform: uppercase;
-  }
-
-
-  .era-heading h2 {
-    margin: 0 0 20px;
-
-    max-width: 900px;
-
-    color: #f5f1eb;
-
-    font-size: clamp(48px, 6vw, 82px);
-    line-height: 0.98;
-    font-weight: 900;
-    letter-spacing: -0.055em;
-  }
-
-
-  .era-heading p {
-    max-width: 800px;
-
-    margin: 0;
-
-    color: #9f9995;
-
-    font-size: 18px;
-    line-height: 1.75;
-  }
-
-
-  /* =========================================================
-     GRID
-  ========================================================== */
-
-  .platform-grid {
-    display: grid;
-    grid-template-columns: repeat(2, minmax(0, 1fr));
-    gap: 24px;
-  }
-
-
-  /* =========================================================
-     CARD
-  ========================================================== */
-
-  .platform-card {
-    position: relative;
-
-    min-height: 300px;
-
-    padding: 34px 32px;
-
-    box-sizing: border-box;
-
-    border: 1px solid rgba(255, 255, 255, 0.075);
-    border-radius: 18px;
-
-    background:
-      linear-gradient(
-        145deg,
-        rgba(255,255,255,0.025),
-        rgba(255,255,255,0.008)
-      );
-
-    transition:
-      transform 0.25s ease,
-      border-color 0.25s ease,
-      background 0.25s ease;
-  }
-
-
-  .platform-card:hover {
-    transform: translateY(-4px);
-
-    border-color: rgba(255, 45, 55, 0.28);
-
-    background:
-      linear-gradient(
-        145deg,
-        rgba(255, 40, 50, 0.055),
-        rgba(255,255,255,0.01)
-      );
-  }
-
-
-  .platform-top {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    gap: 20px;
-
-    margin-bottom: 28px;
-  }
-
-
-  .platform-year {
-    color: #ff3038;
-
-    font-size: 15px;
-    font-weight: 900;
-    letter-spacing: 0.08em;
-  }
-
-
-  .platform-type {
-    padding: 7px 10px;
-
-    border: 1px solid rgba(255,255,255,0.06);
-    border-radius: 6px;
-
-    color: #8d8885;
-
-    font-size: 10px;
-    font-weight: 800;
-    letter-spacing: 0.1em;
-    text-transform: uppercase;
-
-    white-space: nowrap;
-  }
-
-
-  .platform-card h3 {
-    margin: 0 0 18px;
-
-    color: #f5f1eb;
-
-    font-size: 28px;
-    line-height: 1.1;
-    font-weight: 900;
-    letter-spacing: -0.035em;
-  }
-
-
-  .platform-description {
-    margin: 0;
-
-    color: #a7a19d;
-
-    font-size: 16px;
-    line-height: 1.7;
-  }
-
-
-  /* =========================================================
-     AVISO DE CONTATO
-  ========================================================== */
-
-  .contact-note {
-    display: inline-block;
-
-    margin-top: 22px;
-    margin-bottom: 10px;
-
-    color: #ff3038;
-
-    font-size: 10px;
-    font-weight: 900;
-    letter-spacing: 0.12em;
-    text-transform: uppercase;
-  }
-
-
-  /* =========================================================
-     JOGOS
-  ========================================================== */
-
-  .games {
-    margin-top: 38px;
-    padding-top: 24px;
-
-    border-top: 1px solid rgba(255,255,255,0.06);
-  }
-
-
-  .games-title {
-    display: block;
-
-    margin-bottom: 15px;
-
-    color: #8f8985;
-
-    font-size: 10px;
-    font-weight: 900;
-    letter-spacing: 0.14em;
-  }
-
-
-  .game-list {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 8px;
-  }
-
-
-  .game-list span {
-    display: inline-flex;
-    align-items: center;
-
-    min-height: 32px;
-    padding: 6px 11px;
-
-    box-sizing: border-box;
-
-    border: 1px solid rgba(255,255,255,0.055);
-    border-radius: 7px;
-
-    background: rgba(255,255,255,0.012);
-
-    color: #aaa5a1;
-
-    font-size: 11px;
-    line-height: 1.3;
-
-    transition:
-      border-color 0.2s ease,
-      color 0.2s ease,
-      background 0.2s ease;
-  }
-
-
-  .game-list span:hover {
-    border-color: rgba(255, 45, 55, 0.35);
-
-    background: rgba(255, 45, 55, 0.05);
-
-    color: #f5f1eb;
-  }
-
-
-  /* =========================================================
-     FINAL
-  ========================================================== */
-
-  .timeline-end {
-    width: min(900px, calc(100% - 80px));
-    margin: 80px auto 0;
-    padding: 120px 20px;
-
-    border-top: 1px solid rgba(255,255,255,0.06);
-
-    text-align: center;
-  }
-
-
-  .timeline-end > span {
-    color: #ff3038;
-
-    font-size: 12px;
-    font-weight: 900;
-    letter-spacing: 0.18em;
-  }
-
-
-  .timeline-end h2 {
-    margin: 25px 0;
-
-    color: #f5f1eb;
-
-    font-size: clamp(55px, 7vw, 95px);
-    line-height: 0.95;
-    font-weight: 900;
-    letter-spacing: -0.06em;
-  }
-
-
-  .timeline-end p {
-    max-width: 650px;
-    margin: 0 auto;
-
-    color: #9f9995;
-
-    font-size: 18px;
-    line-height: 1.75;
-  }
-
-
-  /* =========================================================
-     TABLET
-  ========================================================== */
-
-  @media (max-width: 850px) {
-
-    .jorgera-timeline {
-      padding-top: 105px;
-    }
-
-
-    .timeline-era {
-      width: min(100% - 40px, 700px);
-      padding: 80px 0;
-    }
-
-
-    .era-header {
-      grid-template-columns: 1fr;
-      gap: 20px;
-    }
-
-
-    .era-number {
-      width: 48px;
-      height: 48px;
-    }
-
-
-    .platform-grid {
-      grid-template-columns: 1fr;
-    }
-
-  }
-
-
-  /* =========================================================
-     CELULAR
-  ========================================================== */
-
-  @media (max-width: 560px) {
-
-    .jorgera-timeline {
-      padding-top: 95px;
-      padding-bottom: 60px;
-    }
-
-
-    .timeline-era {
-      width: calc(100% - 28px);
-      padding: 65px 0;
-    }
-
-
-    .era-heading h2 {
-      font-size: 45px;
-    }
-
-
-    .era-heading p {
-      font-size: 16px;
-    }
-
-
-    .platform-card {
-      min-height: auto;
-      padding: 26px 22px;
-    }
-
-
-    .platform-top {
-      align-items: flex-start;
-      flex-direction: column;
-      gap: 10px;
-    }
-
-
-    .platform-card h3 {
-      font-size: 25px;
-    }
-
-
-    .timeline-end {
-      width: calc(100% - 40px);
-      padding: 80px 0;
-    }
-
-  }
-</style>
