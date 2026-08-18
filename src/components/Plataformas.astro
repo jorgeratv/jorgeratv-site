@@ -1,1131 +1,1854 @@
 ---
+import "../styles/platform-timeline.css";
 ---
 
-<section class="platforms-page">
+<section class="platform-timeline">
 
-    <!-- =====================================================
-         HERO
-    ====================================================== -->
+    <div class="platform-timeline__container">
 
-    <section class="platforms-hero">
+        <!-- =====================================================
+             INTRO
+        ====================================================== -->
 
-        <div class="platforms-hero__glow"></div>
+        <div class="platform-timeline__intro">
 
-        <div class="platforms-hero__content">
-
-            <span class="platforms-eyebrow">
-                🎮 MINHA HISTÓRIA GAMER
-            </span>
+            <div class="platform-timeline__eyebrow">
+                UMA VIDA ATRAVÉS DOS GAMES
+            </div>
 
             <h1>
-                UMA VIDA
-                <span>ENTRE GAMES.</span>
+                Minha história
+                <span>em pixels.</span>
             </h1>
 
             <p>
-                Antes de existir a JorgeraTV, existia uma criança
-                descobrindo mundos através de uma tela.
-                Esta é a linha do tempo das plataformas que fizeram
-                parte da minha história.
+                Antes de existir a JorgeraTV, existiu uma criança,
+                alguns videogames e uma paixão que nunca mais foi embora.
+                Esta é a linha do tempo das máquinas, jogos e momentos
+                que fizeram parte da minha jornada gamer.
             </p>
-
-            <div class="platforms-hero__stats">
-
-                <div>
-                    <strong>1990</strong>
-                    <span>Primeiro contato</span>
-                </div>
-
-                <div>
-                    <strong>2024</strong>
-                    <span>Plataforma atual</span>
-                </div>
-
-                <div>
-                    <strong>34+</strong>
-                    <span>Anos de história</span>
-                </div>
-
-            </div>
 
         </div>
 
-    </section>
+
+        <!-- =====================================================
+             TIMELINE
+        ====================================================== -->
+
+        <div class="platform-timeline__track">
 
 
-    <!-- =====================================================
-         TIMELINE
-    ====================================================== -->
+            <!-- =================================================
+                 ATARI
+            ================================================== -->
 
-    <section class="platforms-timeline">
+            <article
+                class="platform-era"
+                data-status="owned"
+            >
 
-        <div class="timeline-line"></div>
+                <span class="platform-era__marker"></span>
 
+                <span class="platform-era__connector"></span>
 
-        <!-- =================================================
-             1990 — ATARI
-        ================================================== -->
-
-        <article class="timeline-item timeline-item--left">
-
-            <div class="timeline-marker">
-                <span>1990</span>
-            </div>
-
-            <div class="timeline-card">
-
-                <span class="timeline-status timeline-status--mine">
-                    TIVE
-                </span>
-
-                <span class="timeline-number">
-                    01
-                </span>
-
-                <h2>Atari 2600</h2>
-
-                <span class="timeline-year">
+                <div class="platform-era__year">
                     1990
-                </span>
-
-                <p class="timeline-description">
-                    Foi aqui que tudo começou.
-                    Meu primeiro videogame abriu a porta para
-                    um universo que acabaria fazendo parte da
-                    minha vida inteira.
-                </p>
-
-                <div class="timeline-games">
-
-                    <span>Pitfall!</span>
-                    <span>River Raid</span>
-                    <span>Enduro</span>
-                    <span>Frogger</span>
-                    <span>Pac-Man</span>
-                    <span>Adventure</span>
-                    <span>H.E.R.O.</span>
-
                 </div>
 
-            </div>
-
-        </article>
-
-
-        <!-- =================================================
-             MASTER SYSTEM
-        ================================================== -->
-
-        <article class="timeline-item timeline-item--right">
-
-            <div class="timeline-marker">
-                <span>1990+</span>
-            </div>
-
-            <div class="timeline-card">
-
-                <span class="timeline-status timeline-status--memory">
-                    CONHECI
-                </span>
-
-                <span class="timeline-number">
-                    02
-                </span>
-
-                <h2>Master System</h2>
-
-                <span class="timeline-year">
-                    Época da infância
-                </span>
-
-                <p class="timeline-description">
-                    Eu não tive um Master System, mas meus amigos
-                    tinham. E foi jogando com eles que conheci
-                    vários clássicos que marcaram aquela geração.
-                </p>
-
-                <div class="timeline-games">
-
-                    <span>Alex Kidd</span>
-                    <span>Sonic</span>
-                    <span>Shinobi</span>
-                    <span>Golden Axe</span>
-                    <span>Double Dragon</span>
-
-                </div>
-
-            </div>
-
-        </article>
-
-
-        <!-- =================================================
-             1993 — NES
-        ================================================== -->
-
-        <article class="timeline-item timeline-item--left">
-
-            <div class="timeline-marker">
-                <span>1993</span>
-            </div>
-
-            <div class="timeline-card">
-
-                <span class="timeline-status timeline-status--mine">
+                <div class="platform-era__status">
                     TIVE
-                </span>
+                </div>
 
-                <span class="timeline-number">
-                    03
-                </span>
+                <h2>
+                    Atari 2600
+                </h2>
 
-                <h2>Nintendo 8-Bits</h2>
-
-                <span class="timeline-year">
-                    1993
-                </span>
-
-                <p class="timeline-description">
-                    Uma nova geração de aventuras.
-                    Mario, Contra, Castlevania e tantos outros
-                    jogos começaram a ampliar ainda mais meu
-                    fascínio pelos videogames.
+                <p class="platform-era__description">
+                    O começo de tudo. Foi aqui que nasceu minha paixão
+                    pelos videogames e pelas histórias que eles eram
+                    capazes de criar.
                 </p>
 
-                <div class="timeline-games">
+                <div class="platform-era__card">
 
-                    <span>Super Mario Bros.</span>
-                    <span>Contra</span>
-                    <span>DuckTales</span>
-                    <span>Mega Man 2</span>
-                    <span>Castlevania</span>
-                    <span>Battletoads</span>
+                    <div class="platform-era__card-header">
+
+                        <span class="platform-era__type">
+                            Jogos inesquecíveis
+                        </span>
+
+                        <span class="platform-era__count">
+                            7 jogos
+                        </span>
+
+                    </div>
+
+                    <div class="platform-games">
+
+                        <div class="platform-game">
+                            <img src="/assets/pitfall.jpg" alt="Pitfall">
+                            <span class="platform-game__name">Pitfall</span>
+                        </div>
+
+                        <div class="platform-game">
+                            <img src="/assets/river-raid.jpg" alt="River Raid">
+                            <span class="platform-game__name">River Raid</span>
+                        </div>
+
+                        <div class="platform-game">
+                            <img src="/assets/enduro.jpg" alt="Enduro">
+                            <span class="platform-game__name">Enduro</span>
+                        </div>
+
+                        <div class="platform-game">
+                            <img src="/assets/frogger.jpg" alt="Frogger">
+                            <span class="platform-game__name">Frogger</span>
+                        </div>
+
+                        <div class="platform-game">
+                            <img src="/assets/pac-man.jpg" alt="Pac-Man">
+                            <span class="platform-game__name">Pac-Man</span>
+                        </div>
+
+                        <div class="platform-game">
+                            <img src="/assets/adventure.jpg" alt="Adventure">
+                            <span class="platform-game__name">Adventure</span>
+                        </div>
+
+                        <div class="platform-game">
+                            <img src="/assets/hero.jpg" alt="H.E.R.O.">
+                            <span class="platform-game__name">H.E.R.O.</span>
+                        </div>
+
+                    </div>
 
                 </div>
 
-            </div>
-
-        </article>
+            </article>
 
 
-        <!-- =================================================
-             1993 — MEGA DRIVE
-        ================================================== -->
+            <!-- =================================================
+                 MASTER SYSTEM
+            ================================================== -->
 
-        <article class="timeline-item timeline-item--right">
+            <article
+                class="platform-era"
+                data-status="friend"
+            >
 
-            <div class="timeline-marker">
-                <span>1993</span>
-            </div>
+                <span class="platform-era__marker"></span>
+                <span class="platform-era__connector"></span>
 
-            <div class="timeline-card">
+                <div class="platform-era__year">
+                    ERA 90
+                </div>
 
-                <span class="timeline-status timeline-status--memory">
-                    CONHECI
-                </span>
+                <div class="platform-era__status">
+                    CONHECI COM AMIGOS
+                </div>
 
-                <span class="timeline-number">
-                    04
-                </span>
+                <h2>
+                    Master System
+                </h2>
 
-                <h2>Mega Drive</h2>
-
-                <span class="timeline-year">
-                    1993
-                </span>
-
-                <p class="timeline-description">
-                    Assim como o Master System, o Mega Drive
-                    chegou até mim através da família.
-                    Meus primos tinham o console e eu aproveitava
-                    cada oportunidade para jogar.
+                <p class="platform-era__description">
+                    Eu não tinha um, mas meus amigos tinham.
+                    E videogame na infância não precisava ser seu
+                    para virar parte da sua memória.
                 </p>
 
-                <div class="timeline-games">
+                <div class="platform-era__card">
 
-                    <span>Altered Beast</span>
-                    <span>Streets of Rage</span>
-                    <span>Ghouls 'n Ghosts</span>
-                    <span>Earthworm Jim</span>
+                    <div class="platform-era__card-header">
+
+                        <span class="platform-era__type">
+                            Jogos marcantes
+                        </span>
+
+                        <span class="platform-era__count">
+                            5 jogos
+                        </span>
+
+                    </div>
+
+                    <div class="platform-games">
+
+                        <div class="platform-game">
+                            <img src="/assets/alex-kidd.jpg" alt="Alex Kidd">
+                            <span class="platform-game__name">Alex Kidd</span>
+                        </div>
+
+                        <div class="platform-game">
+                            <img src="/assets/sonic.jpg" alt="Sonic">
+                            <span class="platform-game__name">Sonic</span>
+                        </div>
+
+                        <div class="platform-game">
+                            <img src="/assets/shinobi.jpg" alt="Shinobi">
+                            <span class="platform-game__name">Shinobi</span>
+                        </div>
+
+                        <div class="platform-game">
+                            <img src="/assets/golden-axe.jpg" alt="Golden Axe">
+                            <span class="platform-game__name">Golden Axe</span>
+                        </div>
+
+                        <div class="platform-game">
+                            <img src="/assets/double-dragon.jpg" alt="Double Dragon">
+                            <span class="platform-game__name">Double Dragon</span>
+                        </div>
+
+                    </div>
 
                 </div>
 
-            </div>
-
-        </article>
+            </article>
 
 
-        <!-- =================================================
-             1994 — SNES
-        ================================================== -->
+            <!-- =================================================
+                 NES
+            ================================================== -->
 
-        <article class="timeline-item timeline-item--left">
+            <article
+                class="platform-era"
+                data-status="owned"
+            >
 
-            <div class="timeline-marker">
-                <span>1994</span>
-            </div>
+                <span class="platform-era__marker"></span>
+                <span class="platform-era__connector"></span>
 
-            <div class="timeline-card">
+                <div class="platform-era__year">
+                    1993
+                </div>
 
-                <span class="timeline-status timeline-status--mine">
+                <div class="platform-era__status">
                     TIVE
-                </span>
+                </div>
 
-                <span class="timeline-number">
-                    05
-                </span>
+                <h2>
+                    Nintendo NES
+                </h2>
 
-                <h2>Super Nintendo</h2>
+                <p class="platform-era__description">
+                    Uma das grandes portas de entrada para os clássicos
+                    que ajudaram a definir minha infância gamer.
+                </p>
 
-                <span class="timeline-year">
+                <div class="platform-era__card">
+
+                    <div class="platform-era__card-header">
+                        <span class="platform-era__type">
+                            Clássicos
+                        </span>
+
+                        <span class="platform-era__count">
+                            6 jogos
+                        </span>
+                    </div>
+
+                    <div class="platform-games">
+
+                        <div class="platform-game">
+                            <img src="/assets/super-mario-bros.jpg" alt="Super Mario Bros">
+                            <span class="platform-game__name">Super Mario Bros.</span>
+                        </div>
+
+                        <div class="platform-game">
+                            <img src="/assets/contra.jpg" alt="Contra">
+                            <span class="platform-game__name">Contra</span>
+                        </div>
+
+                        <div class="platform-game">
+                            <img src="/assets/ducktales.jpg" alt="DuckTales">
+                            <span class="platform-game__name">DuckTales</span>
+                        </div>
+
+                        <div class="platform-game">
+                            <img src="/assets/mega-man-2.jpg" alt="Mega Man 2">
+                            <span class="platform-game__name">Mega Man 2</span>
+                        </div>
+
+                        <div class="platform-game">
+                            <img src="/assets/castlevania.jpg" alt="Castlevania">
+                            <span class="platform-game__name">Castlevania</span>
+                        </div>
+
+                        <div class="platform-game">
+                            <img src="/assets/battletoads.jpg" alt="Battletoads">
+                            <span class="platform-game__name">Battletoads</span>
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </article>
+
+
+            <!-- =================================================
+                 MEGA DRIVE
+            ================================================== -->
+
+            <article
+                class="platform-era"
+                data-status="friend"
+            >
+
+                <span class="platform-era__marker"></span>
+                <span class="platform-era__connector"></span>
+
+                <div class="platform-era__year">
+                    1993
+                </div>
+
+                <div class="platform-era__status">
+                    CONHECI COM PRIMOS
+                </div>
+
+                <h2>
+                    Mega Drive
+                </h2>
+
+                <p class="platform-era__description">
+                    Outro console que não era meu, mas que entrou
+                    na minha história através das partidas com meus primos.
+                </p>
+
+                <div class="platform-era__card">
+
+                    <div class="platform-era__card-header">
+                        <span class="platform-era__type">
+                            Memórias
+                        </span>
+
+                        <span class="platform-era__count">
+                            4 jogos
+                        </span>
+                    </div>
+
+                    <div class="platform-games">
+
+                        <div class="platform-game">
+                            <img src="/assets/altered-beast.jpg" alt="Altered Beast">
+                            <span class="platform-game__name">Altered Beast</span>
+                        </div>
+
+                        <div class="platform-game">
+                            <img src="/assets/streets-of-rage.jpg" alt="Streets of Rage">
+                            <span class="platform-game__name">Streets of Rage</span>
+                        </div>
+
+                        <div class="platform-game">
+                            <img src="/assets/ghouls-n-ghosts.jpg" alt="Ghouls 'n Ghosts">
+                            <span class="platform-game__name">Ghouls 'n Ghosts</span>
+                        </div>
+
+                        <div class="platform-game">
+                            <img src="/assets/earthworm-jim.jpg" alt="Earthworm Jim">
+                            <span class="platform-game__name">Earthworm Jim</span>
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </article>
+
+
+            <!-- =================================================
+                 SNES
+            ================================================== -->
+
+            <article
+                class="platform-era"
+                data-status="owned"
+            >
+
+                <span class="platform-era__marker"></span>
+                <span class="platform-era__connector"></span>
+
+                <div class="platform-era__year">
                     1994
-                </span>
-
-                <p class="timeline-description">
-                    Para mim, uma das épocas mais especiais da
-                    história dos videogames. Foi uma verdadeira
-                    avalanche de clássicos.
-                </p>
-
-                <div class="timeline-games">
-
-                    <span>Donkey Kong</span>
-                    <span>Super Mario World</span>
-                    <span>Mortal Kombat</span>
-                    <span>Street Fighter</span>
-                    <span>Chrono Trigger</span>
-                    <span>Final Fantasy</span>
-                    <span>Contra III</span>
-                    <span>Top Gear</span>
-                    <span>International Superstar Soccer Deluxe</span>
-                    <span>Final Fight</span>
-                    <span>Sunset Riders</span>
-                    <span>Aladdin</span>
-                    <span>Legend of Mana</span>
-                    <span>Super Metroid</span>
-                    <span>Demon's Crest</span>
-
                 </div>
 
-            </div>
-
-        </article>
-
-
-        <!-- =================================================
-             1994 — PC 486
-        ================================================== -->
-
-        <article class="timeline-item timeline-item--right">
-
-            <div class="timeline-marker">
-                <span>1994</span>
-            </div>
-
-            <div class="timeline-card">
-
-                <span class="timeline-status timeline-status--memory">
-                    CONHECI
-                </span>
-
-                <span class="timeline-number">
-                    06
-                </span>
-
-                <h2>PC 486</h2>
-
-                <span class="timeline-year">
-                    Windows 3.1 · 1994
-                </span>
-
-                <p class="timeline-description">
-                    Meu pai tinha um computador e deixava eu brincar.
-                    Foi nesse PC que comecei a perceber que o computador
-                    poderia ser muito mais do que uma ferramenta.
-                    Ele despertou em mim uma paixão que continua até hoje:
-                    tecnologia.
-                </p>
-
-                <div class="timeline-games">
-
-                    <span>DOOM</span>
-                    <span>Wolfenstein</span>
-                    <span>Duke Nukem</span>
-                    <span>Hexen</span>
-                    <span>Blood</span>
-                    <span>Prince of Persia</span>
-                    <span>Stunts</span>
-                    <span>Monkey Island</span>
-                    <span>Full Throttle</span>
-
-                </div>
-
-            </div>
-
-        </article>
-
-
-        <!-- =================================================
-             1995 — 3DO
-        ================================================== -->
-
-        <article class="timeline-item timeline-item--left">
-
-            <div class="timeline-marker">
-                <span>1995</span>
-            </div>
-
-            <div class="timeline-card">
-
-                <span class="timeline-status timeline-status--memory">
-                    CONHECI
-                </span>
-
-                <span class="timeline-number">
-                    07
-                </span>
-
-                <h2>3DO</h2>
-
-                <span class="timeline-year">
-                    1995 · Locadora
-                </span>
-
-                <p class="timeline-description">
-                    Eu não tive um 3DO, mas conheci o console
-                    em uma época em que a locadora era praticamente
-                    um parque de diversões para quem gostava de games.
-                    Eu pagava por hora e aproveitava cada minuto.
-                </p>
-
-                <div class="timeline-games">
-
-                    <span>Road Rash</span>
-                    <span>The Need for Speed</span>
-                    <span>DOOM</span>
-                    <span>Super Street Fighter II Turbo</span>
-
-                </div>
-
-            </div>
-
-        </article>
-
-
-        <!-- =================================================
-             1995 — NEO GEO CD
-        ================================================== -->
-
-        <article class="timeline-item timeline-item--right">
-
-            <div class="timeline-marker">
-                <span>1995</span>
-            </div>
-
-            <div class="timeline-card">
-
-                <span class="timeline-status timeline-status--memory">
-                    CONHECI
-                </span>
-
-                <span class="timeline-number">
-                    08
-                </span>
-
-                <h2>Neo Geo CD</h2>
-
-                <span class="timeline-year">
-                    1995 · Locadora
-                </span>
-
-                <p class="timeline-description">
-                    Outra máquina que eu conheci através da locadora.
-                    Era impossível não ficar impressionado com
-                    aqueles jogos de luta e ação.
-                </p>
-
-                <div class="timeline-games">
-
-                    <span>The King of Fighters '95</span>
-                    <span>The King of Fighters '96</span>
-                    <span>Metal Slug</span>
-                    <span>Samurai Shodown III</span>
-                    <span>Fatal Fury Special</span>
-                    <span>Super Sidekicks 3</span>
-
-                </div>
-
-            </div>
-
-        </article>
-
-
-        <!-- =================================================
-             1997 — NINTENDO 64
-        ================================================== -->
-
-        <article class="timeline-item timeline-item--left">
-
-            <div class="timeline-marker">
-                <span>1997</span>
-            </div>
-
-            <div class="timeline-card">
-
-                <span class="timeline-status timeline-status--mine">
+                <div class="platform-era__status">
                     TIVE
-                </span>
+                </div>
 
-                <span class="timeline-number">
-                    09
-                </span>
+                <h2>
+                    Super Nintendo
+                </h2>
 
-                <h2>Nintendo 64</h2>
+                <p class="platform-era__description">
+                    Uma época que parece ter concentrado alguns dos
+                    maiores clássicos que já passaram pelas minhas mãos.
+                </p>
 
-                <span class="timeline-year">
+                <div class="platform-era__card">
+
+                    <div class="platform-era__card-header">
+                        <span class="platform-era__type">
+                            A era dourada
+                        </span>
+
+                        <span class="platform-era__count">
+                            15 jogos
+                        </span>
+                    </div>
+
+                    <div class="platform-games">
+
+                        <div class="platform-game">
+                            <img src="/assets/donkey-kong-country.jpg" alt="Donkey Kong Country">
+                            <span class="platform-game__name">Donkey Kong</span>
+                        </div>
+
+                        <div class="platform-game">
+                            <img src="/assets/super-mario-world.jpg" alt="Super Mario World">
+                            <span class="platform-game__name">Super Mario World</span>
+                        </div>
+
+                        <div class="platform-game">
+                            <img src="/assets/mortal-kombat.jpg" alt="Mortal Kombat">
+                            <span class="platform-game__name">Mortal Kombat</span>
+                        </div>
+
+                        <div class="platform-game">
+                            <img src="/assets/street-fighter-ii.jpg" alt="Street Fighter">
+                            <span class="platform-game__name">Street Fighter</span>
+                        </div>
+
+                        <div class="platform-game">
+                            <img src="/assets/chrono-trigger.jpg" alt="Chrono Trigger">
+                            <span class="platform-game__name">Chrono Trigger</span>
+                        </div>
+
+                        <div class="platform-game">
+                            <img src="/assets/final-fantasy.jpg" alt="Final Fantasy">
+                            <span class="platform-game__name">Final Fantasy</span>
+                        </div>
+
+                        <div class="platform-game">
+                            <img src="/assets/contra-iii.jpg" alt="Contra III">
+                            <span class="platform-game__name">Contra III</span>
+                        </div>
+
+                        <div class="platform-game">
+                            <img src="/assets/top-gear.jpg" alt="Top Gear">
+                            <span class="platform-game__name">Top Gear</span>
+                        </div>
+
+                        <div class="platform-game">
+                            <img src="/assets/iss-deluxe.jpg" alt="International Superstar Soccer Deluxe">
+                            <span class="platform-game__name">ISS Deluxe</span>
+                        </div>
+
+                        <div class="platform-game">
+                            <img src="/assets/final-fight.jpg" alt="Final Fight">
+                            <span class="platform-game__name">Final Fight</span>
+                        </div>
+
+                        <div class="platform-game">
+                            <img src="/assets/sunset-riders.jpg" alt="Sunset Riders">
+                            <span class="platform-game__name">Sunset Riders</span>
+                        </div>
+
+                        <div class="platform-game">
+                            <img src="/assets/aladdin.jpg" alt="Aladdin">
+                            <span class="platform-game__name">Aladdin</span>
+                        </div>
+
+                        <div class="platform-game">
+                            <img src="/assets/legend-of-mana.jpg" alt="Legend of Mana">
+                            <span class="platform-game__name">Legend of Mana</span>
+                        </div>
+
+                        <div class="platform-game">
+                            <img src="/assets/super-metroid.jpg" alt="Super Metroid">
+                            <span class="platform-game__name">Super Metroid</span>
+                        </div>
+
+                        <div class="platform-game">
+                            <img src="/assets/demons-crest.jpg" alt="Demon's Crest">
+                            <span class="platform-game__name">Demon's Crest</span>
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </article>
+
+
+            <!-- =================================================
+                 PC 486
+            ================================================== -->
+
+            <article
+                class="platform-era"
+                data-status="owned"
+            >
+
+                <span class="platform-era__marker"></span>
+                <span class="platform-era__connector"></span>
+
+                <div class="platform-era__year">
+                    1994
+                </div>
+
+                <div class="platform-era__status">
+                    CONHECI COM MEU PAI
+                </div>
+
+                <h2>
+                    PC 486 + Windows 3.1
+                </h2>
+
+                <p class="platform-era__description">
+                    Meu pai tinha o computador, mas deixava eu brincar.
+                    Foi aqui que comecei a descobrir que computadores
+                    podiam ser muito mais do que ferramentas de trabalho.
+                </p>
+
+                <div class="platform-era__card">
+
+                    <div class="platform-era__card-header">
+                        <span class="platform-era__type">
+                            Primeiros passos no PC
+                        </span>
+
+                        <span class="platform-era__count">
+                            9 jogos
+                        </span>
+                    </div>
+
+                    <div class="platform-games">
+
+                        <div class="platform-game">
+                            <img src="/assets/doom.jpg" alt="Doom">
+                            <span class="platform-game__name">Doom</span>
+                        </div>
+
+                        <div class="platform-game">
+                            <img src="/assets/wolfenstein-3d.jpg" alt="Wolfenstein 3D">
+                            <span class="platform-game__name">Wolfenstein</span>
+                        </div>
+
+                        <div class="platform-game">
+                            <img src="/assets/duke-nukem-3d.jpg" alt="Duke Nukem 3D">
+                            <span class="platform-game__name">Duke Nukem 3D</span>
+                        </div>
+
+                        <div class="platform-game">
+                            <img src="/assets/hexen.jpg" alt="Hexen">
+                            <span class="platform-game__name">Hexen</span>
+                        </div>
+
+                        <div class="platform-game">
+                            <img src="/assets/blood.jpg" alt="Blood">
+                            <span class="platform-game__name">Blood</span>
+                        </div>
+
+                        <div class="platform-game">
+                            <img src="/assets/prince-of-persia.jpg" alt="Prince of Persia">
+                            <span class="platform-game__name">Prince of Persia</span>
+                        </div>
+
+                        <div class="platform-game">
+                            <img src="/assets/stunts.jpg" alt="Stunts">
+                            <span class="platform-game__name">Stunts</span>
+                        </div>
+
+                        <div class="platform-game">
+                            <img src="/assets/monkey-island.jpg" alt="Monkey Island">
+                            <span class="platform-game__name">Monkey Island</span>
+                        </div>
+
+                        <div class="platform-game">
+                            <img src="/assets/full-throttle.jpg" alt="Full Throttle">
+                            <span class="platform-game__name">Full Throttle</span>
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </article>
+
+
+            <!-- =================================================
+                 3DO
+            ================================================== -->
+
+            <article
+                class="platform-era"
+                data-status="arcade"
+            >
+
+                <span class="platform-era__marker"></span>
+                <span class="platform-era__connector"></span>
+
+                <div class="platform-era__year">
+                    1995
+                </div>
+
+                <div class="platform-era__status">
+                    CONHECI NA LOCADORA
+                </div>
+
+                <h2>
+                    3DO
+                </h2>
+
+                <p class="platform-era__description">
+                    Uma experiência diferente para a época.
+                    Eu pagava por hora na locadora para poder jogar
+                    e conhecer aquele hardware.
+                </p>
+
+                <div class="platform-era__card">
+
+                    <div class="platform-era__card-header">
+                        <span class="platform-era__type">
+                            Locadora
+                        </span>
+
+                        <span class="platform-era__count">
+                            4 jogos
+                        </span>
+                    </div>
+
+                    <div class="platform-games">
+
+                        <div class="platform-game">
+                            <img src="/assets/road-rash.jpg" alt="Road Rash">
+                            <span class="platform-game__name">Road Rash</span>
+                        </div>
+
+                        <div class="platform-game">
+                            <img src="/assets/need-for-speed.jpg" alt="The Need for Speed">
+                            <span class="platform-game__name">The Need for Speed</span>
+                        </div>
+
+                        <div class="platform-game">
+                            <img src="/assets/doom.jpg" alt="Doom">
+                            <span class="platform-game__name">Doom</span>
+                        </div>
+
+                        <div class="platform-game">
+                            <img src="/assets/super-street-fighter-ii-turbo.jpg" alt="Super Street Fighter II Turbo">
+                            <span class="platform-game__name">Super Street Fighter II Turbo</span>
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </article>
+
+
+            <!-- =================================================
+                 NEO GEO CD
+            ================================================== -->
+
+            <article
+                class="platform-era"
+                data-status="arcade"
+            >
+
+                <span class="platform-era__marker"></span>
+                <span class="platform-era__connector"></span>
+
+                <div class="platform-era__year">
+                    1995
+                </div>
+
+                <div class="platform-era__status">
+                    CONHECI NA LOCADORA
+                </div>
+
+                <h2>
+                    Neo Geo CD
+                </h2>
+
+                <p class="platform-era__description">
+                    Mais uma parada inesquecível nas locadoras.
+                    Uma máquina que parecia pertencer ao futuro.
+                </p>
+
+                <div class="platform-era__card">
+
+                    <div class="platform-era__card-header">
+                        <span class="platform-era__type">
+                            Arcade em casa
+                        </span>
+
+                        <span class="platform-era__count">
+                            5 jogos
+                        </span>
+                    </div>
+
+                    <div class="platform-games">
+
+                        <div class="platform-game">
+                            <img src="/assets/kof-95.jpg" alt="The King of Fighters 95">
+                            <span class="platform-game__name">KOF 95</span>
+                        </div>
+
+                        <div class="platform-game">
+                            <img src="/assets/kof-96.jpg" alt="The King of Fighters 96">
+                            <span class="platform-game__name">KOF 96</span>
+                        </div>
+
+                        <div class="platform-game">
+                            <img src="/assets/metal-slug.jpg" alt="Metal Slug">
+                            <span class="platform-game__name">Metal Slug</span>
+                        </div>
+
+                        <div class="platform-game">
+                            <img src="/assets/samurai-shodown-iii.jpg" alt="Samurai Shodown III">
+                            <span class="platform-game__name">Samurai Shodown III</span>
+                        </div>
+
+                        <div class="platform-game">
+                            <img src="/assets/fatal-fury-special.jpg" alt="Fatal Fury Special">
+                            <span class="platform-game__name">Fatal Fury Special</span>
+                        </div>
+
+                        <div class="platform-game">
+                            <img src="/assets/super-sidekicks-3.jpg" alt="Super Sidekicks 3">
+                            <span class="platform-game__name">Super Sidekicks 3</span>
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </article>
+
+
+            <!-- =================================================
+                 NINTENDO 64
+            ================================================== -->
+
+            <article
+                class="platform-era"
+                data-status="owned"
+            >
+
+                <span class="platform-era__marker"></span>
+                <span class="platform-era__connector"></span>
+
+                <div class="platform-era__year">
                     1997
-                </span>
+                </div>
 
-                <p class="timeline-description">
-                    Uma das grandes revoluções da minha infância.
-                    Mario 64, Zelda, GoldenEye e tantos outros
-                    mostraram o que uma nova geração de consoles
-                    poderia fazer.
+                <div class="platform-era__status">
+                    TIVE
+                </div>
+
+                <h2>
+                    Nintendo 64
+                </h2>
+
+                <p class="platform-era__description">
+                    Uma geração que trouxe 3D, mundos enormes e algumas
+                    das experiências mais marcantes da minha adolescência.
                 </p>
 
-                <div class="timeline-games">
+                <div class="platform-era__card">
 
-                    <span>Super Mario 64</span>
-                    <span>Mario Kart 64</span>
-                    <span>Banjo-Kazooie</span>
-                    <span>GoldenEye 007</span>
-                    <span>Donkey Kong 64</span>
-                    <span>Star Fox 64</span>
-                    <span>1080 Snowboarding</span>
-                    <span>Wave Race</span>
+                    <div class="platform-era__card-header">
+                        <span class="platform-era__type">
+                            A revolução 3D
+                        </span>
+
+                        <span class="platform-era__count">
+                            8 jogos
+                        </span>
+                    </div>
+
+                    <div class="platform-games">
+
+                        <div class="platform-game">
+                            <img src="/assets/super-mario-64.jpg" alt="Super Mario 64">
+                            <span class="platform-game__name">Super Mario 64</span>
+                        </div>
+
+                        <div class="platform-game">
+                            <img src="/assets/mario-kart-64.jpg" alt="Mario Kart 64">
+                            <span class="platform-game__name">Mario Kart 64</span>
+                        </div>
+
+                        <div class="platform-game">
+                            <img src="/assets/banjo-kazooie.jpg" alt="Banjo-Kazooie">
+                            <span class="platform-game__name">Banjo-Kazooie</span>
+                        </div>
+
+                        <div class="platform-game">
+                            <img src="/assets/goldeneye-007.jpg" alt="GoldenEye 007">
+                            <span class="platform-game__name">GoldenEye 007</span>
+                        </div>
+
+                        <div class="platform-game">
+                            <img src="/assets/donkey-kong-64.jpg" alt="Donkey Kong 64">
+                            <span class="platform-game__name">Donkey Kong 64</span>
+                        </div>
+
+                        <div class="platform-game">
+                            <img src="/assets/star-fox-64.jpg" alt="Star Fox 64">
+                            <span class="platform-game__name">Star Fox 64</span>
+                        </div>
+
+                        <div class="platform-game">
+                            <img src="/assets/1080-snowboarding.jpg" alt="1080 Snowboarding">
+                            <span class="platform-game__name">1080 Snowboarding</span>
+                        </div>
+
+                        <div class="platform-game">
+                            <img src="/assets/wave-race-64.jpg" alt="Wave Race 64">
+                            <span class="platform-game__name">Wave Race 64</span>
+                        </div>
+
+                    </div>
 
                 </div>
 
-            </div>
-
-        </article>
+            </article>
 
 
-        <!-- =================================================
-             1997 — PENTIUM II
-        ================================================== -->
+            <!-- =================================================
+                 PENTIUM 2
+            ================================================== -->
 
-        <article class="timeline-item timeline-item--right">
+            <article
+                class="platform-era"
+                data-status="owned"
+            >
 
-            <div class="timeline-marker">
-                <span>1997</span>
-            </div>
+                <span class="platform-era__marker"></span>
+                <span class="platform-era__connector"></span>
 
-            <div class="timeline-card">
+                <div class="platform-era__year">
+                    1997
+                </div>
 
-                <span class="timeline-status timeline-status--mine">
-                    TIVE
-                </span>
+                <div class="platform-era__status">
+                    MEU PRIMEIRO PC
+                </div>
 
-                <span class="timeline-number">
-                    10
-                </span>
+                <h2>
+                    Pentium II + Windows 95
+                </h2>
 
-                <h2>Pentium II</h2>
-
-                <span class="timeline-year">
-                    Windows 95 · 1997
-                </span>
-
-                <p class="timeline-description">
+                <p class="platform-era__description">
                     Meu primeiro computador exclusivamente meu.
-                    Foi uma nova fase: agora eu podia explorar
-                    os jogos e a tecnologia no meu próprio computador.
+                    A partir daqui o PC deixou de ser apenas uma curiosidade
+                    e passou a ser parte da minha vida.
                 </p>
 
-                <div class="timeline-games">
+                <div class="platform-era__card">
 
-                    <span>DOOM II</span>
-                    <span>Quake II</span>
-                    <span>Carmageddon</span>
-                    <span>Diablo</span>
-                    <span>Heroes of Might and Magic III</span>
-                    <span>Age of Empires</span>
-                    <span>Command & Conquer: Red Alert</span>
+                    <div class="platform-era__card-header">
+                        <span class="platform-era__type">
+                            PC Gaming
+                        </span>
+
+                        <span class="platform-era__count">
+                            7 jogos
+                        </span>
+                    </div>
+
+                    <div class="platform-games">
+
+                        <div class="platform-game">
+                            <img src="/assets/doom-2.jpg" alt="Doom 2">
+                            <span class="platform-game__name">Doom 2</span>
+                        </div>
+
+                        <div class="platform-game">
+                            <img src="/assets/quake-2.jpg" alt="Quake 2">
+                            <span class="platform-game__name">Quake 2</span>
+                        </div>
+
+                        <div class="platform-game">
+                            <img src="/assets/carmageddon.jpg" alt="Carmageddon">
+                            <span class="platform-game__name">Carmageddon</span>
+                        </div>
+
+                        <div class="platform-game">
+                            <img src="/assets/diablo.jpg" alt="Diablo">
+                            <span class="platform-game__name">Diablo</span>
+                        </div>
+
+                        <div class="platform-game">
+                            <img src="/assets/heroes-3.jpg" alt="Heroes of Might and Magic III">
+                            <span class="platform-game__name">Heroes III</span>
+                        </div>
+
+                        <div class="platform-game">
+                            <img src="/assets/age-of-empires.jpg" alt="Age of Empires">
+                            <span class="platform-game__name">Age of Empires</span>
+                        </div>
+
+                        <div class="platform-game">
+                            <img src="/assets/red-alert.jpg" alt="Command & Conquer Red Alert">
+                            <span class="platform-game__name">Red Alert</span>
+                        </div>
+
+                    </div>
 
                 </div>
 
-            </div>
-
-        </article>
+            </article>
 
 
-        <!-- =================================================
-             1998 — PLAYSTATION
-        ================================================== -->
+            <!-- =================================================
+                 PLAYSTATION 1
+            ================================================== -->
 
-        <article class="timeline-item timeline-item--left">
+            <article
+                class="platform-era"
+                data-status="owned"
+            >
 
-            <div class="timeline-marker">
-                <span>1998</span>
-            </div>
+                <span class="platform-era__marker"></span>
+                <span class="platform-era__connector"></span>
 
-            <div class="timeline-card">
-
-                <span class="timeline-status timeline-status--mine">
-                    TIVE
-                </span>
-
-                <span class="timeline-number">
-                    11
-                </span>
-
-                <h2>PlayStation</h2>
-
-                <span class="timeline-year">
+                <div class="platform-era__year">
                     1998
-                </span>
+                </div>
 
-                <p class="timeline-description">
-                    O PlayStation trouxe uma quantidade absurda
-                    de experiências marcantes. Survival horror,
-                    corrida, luta, ação e aventura.
+                <div class="platform-era__status">
+                    TIVE
+                </div>
+
+                <h2>
+                    PlayStation
+                </h2>
+
+                <p class="platform-era__description">
+                    Uma geração que transformou completamente a maneira
+                    como eu enxergava videogames.
                 </p>
 
-                <div class="timeline-games">
+                <div class="platform-era__card">
 
-                    <span>Resident Evil 1</span>
-                    <span>Resident Evil 2</span>
-                    <span>Resident Evil 3</span>
-                    <span>Dino Crisis</span>
-                    <span>Medal of Honor</span>
-                    <span>Gran Turismo 2</span>
-                    <span>Castlevania: Symphony of the Night</span>
-                    <span>Metal Gear Solid</span>
-                    <span>Tekken 3</span>
+                    <div class="platform-era__card-header">
+                        <span class="platform-era__type">
+                            Era PlayStation
+                        </span>
+
+                        <span class="platform-era__count">
+                            8 jogos
+                        </span>
+                    </div>
+
+                    <div class="platform-games">
+
+                        <div class="platform-game">
+                            <img src="/assets/resident-evil.jpg" alt="Resident Evil">
+                            <span class="platform-game__name">Resident Evil</span>
+                        </div>
+
+                        <div class="platform-game">
+                            <img src="/assets/resident-evil-2.jpg" alt="Resident Evil 2">
+                            <span class="platform-game__name">Resident Evil 2</span>
+                        </div>
+
+                        <div class="platform-game">
+                            <img src="/assets/resident-evil-3.jpg" alt="Resident Evil 3">
+                            <span class="platform-game__name">Resident Evil 3</span>
+                        </div>
+
+                        <div class="platform-game">
+                            <img src="/assets/dino-crisis.jpg" alt="Dino Crisis">
+                            <span class="platform-game__name">Dino Crisis</span>
+                        </div>
+
+                        <div class="platform-game">
+                            <img src="/assets/medal-of-honor.jpg" alt="Medal of Honor">
+                            <span class="platform-game__name">Medal of Honor</span>
+                        </div>
+
+                        <div class="platform-game">
+                            <img src="/assets/gran-turismo-2.jpg" alt="Gran Turismo 2">
+                            <span class="platform-game__name">Gran Turismo 2</span>
+                        </div>
+
+                        <div class="platform-game">
+                            <img src="/assets/castlevania-sotn.jpg" alt="Castlevania Symphony of the Night">
+                            <span class="platform-game__name">Castlevania SOTN</span>
+                        </div>
+
+                        <div class="platform-game">
+                            <img src="/assets/metal-gear-solid.jpg" alt="Metal Gear Solid">
+                            <span class="platform-game__name">Metal Gear Solid</span>
+                        </div>
+
+                        <div class="platform-game">
+                            <img src="/assets/tekken-3.jpg" alt="Tekken 3">
+                            <span class="platform-game__name">Tekken 3</span>
+                        </div>
+
+                    </div>
 
                 </div>
 
-            </div>
-
-        </article>
+            </article>
 
 
-        <!-- =================================================
-             2001 — ATHLON XP
-        ================================================== -->
+            <!-- =================================================
+                 ATHLON XP
+            ================================================== -->
 
-        <article class="timeline-item timeline-item--right">
+            <article
+                class="platform-era"
+                data-status="owned"
+            >
 
-            <div class="timeline-marker">
-                <span>2001</span>
-            </div>
+                <span class="platform-era__marker"></span>
+                <span class="platform-era__connector"></span>
 
-            <div class="timeline-card">
+                <div class="platform-era__year">
+                    2001
+                </div>
 
-                <span class="timeline-status timeline-status--mine">
+                <div class="platform-era__status">
                     TIVE
-                </span>
+                </div>
 
-                <span class="timeline-number">
-                    12
-                </span>
+                <h2>
+                    Athlon XP + Windows XP
+                </h2>
 
-                <h2>Athlon XP</h2>
-
-                <span class="timeline-year">
-                    Windows XP · 2001
-                </span>
-
-                <p class="timeline-description">
-                    Foi aqui que uma das maiores viradas da minha
-                    história gamer aconteceu. Conheci Half-Life,
-                    seus mods e comecei a frequentar LAN houses.
-                    E então veio Counter-Strike.
+                <p class="platform-era__description">
+                    O computador que me levou para Half-Life,
+                    seus mods e para a época das LAN houses.
+                    Foi aqui que Counter-Strike ganhou um lugar especial
+                    na minha história.
                 </p>
 
-                <div class="timeline-games">
+                <div class="platform-era__card">
 
-                    <span>Half-Life</span>
-                    <span>Team Fortress</span>
-                    <span>Counter-Strike 1.5</span>
-                    <span>Counter-Strike 1.6</span>
-                    <span>Quake III</span>
-                    <span>Call of Duty</span>
-                    <span>Max Payne</span>
-                    <span>Age of Mythology</span>
+                    <div class="platform-era__card-header">
+                        <span class="platform-era__type">
+                            LAN Houses
+                        </span>
+
+                        <span class="platform-era__count">
+                            7 jogos
+                        </span>
+                    </div>
+
+                    <div class="platform-games">
+
+                        <div class="platform-game">
+                            <img src="/assets/half-life.jpg" alt="Half-Life">
+                            <span class="platform-game__name">Half-Life</span>
+                        </div>
+
+                        <div class="platform-game">
+                            <img src="/assets/team-fortress.jpg" alt="Team Fortress">
+                            <span class="platform-game__name">Team Fortress</span>
+                        </div>
+
+                        <div class="platform-game">
+                            <img src="/assets/counter-strike-15.jpg" alt="Counter-Strike 1.5">
+                            <span class="platform-game__name">Counter-Strike 1.5</span>
+                        </div>
+
+                        <div class="platform-game">
+                            <img src="/assets/counter-strike-16.jpg" alt="Counter-Strike 1.6">
+                            <span class="platform-game__name">Counter-Strike 1.6</span>
+                        </div>
+
+                        <div class="platform-game">
+                            <img src="/assets/quake-3.jpg" alt="Quake 3">
+                            <span class="platform-game__name">Quake 3</span>
+                        </div>
+
+                        <div class="platform-game">
+                            <img src="/assets/call-of-duty.jpg" alt="Call of Duty">
+                            <span class="platform-game__name">Call of Duty</span>
+                        </div>
+
+                        <div class="platform-game">
+                            <img src="/assets/max-payne.jpg" alt="Max Payne">
+                            <span class="platform-game__name">Max Payne</span>
+                        </div>
+
+                        <div class="platform-game">
+                            <img src="/assets/age-of-mythology.jpg" alt="Age of Mythology">
+                            <span class="platform-game__name">Age of Mythology</span>
+                        </div>
+
+                    </div>
 
                 </div>
 
-            </div>
-
-        </article>
+            </article>
 
 
-        <!-- =================================================
-             2002 — PLAYSTATION 2
-        ================================================== -->
+            <!-- =================================================
+                 PLAYSTATION 2
+            ================================================== -->
 
-        <article class="timeline-item timeline-item--left">
+            <article
+                class="platform-era"
+                data-status="owned"
+            >
 
-            <div class="timeline-marker">
-                <span>2002</span>
-            </div>
+                <span class="platform-era__marker"></span>
+                <span class="platform-era__connector"></span>
 
-            <div class="timeline-card">
-
-                <span class="timeline-status timeline-status--mine">
-                    TIVE
-                </span>
-
-                <span class="timeline-number">
-                    13
-                </span>
-
-                <h2>PlayStation 2</h2>
-
-                <span class="timeline-year">
+                <div class="platform-era__year">
                     2002
-                </span>
+                </div>
 
-                <p class="timeline-description">
-                    Outra geração inesquecível.
-                    Foi uma época em que os grandes jogos começaram
-                    a ficar cada vez mais cinematográficos.
+                <div class="platform-era__status">
+                    TIVE
+                </div>
+
+                <h2>
+                    PlayStation 2
+                </h2>
+
+                <p class="platform-era__description">
+                    Uma biblioteca absurda de clássicos e uma das
+                    gerações mais importantes da minha vida gamer.
                 </p>
 
-                <div class="timeline-games">
+                <div class="platform-era__card">
 
-                    <span>BLACK</span>
-                    <span>Need for Speed Underground 2</span>
-                    <span>GTA San Andreas</span>
-                    <span>GTA Vice City</span>
-                    <span>God of War II</span>
-                    <span>Resident Evil 4</span>
-                    <span>Metal Gear Solid 3</span>
+                    <div class="platform-era__card-header">
+                        <span class="platform-era__type">
+                            Uma geração lendária
+                        </span>
+
+                        <span class="platform-era__count">
+                            7 jogos
+                        </span>
+                    </div>
+
+                    <div class="platform-games">
+
+                        <div class="platform-game">
+                            <img src="/assets/black.jpg" alt="Black">
+                            <span class="platform-game__name">Black</span>
+                        </div>
+
+                        <div class="platform-game">
+                            <img src="/assets/nfs-underground-2.jpg" alt="Need for Speed Underground 2">
+                            <span class="platform-game__name">NFS Underground 2</span>
+                        </div>
+
+                        <div class="platform-game">
+                            <img src="/assets/gta-san-andreas.jpg" alt="GTA San Andreas">
+                            <span class="platform-game__name">GTA San Andreas</span>
+                        </div>
+
+                        <div class="platform-game">
+                            <img src="/assets/gta-vice-city.jpg" alt="GTA Vice City">
+                            <span class="platform-game__name">GTA Vice City</span>
+                        </div>
+
+                        <div class="platform-game">
+                            <img src="/assets/god-of-war-2.jpg" alt="God of War II">
+                            <span class="platform-game__name">God of War II</span>
+                        </div>
+
+                        <div class="platform-game">
+                            <img src="/assets/resident-evil-4.jpg" alt="Resident Evil 4">
+                            <span class="platform-game__name">Resident Evil 4</span>
+                        </div>
+
+                        <div class="platform-game">
+                            <img src="/assets/metal-gear-solid-3.jpg" alt="Metal Gear Solid 3">
+                            <span class="platform-game__name">Metal Gear Solid 3</span>
+                        </div>
+
+                    </div>
 
                 </div>
 
-            </div>
-
-        </article>
+            </article>
 
 
-        <!-- =================================================
-             2006 — XBOX 360
-        ================================================== -->
+            <!-- =================================================
+                 XBOX 360
+            ================================================== -->
 
-        <article class="timeline-item timeline-item--right">
+            <article
+                class="platform-era"
+                data-status="owned"
+            >
 
-            <div class="timeline-marker">
-                <span>2006</span>
-            </div>
+                <span class="platform-era__marker"></span>
+                <span class="platform-era__connector"></span>
 
-            <div class="timeline-card">
-
-                <span class="timeline-status timeline-status--mine">
-                    TIVE
-                </span>
-
-                <span class="timeline-number">
-                    14
-                </span>
-
-                <h2>Xbox 360</h2>
-
-                <span class="timeline-year">
+                <div class="platform-era__year">
                     2006
-                </span>
+                </div>
 
-                <p class="timeline-description">
-                    Uma nova geração, novos mundos e uma enorme
-                    evolução na experiência online.
+                <div class="platform-era__status">
+                    TIVE
+                </div>
+
+                <h2>
+                    Xbox 360
+                </h2>
+
+                <p class="platform-era__description">
+                    Minha primeira grande experiência com a geração Xbox
+                    e uma fase marcada por multiplayer e grandes campanhas.
                 </p>
 
-                <div class="timeline-games">
+                <div class="platform-era__card">
 
-                    <span>Gears of War</span>
-                    <span>Halo 3</span>
-                    <span>Forza Motorsport 4</span>
-                    <span>Batman: Arkham City</span>
-                    <span>Red Dead Redemption</span>
-                    <span>Call of Duty: Modern Warfare</span>
+                    <div class="platform-era__card-header">
+                        <span class="platform-era__type">
+                            Geração HD
+                        </span>
+
+                        <span class="platform-era__count">
+                            6 jogos
+                        </span>
+                    </div>
+
+                    <div class="platform-games">
+
+                        <div class="platform-game">
+                            <img src="/assets/gears-of-war.jpg" alt="Gears of War">
+                            <span class="platform-game__name">Gears of War</span>
+                        </div>
+
+                        <div class="platform-game">
+                            <img src="/assets/halo-3.jpg" alt="Halo 3">
+                            <span class="platform-game__name">Halo 3</span>
+                        </div>
+
+                        <div class="platform-game">
+                            <img src="/assets/forza-motorsport-4.jpg" alt="Forza Motorsport 4">
+                            <span class="platform-game__name">Forza Motorsport 4</span>
+                        </div>
+
+                        <div class="platform-game">
+                            <img src="/assets/batman-arkham-city.jpg" alt="Batman Arkham City">
+                            <span class="platform-game__name">Batman Arkham City</span>
+                        </div>
+
+                        <div class="platform-game">
+                            <img src="/assets/red-dead-redemption.jpg" alt="Red Dead Redemption">
+                            <span class="platform-game__name">Red Dead Redemption</span>
+                        </div>
+
+                        <div class="platform-game">
+                            <img src="/assets/cod-modern-warfare.jpg" alt="Call of Duty Modern Warfare">
+                            <span class="platform-game__name">Modern Warfare</span>
+                        </div>
+
+                    </div>
 
                 </div>
 
-            </div>
-
-        </article>
+            </article>
 
 
-        <!-- =================================================
-             2008 — PLAYSTATION 3
-        ================================================== -->
+            <!-- =================================================
+                 PLAYSTATION 3
+            ================================================== -->
 
-        <article class="timeline-item timeline-item--left">
+            <article
+                class="platform-era"
+                data-status="owned"
+            >
 
-            <div class="timeline-marker">
-                <span>2008</span>
-            </div>
+                <span class="platform-era__marker"></span>
+                <span class="platform-era__connector"></span>
 
-            <div class="timeline-card">
-
-                <span class="timeline-status timeline-status--mine">
-                    TIVE
-                </span>
-
-                <span class="timeline-number">
-                    15
-                </span>
-
-                <h2>PlayStation 3</h2>
-
-                <span class="timeline-year">
+                <div class="platform-era__year">
                     2008
-                </span>
+                </div>
 
-                <p class="timeline-description">
-                    Uma geração marcada por experiências cada vez
-                    mais ambiciosas, histórias cinematográficas
-                    e multiplayer intenso.
+                <div class="platform-era__status">
+                    TIVE
+                </div>
+
+                <h2>
+                    PlayStation 3
+                </h2>
+
+                <p class="platform-era__description">
+                    Uma geração que trouxe experiências cinematográficas
+                    que mudaram minha visão sobre o que um jogo poderia ser.
                 </p>
 
-                <div class="timeline-games">
+                <div class="platform-era__card">
 
-                    <span>The Last of Us</span>
-                    <span>God of War III</span>
-                    <span>Grand Theft Auto V</span>
-                    <span>Assassin's Creed III</span>
-                    <span>Killzone 3</span>
-                    <span>Battlefield 4</span>
-                    <span>Far Cry 3</span>
-                    <span>Ultimate Marvel vs. Capcom 3</span>
+                    <div class="platform-era__card-header">
+                        <span class="platform-era__type">
+                            Era cinematográfica
+                        </span>
+
+                        <span class="platform-era__count">
+                            8 jogos
+                        </span>
+                    </div>
+
+                    <div class="platform-games">
+
+                        <div class="platform-game">
+                            <img src="/assets/the-last-of-us.jpg" alt="The Last of Us">
+                            <span class="platform-game__name">The Last of Us</span>
+                        </div>
+
+                        <div class="platform-game">
+                            <img src="/assets/god-of-war-3.jpg" alt="God of War III">
+                            <span class="platform-game__name">God of War III</span>
+                        </div>
+
+                        <div class="platform-game">
+                            <img src="/assets/gta-5.jpg" alt="Grand Theft Auto V">
+                            <span class="platform-game__name">GTA V</span>
+                        </div>
+
+                        <div class="platform-game">
+                            <img src="/assets/assassins-creed-3.jpg" alt="Assassin's Creed III">
+                            <span class="platform-game__name">Assassin's Creed III</span>
+                        </div>
+
+                        <div class="platform-game">
+                            <img src="/assets/killzone-3.jpg" alt="Killzone 3">
+                            <span class="platform-game__name">Killzone 3</span>
+                        </div>
+
+                        <div class="platform-game">
+                            <img src="/assets/battlefield-4.jpg" alt="Battlefield 4">
+                            <span class="platform-game__name">Battlefield 4</span>
+                        </div>
+
+                        <div class="platform-game">
+                            <img src="/assets/far-cry-3.jpg" alt="Far Cry 3">
+                            <span class="platform-game__name">Far Cry 3</span>
+                        </div>
+
+                        <div class="platform-game">
+                            <img src="/assets/ultimate-marvel-vs-capcom-3.jpg" alt="Ultimate Marvel vs Capcom 3">
+                            <span class="platform-game__name">UMVC3</span>
+                        </div>
+
+                    </div>
 
                 </div>
 
-            </div>
-
-        </article>
+            </article>
 
 
-        <!-- =================================================
-             2009 — PHENOM II
-        ================================================== -->
+            <!-- =================================================
+                 PHENOM II
+            ================================================== -->
 
-        <article class="timeline-item timeline-item--right">
+            <article
+                class="platform-era"
+                data-status="owned"
+            >
 
-            <div class="timeline-marker">
-                <span>2009</span>
-            </div>
+                <span class="platform-era__marker"></span>
+                <span class="platform-era__connector"></span>
 
-            <div class="timeline-card">
+                <div class="platform-era__year">
+                    2009
+                </div>
 
-                <span class="timeline-status timeline-status--mine">
+                <div class="platform-era__status">
                     TIVE
-                </span>
+                </div>
 
-                <span class="timeline-number">
-                    16
-                </span>
+                <h2>
+                    AMD Phenom II X4 + Windows 7
+                </h2>
 
-                <h2>AMD Phenom II X4</h2>
-
-                <span class="timeline-year">
-                    Windows 7 · 2009
-                </span>
-
-                <p class="timeline-description">
-                    O PC continuava acompanhando minha evolução.
-                    Mais potência significava mundos maiores,
-                    gráficos melhores e novas experiências.
+                <p class="platform-era__description">
+                    Um salto importante no PC e uma época recheada
+                    de jogos que marcaram a minha relação com computadores.
                 </p>
 
-                <div class="timeline-games">
+                <div class="platform-era__card">
 
-                    <span>Call of Duty: Modern Warfare 2</span>
-                    <span>Left 4 Dead 2</span>
-                    <span>Fallout 3</span>
-                    <span>GTA IV</span>
-                    <span>Age of Empires III</span>
-                    <span>Crysis</span>
-                    <span>The Elder Scrolls V: Skyrim</span>
+                    <div class="platform-era__card-header">
+                        <span class="platform-era__type">
+                            PC Gaming
+                        </span>
+
+                        <span class="platform-era__count">
+                            7 jogos
+                        </span>
+                    </div>
+
+                    <div class="platform-games">
+
+                        <div class="platform-game">
+                            <img src="/assets/cod-modern-warfare-2.jpg" alt="Call of Duty Modern Warfare 2">
+                            <span class="platform-game__name">MW2</span>
+                        </div>
+
+                        <div class="platform-game">
+                            <img src="/assets/left-4-dead-2.jpg" alt="Left 4 Dead 2">
+                            <span class="platform-game__name">Left 4 Dead 2</span>
+                        </div>
+
+                        <div class="platform-game">
+                            <img src="/assets/fallout-3.jpg" alt="Fallout 3">
+                            <span class="platform-game__name">Fallout 3</span>
+                        </div>
+
+                        <div class="platform-game">
+                            <img src="/assets/gta-4.jpg" alt="GTA IV">
+                            <span class="platform-game__name">GTA IV</span>
+                        </div>
+
+                        <div class="platform-game">
+                            <img src="/assets/age-of-empires-3.jpg" alt="Age of Empires III">
+                            <span class="platform-game__name">Age of Empires III</span>
+                        </div>
+
+                        <div class="platform-game">
+                            <img src="/assets/crysis.jpg" alt="Crysis">
+                            <span class="platform-game__name">Crysis</span>
+                        </div>
+
+                        <div class="platform-game">
+                            <img src="/assets/skyrim.jpg" alt="The Elder Scrolls V Skyrim">
+                            <span class="platform-game__name">Skyrim</span>
+                        </div>
+
+                    </div>
 
                 </div>
 
-            </div>
-
-        </article>
+            </article>
 
 
-        <!-- =================================================
-             2013 — PLAYSTATION 4
-        ================================================== -->
+            <!-- =================================================
+                 PLAYSTATION 4
+            ================================================== -->
 
-        <article class="timeline-item timeline-item--left">
+            <article
+                class="platform-era"
+                data-status="owned"
+            >
 
-            <div class="timeline-marker">
-                <span>2013</span>
-            </div>
+                <span class="platform-era__marker"></span>
+                <span class="platform-era__connector"></span>
 
-            <div class="timeline-card">
-
-                <span class="timeline-status timeline-status--mine">
-                    TIVE
-                </span>
-
-                <span class="timeline-number">
-                    17
-                </span>
-
-                <h2>PlayStation 4</h2>
-
-                <span class="timeline-year">
+                <div class="platform-era__year">
                     2013
-                </span>
-
-                <p class="timeline-description">
-                    Uma geração gigantesca para quem ama mundos
-                    abertos, narrativa e experiências cinematográficas.
-                </p>
-
-                <div class="timeline-games">
-
-                    <span>Red Dead Redemption 2</span>
-                    <span>Grand Theft Auto V</span>
-                    <span>The Last of Us Part II</span>
-                    <span>God of War</span>
-                    <span>Resident Evil 7</span>
-                    <span>Mortal Kombat X</span>
-                    <span>The Witcher 3</span>
-                    <span>Uncharted 4</span>
-                    <span>Ace Combat 7</span>
-
                 </div>
 
-            </div>
-
-        </article>
-
-
-        <!-- =================================================
-             2020 — XBOX SERIES S
-        ================================================== -->
-
-        <article class="timeline-item timeline-item--right">
-
-            <div class="timeline-marker">
-                <span>2020</span>
-            </div>
-
-            <div class="timeline-card">
-
-                <span class="timeline-status timeline-status--mine">
+                <div class="platform-era__status">
                     TIVE
-                </span>
+                </div>
 
-                <span class="timeline-number">
-                    18
-                </span>
+                <h2>
+                    PlayStation 4
+                </h2>
 
-                <h2>Xbox Series S</h2>
+                <p class="platform-era__description">
+                    Uma das gerações mais completas da minha trajetória,
+                    reunindo grandes mundos abertos, terror, ação e aventura.
+                </p>
 
-                <span class="timeline-year">
+                <div class="platform-era__card">
+
+                    <div class="platform-era__card-header">
+                        <span class="platform-era__type">
+                            Uma geração monumental
+                        </span>
+
+                        <span class="platform-era__count">
+                            9 jogos
+                        </span>
+                    </div>
+
+                    <div class="platform-games">
+
+                        <div class="platform-game">
+                            <img src="/assets/red-dead-redemption-2.jpg" alt="Red Dead Redemption 2">
+                            <span class="platform-game__name">RDR2</span>
+                        </div>
+
+                        <div class="platform-game">
+                            <img src="/assets/gta-5.jpg" alt="Grand Theft Auto V">
+                            <span class="platform-game__name">GTA V</span>
+                        </div>
+
+                        <div class="platform-game">
+                            <img src="/assets/the-last-of-us-2.jpg" alt="The Last of Us Part II">
+                            <span class="platform-game__name">The Last of Us II</span>
+                        </div>
+
+                        <div class="platform-game">
+                            <img src="/assets/god-of-war-2018.jpg" alt="God of War">
+                            <span class="platform-game__name">God of War</span>
+                        </div>
+
+                        <div class="platform-game">
+                            <img src="/assets/resident-evil-7.jpg" alt="Resident Evil 7">
+                            <span class="platform-game__name">Resident Evil 7</span>
+                        </div>
+
+                        <div class="platform-game">
+                            <img src="/assets/mortal-kombat-x.jpg" alt="Mortal Kombat X">
+                            <span class="platform-game__name">Mortal Kombat X</span>
+                        </div>
+
+                        <div class="platform-game">
+                            <img src="/assets/witcher-3.jpg" alt="The Witcher 3">
+                            <span class="platform-game__name">The Witcher 3</span>
+                        </div>
+
+                        <div class="platform-game">
+                            <img src="/assets/uncharted-4.jpg" alt="Uncharted 4">
+                            <span class="platform-game__name">Uncharted 4</span>
+                        </div>
+
+                        <div class="platform-game">
+                            <img src="/assets/ace-combat-7.jpg" alt="Ace Combat 7">
+                            <span class="platform-game__name">Ace Combat 7</span>
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </article>
+
+
+            <!-- =================================================
+                 XBOX SERIES S
+            ================================================== -->
+
+            <article
+                class="platform-era"
+                data-status="owned"
+            >
+
+                <span class="platform-era__marker"></span>
+                <span class="platform-era__connector"></span>
+
+                <div class="platform-era__year">
                     2020
-                </span>
+                </div>
 
-                <p class="timeline-description">
-                    Uma pequena máquina que trouxe uma nova
-                    geração para dentro de casa.
+                <div class="platform-era__status">
+                    TIVE
+                </div>
+
+                <h2>
+                    Xbox Series S
+                </h2>
+
+                <p class="platform-era__description">
+                    Uma pequena máquina que me entregou uma enorme
+                    quantidade de horas de diversão.
                 </p>
 
-                <div class="timeline-games">
+                <div class="platform-era__card">
 
-                    <span>Gears 5</span>
-                    <span>DOOM Eternal</span>
-                    <span>Halo Infinite</span>
-                    <span>Forza Horizon 5</span>
-                    <span>Far Cry 5</span>
+                    <div class="platform-era__card-header">
+                        <span class="platform-era__type">
+                            Geração atual
+                        </span>
+
+                        <span class="platform-era__count">
+                            5 jogos
+                        </span>
+                    </div>
+
+                    <div class="platform-games">
+
+                        <div class="platform-game">
+                            <img src="/assets/gears-5.jpg" alt="Gears 5">
+                            <span class="platform-game__name">Gears 5</span>
+                        </div>
+
+                        <div class="platform-game">
+                            <img src="/assets/doom-eternal.jpg" alt="Doom Eternal">
+                            <span class="platform-game__name">Doom Eternal</span>
+                        </div>
+
+                        <div class="platform-game">
+                            <img src="/assets/halo-infinite.jpg" alt="Halo Infinite">
+                            <span class="platform-game__name">Halo Infinite</span>
+                        </div>
+
+                        <div class="platform-game">
+                            <img src="/assets/forza-horizon-5.jpg" alt="Forza Horizon 5">
+                            <span class="platform-game__name">Forza Horizon 5</span>
+                        </div>
+
+                        <div class="platform-game">
+                            <img src="/assets/far-cry-5.jpg" alt="Far Cry 5">
+                            <span class="platform-game__name">Far Cry 5</span>
+                        </div>
+
+                    </div>
 
                 </div>
 
-            </div>
-
-        </article>
+            </article>
 
 
-        <!-- =================================================
-             2022 — DELL G15
-        ================================================== -->
+            <!-- =================================================
+                 DELL G15
+            ================================================== -->
 
-        <article class="timeline-item timeline-item--left">
+            <article
+                class="platform-era"
+                data-status="owned"
+            >
 
-            <div class="timeline-marker">
-                <span>2022</span>
-            </div>
+                <span class="platform-era__marker"></span>
+                <span class="platform-era__connector"></span>
 
-            <div class="timeline-card">
+                <div class="platform-era__year">
+                    2022
+                </div>
 
-                <span class="timeline-status timeline-status--mine">
-                    ATUAL
-                </span>
+                <div class="platform-era__status">
+                    MEU PC ATUAL
+                </div>
 
-                <span class="timeline-number">
-                    19
-                </span>
+                <h2>
+                    Dell G15
+                </h2>
 
-                <h2>Dell G15</h2>
-
-                <span class="timeline-year">
-                    Ryzen Edition · RTX 3060 · 2022
-                </span>
-
-                <p class="timeline-description">
-                    Meu PC atual representa também a união entre
-                    duas paixões que começaram muito tempo atrás:
-                    videogames e tecnologia.
+                <p class="platform-era__description">
+                    Meu atual notebook gamer e uma das máquinas centrais
+                    da JorgeraTV. É nele que tecnologia, games e criação
+                    de conteúdo se encontram.
                 </p>
 
-                <div class="timeline-games">
+                <div class="platform-era__card">
 
-                    <span>Battlefield 2042</span>
-                    <span>DOOM: The Dark Ages</span>
-                    <span>Counter-Strike 2</span>
-                    <span>Cyberpunk 2077</span>
+                    <div class="platform-era__card-header">
+                        <span class="platform-era__type">
+                            PC Gamer
+                        </span>
+
+                        <span class="platform-era__count">
+                            4 jogos
+                        </span>
+                    </div>
+
+                    <div class="platform-games">
+
+                        <div class="platform-game">
+                            <img src="/assets/battlefield-2042.jpg" alt="Battlefield 2042">
+                            <span class="platform-game__name">Battlefield 2042</span>
+                        </div>
+
+                        <div class="platform-game">
+                            <img src="/assets/doom-the-dark-ages.jpg" alt="Doom The Dark Ages">
+                            <span class="platform-game__name">Doom The Dark Ages</span>
+                        </div>
+
+                        <div class="platform-game">
+                            <img src="/assets/counter-strike-2.jpg" alt="Counter-Strike 2">
+                            <span class="platform-game__name">Counter-Strike 2</span>
+                        </div>
+
+                        <div class="platform-game">
+                            <img src="/assets/cyberpunk-2077.jpg" alt="Cyberpunk 2077">
+                            <span class="platform-game__name">Cyberpunk 2077</span>
+                        </div>
+
+                    </div>
 
                 </div>
 
-            </div>
-
-        </article>
+            </article>
 
 
-        <!-- =================================================
-             2023 — PLAYSTATION 5 SLIM
-        ================================================== -->
+            <!-- =================================================
+                 PLAYSTATION 5
+            ================================================== -->
 
-        <article class="timeline-item timeline-item--right">
+            <article
+                class="platform-era"
+                data-status="owned"
+            >
 
-            <div class="timeline-marker">
-                <span>2023</span>
-            </div>
+                <span class="platform-era__marker"></span>
+                <span class="platform-era__connector"></span>
 
-            <div class="timeline-card">
+                <div class="platform-era__year">
+                    2023
+                </div>
 
-                <span class="timeline-status timeline-status--mine">
-                    ATUAL
-                </span>
+                <div class="platform-era__status">
+                    TENHO HOJE
+                </div>
 
-                <span class="timeline-number">
-                    20
-                </span>
+                <h2>
+                    PlayStation 5 Slim
+                </h2>
 
-                <h2>PlayStation 5 Slim</h2>
-
-                <span class="timeline-year">
-                    2023 · Com leitor
-                </span>
-
-                <p class="timeline-description">
-                    Hoje, o PlayStation 5 Slim é uma das plataformas
-                    que continuam alimentando essa paixão.
-                    A história começou no Atari, mas ainda está longe
-                    de terminar.
+                <p class="platform-era__description">
+                    Minha atual máquina PlayStation.
+                    É também uma das plataformas protagonistas
+                    da JorgeraTV.
                 </p>
 
-                <div class="timeline-games">
+                <div class="platform-era__card">
 
-                    <span>God of War Ragnarök</span>
-                    <span>Resident Evil 4 Remake</span>
-                    <span>Battlefield 6</span>
-                    <span>Metal Gear Solid Delta</span>
-                    <span>The Callisto Protocol</span>
+                    <div class="platform-era__card-header">
+                        <span class="platform-era__type">
+                            Geração atual
+                        </span>
+
+                        <span class="platform-era__count">
+                            5 jogos
+                        </span>
+                    </div>
+
+                    <div class="platform-games">
+
+                        <div class="platform-game">
+                            <img src="/assets/god-of-war-ragnarok.jpg" alt="God of War Ragnarök">
+                            <span class="platform-game__name">God of War Ragnarök</span>
+                        </div>
+
+                        <div class="platform-game">
+                            <img src="/assets/resident-evil-4-remake.jpg" alt="Resident Evil 4 Remake">
+                            <span class="platform-game__name">Resident Evil 4</span>
+                        </div>
+
+                        <div class="platform-game">
+                            <img src="/assets/battlefield-6.jpg" alt="Battlefield 6">
+                            <span class="platform-game__name">Battlefield 6</span>
+                        </div>
+
+                        <div class="platform-game">
+                            <img src="/assets/metal-gear-solid-delta.jpg" alt="Metal Gear Solid Delta">
+                            <span class="platform-game__name">Metal Gear Solid Delta</span>
+                        </div>
+
+                        <div class="platform-game">
+                            <img src="/assets/the-callisto-protocol.jpg" alt="The Callisto Protocol">
+                            <span class="platform-game__name">The Callisto Protocol</span>
+                        </div>
+
+                    </div>
 
                 </div>
 
-            </div>
-
-        </article>
+            </article>
 
 
-        <!-- =================================================
-             2024 — SWITCH LITE
-        ================================================== -->
+            <!-- =================================================
+                 SWITCH LITE
+            ================================================== -->
 
-        <article class="timeline-item timeline-item--left">
+            <article
+                class="platform-era"
+                data-status="owned"
+            >
 
-            <div class="timeline-marker">
-                <span>2024</span>
-            </div>
+                <span class="platform-era__marker"></span>
 
-            <div class="timeline-card">
-
-                <span class="timeline-status timeline-status--mine">
-                    ATUAL
-                </span>
-
-                <span class="timeline-number">
-                    21
-                </span>
-
-                <h2>Nintendo Switch Lite</h2>
-
-                <span class="timeline-year">
+                <div class="platform-era__year">
                     2024
-                </span>
+                </div>
 
-                <p class="timeline-description">
-                    Uma maneira diferente de continuar jogando.
-                    Portabilidade, nostalgia e novas aventuras
-                    dividindo espaço com as plataformas mais poderosas.
+                <div class="platform-era__status">
+                    TENHO HOJE
+                </div>
+
+                <h2>
+                    Nintendo Switch Lite
+                </h2>
+
+                <p class="platform-era__description">
+                    A história continua.
+                    Mais uma plataforma na coleção e mais uma forma
+                    de continuar descobrindo novos mundos.
                 </p>
 
-                <div class="timeline-games">
+                <div class="platform-era__card">
 
-                    <span>Super Mario 3D World + Bowser's Fury</span>
-                    <span>Super Mario Odyssey</span>
-                    <span>Mario Kart 8 Deluxe</span>
-                    <span>Donkey Kong Country: Tropical Freeze</span>
-                    <span>The Legend of Zelda: Tears of the Kingdom</span>
+                    <div class="platform-era__card-header">
+                        <span class="platform-era__type">
+                            Nintendo
+                        </span>
+
+                        <span class="platform-era__count">
+                            5 jogos
+                        </span>
+                    </div>
+
+                    <div class="platform-games">
+
+                        <div class="platform-game">
+                            <img src="/assets/super-mario-3d-world.jpg" alt="Super Mario 3D World">
+                            <span class="platform-game__name">Super Mario 3D World</span>
+                        </div>
+
+                        <div class="platform-game">
+                            <img src="/assets/super-mario-odyssey.jpg" alt="Super Mario Odyssey">
+                            <span class="platform-game__name">Super Mario Odyssey</span>
+                        </div>
+
+                        <div class="platform-game">
+                            <img src="/assets/mario-kart-8-deluxe.jpg" alt="Mario Kart 8 Deluxe">
+                            <span class="platform-game__name">Mario Kart 8 Deluxe</span>
+                        </div>
+
+                        <div class="platform-game">
+                            <img src="/assets/donkey-kong-tropical-freeze.jpg" alt="Donkey Kong Country Tropical Freeze">
+                            <span class="platform-game__name">Donkey Kong Tropical Freeze</span>
+                        </div>
+
+                        <div class="platform-game">
+                            <img src="/assets/zelda-tears-of-the-kingdom.jpg" alt="The Legend of Zelda Tears of the Kingdom">
+                            <span class="platform-game__name">Zelda: Tears of the Kingdom</span>
+                        </div>
+
+                    </div>
 
                 </div>
 
-            </div>
+            </article>
 
-        </article>
-
-
-    </section>
+        </div>
 
 
-    <!-- =====================================================
-         FINAL
-    ====================================================== -->
+        <!-- =====================================================
+             FINAL
+        ====================================================== -->
 
-    <section class="platforms-ending">
+        <div class="platform-timeline__ending">
 
-        <span class="platforms-eyebrow">
-            E A HISTÓRIA CONTINUA...
-        </span>
+            <small>
+                E AINDA NÃO TERMINOU
+            </small>
 
-        <h2>
-            DO ATARI
-            <span>ATÉ HOJE.</span>
-        </h2>
+            <h2>
+                A história continua.
+                <span>Próxima fase...</span>
+            </h2>
 
-        <p>
-            Foram décadas atravessando gerações,
-            descobrindo mundos, conhecendo pessoas,
-            aprendendo tecnologia e colecionando histórias.
+            <p>
+                De um Atari 2600 até o PlayStation 5, passando por
+                locadoras, LAN houses, computadores, consoles e milhares
+                de horas de diversão. A tecnologia mudou.
+                Os jogos mudaram.
+                Mas aquela paixão de quando tudo começou continua aqui.
+            </p>
 
-            <br /><br />
+        </div>
 
-            E talvez essa seja a parte mais legal:
-
-            <strong>
-                ainda não acabou.
-            </strong>
-        </p>
-
-    </section>
+    </div>
 
 </section>
