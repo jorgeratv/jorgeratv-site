@@ -1,5 +1,4 @@
 ---
-
 ---
 
 <section class="about-page">
@@ -624,6 +623,7 @@
 
                 </article>
 
+
             </div>
 
         </div>
@@ -900,6 +900,11 @@
     margin: 0 auto;
 
     padding: 90px 0;
+
+    /* ÚNICA ALTERAÇÃO:
+       desce todo o conteúdo do Hero uma linha,
+       sem alterar o restante da estrutura. */
+    transform: translateY(28px);
 
 }
 
@@ -1200,12 +1205,15 @@
     position: absolute;
 
     top: 0;
+
     bottom: 0;
+
     left: 29px;
 
     width: 1px;
 
     background:
+
         linear-gradient(
             to bottom,
             transparent,
@@ -1237,11 +1245,13 @@
     top: 25px;
 
     width: 59px;
+
     height: 59px;
 
     display: flex;
 
     align-items: center;
+
     justify-content: center;
 
     border-radius: 50%;
@@ -1251,7 +1261,9 @@
     border: 1px solid rgba(255,36,36,0.55);
 
     box-shadow:
+
         0 0 0 7px rgba(255,36,36,0.025),
+
         0 0 25px rgba(255,0,0,0.08);
 
 }
@@ -1275,7 +1287,9 @@
     border-color: var(--red);
 
     box-shadow:
+
         0 0 0 7px rgba(255,36,36,0.06),
+
         0 0 35px rgba(255,0,0,0.25);
 
 }
@@ -1299,6 +1313,7 @@
     padding: 30px;
 
     background:
+
         linear-gradient(
             135deg,
             rgba(255,255,255,0.035),
@@ -1310,8 +1325,11 @@
     border-radius: 16px;
 
     transition:
+
         transform 0.25s ease,
+
         border-color 0.25s ease,
+
         box-shadow 0.25s ease;
 
 }
@@ -1324,6 +1342,7 @@
     border-color: rgba(255,36,36,0.35);
 
     box-shadow:
+
         0 15px 45px rgba(0,0,0,0.3);
 
 }
@@ -1334,11 +1353,13 @@
     border-color: rgba(255,36,36,0.25);
 
     background:
+
         radial-gradient(
             circle at 90% 50%,
             rgba(180,0,0,0.10),
             transparent 45%
         ),
+
         rgba(255,255,255,0.025);
 
 }
@@ -1354,11 +1375,13 @@
 .timeline-icon {
 
     width: 65px;
+
     height: 65px;
 
     display: flex;
 
     align-items: center;
+
     justify-content: center;
 
     border-radius: 15px;
@@ -1577,6 +1600,7 @@
     border-radius: 16px;
 
     background:
+
         linear-gradient(
             145deg,
             rgba(255,255,255,0.035),
@@ -1595,7 +1619,9 @@
     position: absolute;
 
     left: 0;
+
     right: 0;
+
     bottom: 0;
 
     height: 3px;
@@ -1749,6 +1775,7 @@
     border-radius: 20px;
 
     background:
+
         linear-gradient(
             135deg,
             rgba(255,255,255,0.035),
@@ -1767,16 +1794,19 @@
     position: absolute;
 
     top: 0;
+
     left: 50%;
 
     transform: translateX(-50%);
 
     width: 180px;
+
     height: 2px;
 
     background: var(--red);
 
     box-shadow:
+
         0 0 30px rgba(255,0,0,0.5);
 
 }
@@ -1867,7 +1897,9 @@
     letter-spacing: 0.5px;
 
     transition:
+
         transform 0.2s ease,
+
         box-shadow 0.2s ease;
 
 }
@@ -1878,6 +1910,7 @@
     transform: translateY(-2px);
 
     box-shadow:
+
         0 10px 30px rgba(255,0,0,0.25);
 
 }
@@ -1888,6 +1921,7 @@
     position: absolute;
 
     width: 180px;
+
     height: 180px;
 
     border-radius: 50%;
@@ -1900,6 +1934,7 @@
 .ending-decoration.left {
 
     left: -90px;
+
     bottom: -90px;
 
 }
@@ -1908,6 +1943,7 @@
 .ending-decoration.right {
 
     right: -90px;
+
     top: -90px;
 
 }
@@ -1980,6 +2016,8 @@
 
         padding: 70px 0;
 
+        transform: translateY(28px);
+
     }
 
 
@@ -2026,6 +2064,7 @@
     .timeline-marker {
 
         width: 41px;
+
         height: 41px;
 
         top: 25px;
@@ -2047,6 +2086,7 @@
     .timeline-icon {
 
         width: 52px;
+
         height: 52px;
 
         font-size: 23px;
