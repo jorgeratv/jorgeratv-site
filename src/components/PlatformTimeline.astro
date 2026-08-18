@@ -4,15 +4,15 @@ import "../styles/platform-timeline.css";
 const eras = [
     {
         number: "01",
-        title: "A ERA 8-BIT",
-        subtitle: "Onde tudo começou",
+        label: "ERA 01",
+        title: "OS PRIMEIROS PIXELS",
         description:
-            "Os primeiros videogames que fizeram parte da minha infância e ajudaram a construir uma paixão que atravessaria décadas.",
+            "Foi aqui que tudo começou. Os primeiros videogames, os primeiros controles e as primeiras lembranças que ajudaram a construir minha relação com os jogos.",
         platforms: [
             {
                 year: "1990",
+                type: "CONSOLE • 8-BIT",
                 name: "ATARI 2600",
-                type: "Tive",
                 description:
                     "Foi aqui que tudo começou. Meu primeiro contato com videogames e a primeira porta para um universo que nunca mais deixou de fazer parte da minha vida.",
                 games: [
@@ -27,10 +27,10 @@ const eras = [
             },
             {
                 year: "1993",
+                type: "CONSOLE • 8-BIT",
                 name: "MASTER SYSTEM",
-                type: "Contato através de amigos",
                 description:
-                    "Eu não tinha um Master System, mas meus amigos tinham. E foi através deles que conheci alguns dos grandes clássicos da Sega.",
+                    "Eu não tinha um Master System, mas meus amigos tinham. Foi através deles que conheci alguns dos grandes clássicos da Sega.",
                 games: [
                     "Alex Kidd",
                     "Sonic",
@@ -41,10 +41,10 @@ const eras = [
             },
             {
                 year: "1993",
+                type: "CONSOLE • 8-BIT",
                 name: "NES",
-                type: "Tive",
                 description:
-                    "O Nintendo 8-bit marcou uma nova fase da minha infância e trouxe alguns dos personagens e franquias que continuam comigo até hoje.",
+                    "O Nintendo 8-bit marcou uma nova fase da minha infância e trouxe personagens e franquias que continuam comigo até hoje.",
                 games: [
                     "Super Mario Bros.",
                     "Contra",
@@ -59,17 +59,17 @@ const eras = [
 
     {
         number: "02",
+        label: "ERA 02",
         title: "A ERA 16-BIT",
-        subtitle: "A geração dos clássicos",
         description:
-            "Uma época marcada por grandes aventuras, jogos de luta, RPGs, corridas e alguns dos títulos que mais ficaram na memória.",
+            "Uma geração que elevou os videogames a outro nível. Gráficos melhores, trilhas memoráveis e alguns dos jogos que mais marcaram minha infância.",
         platforms: [
             {
                 year: "1993",
+                type: "CONSOLE • 16-BIT",
                 name: "MEGA DRIVE",
-                type: "Contato através de primos",
                 description:
-                    "Eu não tive um Mega Drive. Meus primos tinham e eu aproveitava cada oportunidade para jogar.",
+                    "Assim como o Master System, não tive um Mega Drive. Meus primos tinham e eu aproveitava cada oportunidade para jogar.",
                 games: [
                     "Altered Beast",
                     "Streets of Rage",
@@ -79,12 +79,12 @@ const eras = [
             },
             {
                 year: "1994",
+                type: "CONSOLE • 16-BIT",
                 name: "SUPER NINTENDO",
-                type: "Tive",
                 description:
                     "Uma das fases mais marcantes da minha vida gamer. O Super Nintendo abriu um universo enorme de aventuras, lutas, RPGs, corridas e exploração.",
                 games: [
-                    "Donkey Kong Country",
+                    "Donkey Kong",
                     "Super Mario World",
                     "Mortal Kombat",
                     "Street Fighter",
@@ -106,46 +106,30 @@ const eras = [
 
     {
         number: "03",
-        title: "A ERA 3D",
-        subtitle: "Quando os mundos ganharam outra dimensão",
+        label: "ERA 03",
+        title: "A REVOLUÇÃO 3D",
         description:
-            "A transição para experiências tridimensionais mudou completamente a maneira como eu enxergava os videogames.",
+            "Os videogames começaram a abandonar os sprites e entrar de vez em mundos tridimensionais. Foi uma transformação que mudou para sempre a maneira de jogar.",
         platforms: [
             {
-                year: "1994",
-                name: "PC 486 + WINDOWS 3.1",
-                type: "Computador do meu pai",
-                description:
-                    "Meu pai tinha o computador, mas deixava eu brincar. Foi quando videogames e tecnologia começaram a andar juntos na minha cabeça.",
-                games: [
-                    "DOOM",
-                    "Wolfenstein 3D",
-                    "Duke Nukem",
-                    "Hexen",
-                    "Blood",
-                    "Prince of Persia",
-                    "Stunts",
-                    "Monkey Island",
-                    "Full Throttle"
-                ]
-            },
-            {
                 year: "1995",
+                type: "CONSOLE • 32-BIT",
                 name: "3DO",
-                type: "Contato através de locadora",
                 description:
                     "Não tive um 3DO, mas conheci a plataforma em uma locadora. Eu pagava por hora e aproveitava cada minuto para descobrir aquela tecnologia diferente.",
                 games: [
                     "Road Rash",
                     "The Need for Speed",
-                    "DOOM",
+                    "Alone in the Dark",
+                    "Gex",
+                    "FIFA International Soccer",
                     "Super Street Fighter II Turbo"
                 ]
             },
             {
                 year: "1995",
+                type: "CONSOLE • CD",
                 name: "NEO GEO CD",
-                type: "Contato através de locadora",
                 description:
                     "Outra experiência de locadora que ficou marcada. O Neo Geo era praticamente um sonho para quem gostava dos arcades.",
                 games: [
@@ -159,8 +143,8 @@ const eras = [
             },
             {
                 year: "1997",
+                type: "CONSOLE • 64-BIT",
                 name: "NINTENDO 64",
-                type: "Tive",
                 description:
                     "O Nintendo 64 foi uma verdadeira revolução. Foi uma das primeiras vezes em que senti que os mundos dos videogames estavam realmente ganhando outra dimensão.",
                 games: [
@@ -176,12 +160,12 @@ const eras = [
             },
             {
                 year: "1998",
-                name: "PLAYSTATION",
-                type: "Tive",
+                type: "CONSOLE • 32-BIT",
+                name: "PLAYSTATION 1",
                 description:
-                    "O PlayStation trouxe uma quantidade absurda de experiências diferentes e ajudou a consolidar ainda mais minha paixão por videogames.",
+                    "O PlayStation marcou uma das grandes viradas da minha vida gamer. Foi uma geração de experiências que ajudaram a definir o videogame moderno.",
                 games: [
-                    "Resident Evil",
+                    "Resident Evil 1",
                     "Resident Evil 2",
                     "Resident Evil 3",
                     "Dino Crisis",
@@ -197,17 +181,35 @@ const eras = [
 
     {
         number: "04",
-        title: "A ERA DAS LAN HOUSES",
-        subtitle: "PC, multiplayer e novas experiências",
+        label: "ERA 04",
+        title: "A ERA DOS PCs",
         description:
-            "O computador deixou de ser apenas uma máquina para jogar e passou a ser também uma porta para comunidades, multiplayer e novas formas de jogar.",
+            "O computador deixou de ser apenas uma máquina de trabalho e passou a ser também uma das grandes plataformas da minha vida.",
         platforms: [
             {
-                year: "1997",
-                name: "PC PENTIUM II + WINDOWS 95",
-                type: "Meu primeiro computador",
+                year: "1994",
+                type: "PC • WINDOWS 3.1",
+                name: "PC 486",
                 description:
-                    "Foi meu primeiro computador exclusivamente meu. A partir daqui, o PC passou a ocupar um espaço cada vez maior na minha vida.",
+                    "Meu pai tinha o computador, mas deixava eu brincar. Foi quando videogames e tecnologia começaram a andar juntos na minha cabeça.",
+                games: [
+                    "DOOM",
+                    "Wolfenstein 3D",
+                    "Duke Nukem",
+                    "Hexen",
+                    "Blood",
+                    "Prince of Persia",
+                    "Stunts",
+                    "Monkey Island",
+                    "Full Throttle"
+                ]
+            },
+            {
+                year: "1997",
+                type: "PC • WINDOWS 95",
+                name: "PC PENTIUM II",
+                description:
+                    "Meu primeiro computador exclusivamente meu. A partir daqui, o PC passou a ocupar um espaço cada vez maior na minha vida.",
                 games: [
                     "DOOM II",
                     "Quake II",
@@ -220,16 +222,16 @@ const eras = [
             },
             {
                 year: "2001",
-                name: "PC ATHLON XP + WINDOWS XP",
-                type: "Meu PC",
+                type: "PC • WINDOWS XP",
+                name: "PC ATHLON XP",
                 description:
-                    "Foi nesse computador que conheci Half-Life e seus mods. Também foi quando comecei a frequentar LAN Houses.",
+                    "Foi onde conheci Half-Life e seus mods e também a época em que comecei a frequentar LAN houses.",
                 games: [
                     "Half-Life",
                     "Team Fortress",
                     "Counter-Strike 1.5",
                     "Counter-Strike 1.6",
-                    "Quake III Arena",
+                    "Quake 3",
                     "Call of Duty",
                     "Max Payne",
                     "Age of Mythology"
@@ -240,31 +242,31 @@ const eras = [
 
     {
         number: "05",
-        title: "A ERA 128-BIT",
-        subtitle: "Uma geração histórica",
+        label: "ERA 05",
+        title: "A GERAÇÃO ONLINE",
         description:
-            "Consoles que ajudaram a definir uma das épocas mais marcantes da indústria dos videogames.",
+            "Os consoles e PCs começaram a conectar jogadores do mundo inteiro. Multiplayer, comunidades e novas experiências passaram a fazer parte da rotina.",
         platforms: [
             {
                 year: "2002",
+                type: "CONSOLE • 128-BIT",
                 name: "PLAYSTATION 2",
-                type: "Tive",
                 description:
-                    "O PlayStation 2 acompanhou uma das épocas mais importantes da indústria dos videogames e trouxe alguns dos jogos que mais me marcaram.",
+                    "Uma geração gigantesca, cheia de jogos que ficaram marcados na história dos videogames.",
                 games: [
-                    "Black",
+                    "BLACK",
                     "Need for Speed Underground 2",
-                    "GTA: San Andreas",
-                    "GTA: Vice City",
+                    "GTA San Andreas",
+                    "GTA Vice City",
                     "God of War II",
                     "Resident Evil 4",
                     "Metal Gear Solid 3"
                 ]
             },
             {
-                year: "2006",
+                year: "2007",
+                type: "CONSOLE • HD",
                 name: "XBOX 360",
-                type: "Tive",
                 description:
                     "O Xbox 360 trouxe uma nova geração de gráficos, multiplayer e experiências que definiram uma época.",
                 games: [
@@ -278,10 +280,10 @@ const eras = [
             },
             {
                 year: "2008",
+                type: "CONSOLE • HD",
                 name: "PLAYSTATION 3",
-                type: "Tive",
                 description:
-                    "Uma geração marcada por grandes aventuras, mundos abertos e experiências cinematográficas.",
+                    "Uma geração que trouxe experiências cinematográficas e alguns dos jogos mais marcantes da era HD.",
                 games: [
                     "The Last of Us",
                     "God of War III",
@@ -298,17 +300,17 @@ const eras = [
 
     {
         number: "06",
-        title: "A ERA HD",
-        subtitle: "Mais mundos, mais histórias",
+        label: "ERA 06",
+        title: "A ERA MODERNA",
         description:
-            "Uma fase marcada pela evolução gráfica, grandes mundos abertos e experiências cada vez mais cinematográficas.",
+            "Gráficos cada vez mais impressionantes, mundos abertos gigantescos e experiências que começaram a se aproximar do cinema.",
         platforms: [
             {
                 year: "2009",
-                name: "PC AMD PHENOM II X4 + WINDOWS 7",
-                type: "Meu PC",
+                type: "PC • WINDOWS 7",
+                name: "PC AMD PHENOM II X4",
                 description:
-                    "Mais uma evolução importante no PC. Foi uma época de grandes experiências multiplayer e jogos tecnicamente impressionantes.",
+                    "Uma fase importante da minha história com o PC, marcada por grandes jogos e pelo avanço do hardware.",
                 games: [
                     "Call of Duty: Modern Warfare 2",
                     "Left 4 Dead 2",
@@ -321,10 +323,10 @@ const eras = [
             },
             {
                 year: "2013",
+                type: "CONSOLE • 8ª GERAÇÃO",
                 name: "PLAYSTATION 4",
-                type: "Tive",
                 description:
-                    "O PlayStation 4 trouxe uma combinação incrível de mundos abertos, histórias cinematográficas, ação e experiências multiplayer.",
+                    "Uma das gerações mais importantes da minha trajetória, com mundos abertos enormes e experiências narrativas memoráveis.",
                 games: [
                     "Red Dead Redemption 2",
                     "Grand Theft Auto V",
@@ -336,23 +338,13 @@ const eras = [
                     "Uncharted 4",
                     "Ace Combat 7"
                 ]
-            }
-        ]
-    },
-
-    {
-        number: "07",
-        title: "A ERA ATUAL",
-        subtitle: "Onde a JorgeraTV está hoje",
-        description:
-            "As plataformas que representam minha fase atual como jogador e também como criador de conteúdo.",
-        platforms: [
+            },
             {
                 year: "2020",
+                type: "CONSOLE • 9ª GERAÇÃO",
                 name: "XBOX SERIES S",
-                type: "Tive",
                 description:
-                    "Uma entrada mais compacta na nova geração, mantendo minha paixão por Xbox e seus grandes jogos.",
+                    "Uma entrada na nova geração com foco em velocidade, praticidade e acesso a uma enorme biblioteca de jogos.",
                 games: [
                     "Gears 5",
                     "DOOM Eternal",
@@ -360,13 +352,23 @@ const eras = [
                     "Forza Horizon 5",
                     "Far Cry 5"
                 ]
-            },
+            }
+        ]
+    },
+
+    {
+        number: "07",
+        label: "ERA 07",
+        title: "A FASE ATUAL",
+        description:
+            "Hoje os videogames fazem parte de algo ainda maior: jogar, transmitir, criar conteúdo, conversar e compartilhar experiências.",
+        platforms: [
             {
                 year: "2022",
+                type: "PC • GAMER",
                 name: "DELL G15",
-                type: "Tenho",
                 description:
-                    "O PC que representa minha fase atual como gamer e também como criador de conteúdo da JorgeraTV.",
+                    "Meu PC gamer atual para jogar, transmitir e produzir conteúdo para a JorgeraTV.",
                 games: [
                     "Battlefield 2042",
                     "DOOM: The Dark Ages",
@@ -376,10 +378,10 @@ const eras = [
             },
             {
                 year: "2023",
+                type: "CONSOLE • 9ª GERAÇÃO",
                 name: "PLAYSTATION 5 SLIM",
-                type: "Tenho",
                 description:
-                    "Hoje, o PlayStation 5 Slim é uma das principais plataformas da minha experiência gamer atual.",
+                    "Meu console principal atualmente e uma das plataformas centrais da experiência JorgeraTV.",
                 games: [
                     "God of War Ragnarök",
                     "Resident Evil 4 Remake",
@@ -390,10 +392,10 @@ const eras = [
             },
             {
                 year: "2024",
+                type: "CONSOLE • HÍBRIDO",
                 name: "NINTENDO SWITCH LITE",
-                type: "Tenho",
                 description:
-                    "Uma forma diferente de continuar conectado aos universos da Nintendo, agora em uma experiência portátil.",
+                    "Uma experiência diferente, trazendo a possibilidade de levar grandes aventuras para qualquer lugar.",
                 games: [
                     "Super Mario 3D World + Bowser's Fury",
                     "Super Mario Odyssey",
@@ -408,6 +410,8 @@ const eras = [
 ---
 
 <section class="platform-timeline" id="plataformas">
+
+    <!-- HERO -->
 
     <div class="platform-timeline__hero">
 
@@ -431,7 +435,7 @@ const eras = [
             <div class="platform-timeline__stats">
 
                 <div>
-                    <strong>{eras.length}</strong>
+                    <strong>7</strong>
                     <span>Eras</span>
                 </div>
 
@@ -452,6 +456,8 @@ const eras = [
     </div>
 
 
+    <!-- INTRO -->
+
     <div class="platform-timeline__intro">
 
         <span>UMA HISTÓRIA EM GERAÇÕES</span>
@@ -463,13 +469,15 @@ const eras = [
 
         <p>
             Alguns fizeram parte diretamente da minha vida.
-            Outros chegaram através de amigos, primos, meu pai
-            ou das locadoras que fizeram parte daquela época.
+            Outros chegaram através de amigos, primos, meu pai ou
+            das locadoras que fizeram parte daquela época.
             Mas todos deixaram alguma lembrança.
         </p>
 
     </div>
 
+
+    <!-- ERAS -->
 
     <div class="platform-eras">
 
@@ -485,7 +493,7 @@ const eras = [
 
                     <div class="platform-era__heading-text">
 
-                        <span>{era.subtitle}</span>
+                        <span>{era.label}</span>
 
                         <h2>
                             {era.title}
@@ -560,24 +568,27 @@ const eras = [
     </div>
 
 
+    <!-- ENCERRAMENTO -->
+
     <div class="platform-timeline__ending">
 
-        <span>CONTINUA...</span>
+        <span>
+            E A HISTÓRIA CONTINUA
+        </span>
 
         <h2>
-            A história ainda
-            <strong>está sendo escrita.</strong>
+            Ainda há muitos
+            <strong>jogos pela frente.</strong>
         </h2>
 
         <p>
-            Os consoles mudaram. Os computadores evoluíram.
-            A tecnologia ficou cada vez mais impressionante.
-            Mas uma coisa permaneceu igual desde 1990:
-            a vontade de jogar.
+            A JorgeraTV é a continuação dessa jornada:
+            jogar, descobrir, conversar e compartilhar
+            tudo aquilo que torna os videogames especiais.
         </p>
 
         <p class="platform-timeline__signature">
-            E essa história agora também faz parte da JorgeraTV.
+            JorgeraTV
         </p>
 
     </div>
