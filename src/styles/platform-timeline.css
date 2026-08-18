@@ -1,1097 +1,823 @@
----
-import "../styles/platform-timeline.css";
----
+/* =========================================================
+   JORGERATV
+   PLATFORM TIMELINE
+   MINHA JORNADA PELOS VIDEOGAMES
+========================================================= */
 
-<section class="platform-history" id="plataformas">
+.platform-timeline {
+    position: relative;
+    overflow: hidden;
 
-    <!-- =========================================================
-         INTRO
-    ========================================================== -->
+    color: #f5f5f5;
 
-    <div class="platform-history__container">
+    background:
+        radial-gradient(
+            circle at 85% 8%,
+            rgba(214, 31, 38, 0.12),
+            transparent 30%
+        ),
+        #050505;
+}
 
-        <div class="platform-history__intro">
 
-            <span class="platform-history__eyebrow">
-                JORGERATV • MINHA HISTÓRIA GAMER
-            </span>
+/* =========================================================
+   HERO
+========================================================= */
 
-            <h1>
-                Minha jornada
-                <span>pelos videogames.</span>
-            </h1>
+.platform-timeline__hero {
+    position: relative;
 
-            <p>
-                De um Atari 2600 ao PlayStation 5 e ao PC gamer.
-                Mais de três décadas atravessando gerações,
-                tecnologias, amizades e histórias que ficaram para sempre.
-            </p>
+    min-height: 650px;
 
-            <div class="platform-history__stats">
+    display: flex;
+    align-items: center;
 
-                <div class="platform-stat">
-                    <strong>21</strong>
-                    <span>Plataformas</span>
-                </div>
+    overflow: hidden;
 
-                <div class="platform-stat">
-                    <strong>1990</strong>
-                    <span>Primeiro contato</span>
-                </div>
+    border-bottom: 1px solid rgba(255, 255, 255, 0.05);
 
-                <div class="platform-stat">
-                    <strong>2024</strong>
-                    <span>Fase atual</span>
-                </div>
+    background:
+        radial-gradient(
+            circle at 75% 45%,
+            rgba(255, 25, 32, 0.13),
+            transparent 35%
+        ),
+        linear-gradient(
+            135deg,
+            #050505 0%,
+            #090909 55%,
+            #120304 100%
+        );
+}
 
-            </div>
 
-        </div>
+.platform-timeline__hero::before {
+    content: "";
 
-    </div>
+    position: absolute;
 
+    width: 520px;
+    height: 520px;
 
-    <!-- =========================================================
-         INTRO DA HISTÓRIA
-    ========================================================== -->
+    right: -220px;
+    top: -240px;
 
-    <div class="platform-history__container">
+    border: 1px solid rgba(255, 35, 40, 0.15);
 
-        <div class="platform-story-intro">
+    border-radius: 50%;
+}
 
-            <span class="platform-history__eyebrow">
-                UMA HISTÓRIA EM GERAÇÕES
-            </span>
 
-            <h2>
-                Cada plataforma conta
-                <span>uma parte da história.</span>
-            </h2>
+.platform-timeline__hero::after {
+    content: "";
 
-            <p>
-                Alguns eu tive. Outros pertenciam a amigos, primos,
-                meu pai ou às locadoras que fizeram parte daquela época.
-                Mas todos eles contribuíram de alguma forma para construir
-                a minha relação com os videogames.
-            </p>
+    position: absolute;
 
-        </div>
+    width: 360px;
+    height: 360px;
 
+    left: -200px;
+    bottom: -230px;
 
-        <!-- =====================================================
-             ERA 8-BIT
-        ====================================================== -->
+    border: 1px solid rgba(255, 35, 40, 0.10);
 
-        <section class="generation">
+    border-radius: 50%;
+}
 
-            <div class="generation__header">
 
-                <div class="generation__number">
-                    01
-                </div>
+.platform-timeline__hero-inner {
+    position: relative;
+    z-index: 2;
 
-                <div>
+    width: min(1120px, calc(100% - 48px));
 
-                    <span class="generation__eyebrow">
-                        PRIMEIRA GERAÇÃO DA MINHA HISTÓRIA
-                    </span>
+    margin: 0 auto;
+}
 
-                    <h2>
-                        Os primeiros pixels
-                    </h2>
 
-                    <p>
-                        O começo de tudo. Os primeiros videogames,
-                        os primeiros controles e as primeiras lembranças
-                        que ajudaram a construir minha relação com os jogos.
-                    </p>
+.platform-timeline__eyebrow {
+    display: inline-flex;
+    align-items: center;
 
-                </div>
+    color: #ff343a;
 
-            </div>
+    font-size: 13px;
+    font-weight: 800;
 
+    letter-spacing: 2px;
+    text-transform: uppercase;
+}
 
-            <!-- ATARI -->
 
-            <article class="platform-entry">
+.platform-timeline__hero h1 {
+    max-width: 900px;
 
-                <div class="platform-entry__meta">
-                    <span>1990</span>
-                    <span>ATARI</span>
-                </div>
+    margin: 28px 0 28px;
 
-                <div class="platform-entry__content">
+    font-size: clamp(58px, 8vw, 110px);
 
-                    <h3>Atari 2600</h3>
+    line-height: 0.92;
 
-                    <p>
-                        Foi aqui que tudo começou. Meu primeiro contato
-                        com videogames e a primeira porta para um universo
-                        que nunca mais deixou de fazer parte da minha vida.
-                    </p>
+    letter-spacing: -5px;
 
-                    <div class="games">
+    font-weight: 900;
+}
 
-                        <span>Pitfall</span>
-                        <span>River Raid</span>
-                        <span>Enduro</span>
-                        <span>Frogger</span>
-                        <span>Pac-Man</span>
-                        <span>Adventure</span>
-                        <span>H.E.R.O.</span>
 
-                    </div>
+.platform-timeline__hero h1 span {
+    display: block;
 
-                </div>
+    color: #ff2b31;
+}
 
-            </article>
 
+.platform-timeline__hero-inner > p {
+    max-width: 700px;
 
-            <!-- MASTER SYSTEM -->
+    margin: 0;
 
-            <article class="platform-entry platform-entry--contact">
+    color: #aaa;
 
-                <div class="platform-entry__meta">
-                    <span>1993</span>
-                    <span>8-BIT</span>
-                </div>
+    font-size: 19px;
 
-                <div class="platform-entry__content">
+    line-height: 1.75;
+}
 
-                    <div class="platform-entry__contact">
-                        CONHECI ATRAVÉS DE AMIGOS
-                    </div>
 
-                    <h3>Master System</h3>
+/* =========================================================
+   STATS
+========================================================= */
 
-                    <p>
-                        Eu não tinha um Master System, mas meus amigos tinham.
-                        Foi através deles que conheci alguns dos grandes
-                        clássicos da Sega.
-                    </p>
+.platform-timeline__stats {
+    display: flex;
+    align-items: flex-start;
 
-                    <div class="games">
+    gap: 55px;
 
-                        <span>Alex Kidd</span>
-                        <span>Sonic</span>
-                        <span>Shinobi</span>
-                        <span>Golden Axe</span>
-                        <span>Double Dragon</span>
+    margin-top: 55px;
+}
 
-                    </div>
 
-                </div>
+.platform-timeline__stats div {
+    display: flex;
+    flex-direction: column;
+}
 
-            </article>
 
+.platform-timeline__stats strong {
+    color: #fff;
 
-            <!-- NES -->
+    font-size: 36px;
 
-            <article class="platform-entry">
+    line-height: 1;
+}
 
-                <div class="platform-entry__meta">
-                    <span>1993</span>
-                    <span>NINTENDO</span>
-                </div>
 
-                <div class="platform-entry__content">
+.platform-timeline__stats span {
+    margin-top: 9px;
 
-                    <h3>NES</h3>
+    color: #666;
 
-                    <p>
-                        O Nintendo 8-bit marcou uma nova fase da minha
-                        infância e trouxe alguns dos personagens e franquias
-                        que continuam comigo até hoje.
-                    </p>
+    font-size: 11px;
 
-                    <div class="games">
+    letter-spacing: 1.5px;
 
-                        <span>Super Mario Bros.</span>
-                        <span>Contra</span>
-                        <span>DuckTales</span>
-                        <span>Mega Man 2</span>
-                        <span>Castlevania</span>
-                        <span>Battletoads</span>
+    text-transform: uppercase;
+}
 
-                    </div>
 
-                </div>
+/* =========================================================
+   INTRO
+========================================================= */
 
-            </article>
+.platform-timeline__intro {
+    width: min(900px, calc(100% - 48px));
 
-        </section>
+    margin: 0 auto;
 
+    padding: 125px 0 90px;
 
-        <!-- =====================================================
-             ERA 16-BIT
-        ====================================================== -->
+    text-align: center;
+}
 
-        <section class="generation">
 
-            <div class="generation__header">
+.platform-timeline__intro > span {
+    color: #ff343a;
 
-                <div class="generation__number">
-                    02
-                </div>
+    font-size: 12px;
+    font-weight: 800;
 
-                <div>
+    letter-spacing: 2.5px;
 
-                    <span class="generation__eyebrow">
-                        A GERAÇÃO QUE MUDOU TUDO
-                    </span>
+    text-transform: uppercase;
+}
 
-                    <h2>
-                        A era 16-bit
-                    </h2>
 
-                    <p>
-                        Uma geração que elevou os videogames a outro nível.
-                        Gráficos melhores, trilhas memoráveis e alguns dos
-                        jogos que mais marcaram minha infância.
-                    </p>
+.platform-timeline__intro h2 {
+    margin: 18px 0 22px;
 
-                </div>
+    color: #fff;
 
-            </div>
+    font-size: clamp(38px, 5vw, 64px);
 
+    line-height: 1;
 
-            <!-- MEGA DRIVE -->
+    letter-spacing: -2.5px;
 
-            <article class="platform-entry platform-entry--contact">
+    font-weight: 900;
+}
 
-                <div class="platform-entry__meta">
-                    <span>1993</span>
-                    <span>16-BIT</span>
-                </div>
 
-                <div class="platform-entry__content">
+.platform-timeline__intro h2 strong {
+    display: block;
 
-                    <div class="platform-entry__contact">
-                        CONHECI ATRAVÉS DOS PRIMOS
-                    </div>
+    color: #ff3036;
+}
 
-                    <h3>Mega Drive</h3>
 
-                    <p>
-                        Assim como o Master System, não tive um Mega Drive.
-                        Meus primos tinham e eu aproveitava cada oportunidade
-                        para jogar.
-                    </p>
+.platform-timeline__intro p {
+    max-width: 720px;
 
-                    <div class="games">
+    margin: 0 auto;
 
-                        <span>Altered Beast</span>
-                        <span>Streets of Rage</span>
-                        <span>Ghouls 'n Ghosts</span>
-                        <span>Earthworm Jim</span>
+    color: #888;
 
-                    </div>
+    font-size: 17px;
 
-                </div>
+    line-height: 1.8;
+}
 
-            </article>
 
+/* =========================================================
+   ERAS
+========================================================= */
 
-            <!-- SNES -->
+.platform-eras {
+    width: min(1120px, calc(100% - 48px));
 
-            <article class="platform-entry">
+    margin: 0 auto;
+}
 
-                <div class="platform-entry__meta">
-                    <span>1994</span>
-                    <span>16-BIT</span>
-                </div>
 
-                <div class="platform-entry__content">
+.platform-era {
+    position: relative;
 
-                    <h3>Super Nintendo</h3>
+    padding: 110px 0 120px;
 
-                    <p>
-                        Uma das fases mais marcantes da minha vida gamer.
-                        O Super Nintendo abriu um universo enorme de
-                        aventuras, lutas, RPGs, corridas e exploração.
-                    </p>
+    border-top: 1px solid rgba(255, 255, 255, 0.06);
+}
 
-                    <div class="games">
 
-                        <span>Donkey Kong</span>
-                        <span>Super Mario World</span>
-                        <span>Mortal Kombat</span>
-                        <span>Street Fighter</span>
-                        <span>Chrono Trigger</span>
-                        <span>Final Fantasy</span>
-                        <span>Contra III</span>
-                        <span>Top Gear</span>
-                        <span>International Superstar Soccer Deluxe</span>
-                        <span>Final Fight</span>
-                        <span>Sunset Riders</span>
-                        <span>Aladdin</span>
-                        <span>Legend of Mana</span>
-                        <span>Super Metroid</span>
-                        <span>Demon's Crest</span>
+.platform-era:first-child {
+    border-top: 0;
+}
 
-                    </div>
 
-                </div>
+/* =========================================================
+   ERA HEADING
+========================================================= */
 
-            </article>
+.platform-era__heading {
+    display: grid;
 
-        </section>
+    grid-template-columns: 100px minmax(0, 760px);
 
+    column-gap: 35px;
 
-        <!-- =====================================================
-             ERA 32 / 64 BIT
-        ====================================================== -->
+    align-items: start;
 
-        <section class="generation">
+    margin-bottom: 55px;
+}
 
-            <div class="generation__header">
 
-                <div class="generation__number">
-                    03
-                </div>
+.platform-era__number {
+    color: #ff3036;
 
-                <div>
+    font-size: 17px;
+    font-weight: 900;
 
-                    <span class="generation__eyebrow">
-                        UMA NOVA DIMENSÃO
-                    </span>
+    letter-spacing: 2px;
+}
 
-                    <h2>
-                        A era 32 e 64-bit
-                    </h2>
 
-                    <p>
-                        Os videogames começaram a ganhar novas dimensões,
-                        mundos tridimensionais e experiências que pareciam
-                        impossíveis poucos anos antes.
-                    </p>
+.platform-era__heading-text > span {
+    display: block;
 
-                </div>
+    margin-bottom: 12px;
 
-            </div>
+    color: #666;
 
+    font-size: 11px;
+    font-weight: 800;
 
-            <!-- 3DO -->
+    letter-spacing: 2px;
 
-            <article class="platform-entry platform-entry--contact">
+    text-transform: uppercase;
+}
 
-                <div class="platform-entry__meta">
-                    <span>1995</span>
-                    <span>32-BIT</span>
-                </div>
 
-                <div class="platform-entry__content">
+.platform-era__heading h2 {
+    margin: 0 0 17px;
 
-                    <div class="platform-entry__contact">
-                        CONHECI EM UMA LOCADORA
-                    </div>
+    color: #fff;
 
-                    <h3>3DO</h3>
+    font-size: clamp(40px, 5vw, 66px);
 
-                    <p>
-                        Não tive um 3DO, mas conheci a plataforma em uma
-                        locadora, onde pagava por hora e aproveitava cada
-                        minuto para descobrir aquela tecnologia diferente.
-                    </p>
+    line-height: 0.98;
 
-                    <div class="games">
+    letter-spacing: -3px;
 
-                        <span>Road Rash</span>
-                        <span>The Need for Speed</span>
-                        <span>Doom</span>
-                        <span>Super Street Fighter II Turbo</span>
+    font-weight: 900;
+}
 
-                    </div>
 
-                </div>
+.platform-era__heading p {
+    max-width: 720px;
 
-            </article>
+    margin: 0;
 
+    color: #888;
 
-            <!-- NEO GEO CD -->
+    font-size: 16px;
 
-            <article class="platform-entry platform-entry--contact">
+    line-height: 1.75;
+}
 
-                <div class="platform-entry__meta">
-                    <span>1995</span>
-                    <span>NEO GEO</span>
-                </div>
 
-                <div class="platform-entry__content">
+/* =========================================================
+   PLATFORM GRID
+========================================================= */
 
-                    <div class="platform-entry__contact">
-                        CONHECI EM UMA LOCADORA
-                    </div>
+.platform-era__platforms {
+    display: grid;
 
-                    <h3>Neo Geo CD</h3>
+    grid-template-columns:
+        repeat(2, minmax(0, 1fr));
 
-                    <p>
-                        Outra experiência de locadora que ficou marcada.
-                        O Neo Geo era praticamente um sonho para quem
-                        gostava dos arcades.
-                    </p>
+    gap: 22px;
+}
 
-                    <div class="games">
 
-                        <span>The King of Fighters '95</span>
-                        <span>The King of Fighters '96</span>
-                        <span>Metal Slug</span>
-                        <span>Samurai Shodown III</span>
-                        <span>Fatal Fury Special</span>
-                        <span>Super Sidekicks 3</span>
+/* =========================================================
+   PLATFORM CARD
+========================================================= */
 
-                    </div>
+.platform-card {
+    position: relative;
 
-                </div>
+    min-width: 0;
 
-            </article>
+    display: flex;
+    flex-direction: column;
 
+    padding: 30px;
 
-            <!-- N64 -->
+    overflow: hidden;
 
-            <article class="platform-entry">
+    border: 1px solid rgba(255, 255, 255, 0.07);
 
-                <div class="platform-entry__meta">
-                    <span>1997</span>
-                    <span>64-BIT</span>
-                </div>
+    border-radius: 18px;
 
-                <div class="platform-entry__content">
+    background:
+        linear-gradient(
+            145deg,
+            rgba(255, 255, 255, 0.028),
+            rgba(255, 255, 255, 0.006)
+        );
 
-                    <h3>Nintendo 64</h3>
+    transition:
+        transform 0.35s ease,
+        border-color 0.35s ease,
+        box-shadow 0.35s ease;
+}
 
-                    <p>
-                        O Nintendo 64 foi uma verdadeira revolução.
-                        Foi uma das primeiras vezes em que senti que os
-                        mundos dos videogames estavam realmente ganhando
-                        outra dimensão.
-                    </p>
 
-                    <div class="games">
+.platform-card::before {
+    content: "";
 
-                        <span>Super Mario 64</span>
-                        <span>Mario Kart 64</span>
-                        <span>Banjo-Kazooie</span>
-                        <span>GoldenEye 007</span>
-                        <span>Donkey Kong 64</span>
-                        <span>Star Fox 64</span>
-                        <span>1080 Snowboarding</span>
-                        <span>Wave Race 64</span>
+    position: absolute;
 
-                    </div>
+    top: 0;
+    left: 0;
 
-                </div>
+    width: 100%;
+    height: 3px;
 
-            </article>
+    background: #d61f26;
 
+    transform: scaleX(0);
 
-            <!-- PS1 -->
+    transform-origin: left;
 
-            <article class="platform-entry">
+    transition: transform 0.35s ease;
+}
 
-                <div class="platform-entry__meta">
-                    <span>1998</span>
-                    <span>32-BIT</span>
-                </div>
 
-                <div class="platform-entry__content">
+.platform-card:hover {
+    transform: translateY(-6px);
 
-                    <h3>PlayStation</h3>
+    border-color: rgba(255, 35, 40, 0.38);
 
-                    <p>
-                        Uma geração que transformou completamente a maneira
-                        como eu enxergava videogames.
-                    </p>
+    box-shadow:
+        0 20px 55px rgba(0, 0, 0, 0.40),
+        0 0 30px rgba(255, 25, 32, 0.06);
+}
 
-                    <div class="games">
 
-                        <span>Resident Evil</span>
-                        <span>Resident Evil 2</span>
-                        <span>Resident Evil 3</span>
-                        <span>Dino Crisis</span>
-                        <span>Medal of Honor</span>
-                        <span>Gran Turismo 2</span>
-                        <span>Castlevania: Symphony of the Night</span>
-                        <span>Metal Gear Solid</span>
-                        <span>Tekken 3</span>
+.platform-card:hover::before {
+    transform: scaleX(1);
+}
 
-                    </div>
 
-                </div>
+/* =========================================================
+   CARD TOP
+========================================================= */
 
-            </article>
+.platform-card__top {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
 
-        </section>
+    gap: 15px;
 
+    margin-bottom: 24px;
+}
 
-        <!-- =====================================================
-             ERA PC
-        ====================================================== -->
 
-        <section class="generation">
+.platform-card__year {
+    color: #ff343a;
 
-            <div class="generation__header">
+    font-size: 13px;
+    font-weight: 900;
 
-                <div class="generation__number">
-                    04
-                </div>
+    letter-spacing: 1.5px;
+}
 
-                <div>
 
-                    <span class="generation__eyebrow">
-                        COMPUTADORES
-                    </span>
+.platform-card__type {
+    padding: 6px 9px;
 
-                    <h2>
-                        Quando o PC entrou na história
-                    </h2>
+    border: 1px solid rgba(255, 255, 255, 0.07);
 
-                    <p>
-                        Paralelamente aos consoles, os computadores passaram
-                        a ocupar um espaço cada vez maior na minha vida.
-                    </p>
+    border-radius: 6px;
 
-                </div>
+    color: #777;
 
-            </div>
+    font-size: 9px;
+    font-weight: 800;
 
+    letter-spacing: 0.8px;
 
-            <!-- PC 486 -->
+    text-transform: uppercase;
 
-            <article class="platform-entry">
+    text-align: right;
+}
 
-                <div class="platform-entry__meta">
-                    <span>1994</span>
-                    <span>PC</span>
-                </div>
 
-                <div class="platform-entry__content">
+/* =========================================================
+   CARD TITLE
+========================================================= */
 
-                    <div class="platform-entry__contact">
-                        MEU PAI TINHA
-                    </div>
+.platform-card h3 {
+    margin: 0 0 15px;
 
-                    <h3>PC 486 + Windows 3.1</h3>
+    color: #f5f5f5;
 
-                    <p>
-                        Meu pai tinha o computador, mas deixava eu brincar.
-                        Foi quando videogames e tecnologia começaram a andar
-                        juntos na minha cabeça.
-                    </p>
+    font-size: 27px;
 
-                    <div class="games">
+    line-height: 1.05;
 
-                        <span>Doom</span>
-                        <span>Wolfenstein</span>
-                        <span>Duke Nukem</span>
-                        <span>Hexen</span>
-                        <span>Blood</span>
-                        <span>Prince of Persia</span>
-                        <span>Stunts</span>
-                        <span>Monkey Island</span>
-                        <span>Full Throttle</span>
+    letter-spacing: -0.8px;
 
-                    </div>
+    font-weight: 900;
+}
 
-                </div>
 
-            </article>
+.platform-card__description {
+    margin: 0;
 
+    color: #888;
 
-            <!-- PENTIUM II -->
+    font-size: 14px;
 
-            <article class="platform-entry">
+    line-height: 1.7;
+}
 
-                <div class="platform-entry__meta">
-                    <span>1997</span>
-                    <span>PC</span>
-                </div>
 
-                <div class="platform-entry__content">
+/* =========================================================
+   GAMES
+========================================================= */
 
-                    <h3>PC Pentium II + Windows 95</h3>
+.platform-card__games {
+    margin-top: 30px;
 
-                    <p>
-                        Meu primeiro computador exclusivamente meu.
-                        A partir daqui, o PC passou a ocupar um espaço
-                        cada vez maior na minha vida.
-                    </p>
+    padding-top: 23px;
 
-                    <div class="games">
+    border-top: 1px solid rgba(255, 255, 255, 0.06);
+}
 
-                        <span>Doom II</span>
-                        <span>Quake II</span>
-                        <span>Carmageddon</span>
-                        <span>Diablo</span>
-                        <span>Heroes of Might and Magic III</span>
-                        <span>Age of Empires</span>
-                        <span>Command &amp; Conquer: Red Alert</span>
 
-                    </div>
+.platform-card__games-title {
+    margin-bottom: 14px;
 
-                </div>
+    color: #555;
 
-            </article>
+    font-size: 9px;
+    font-weight: 900;
 
-        </section>
+    letter-spacing: 1.5px;
 
+    text-transform: uppercase;
+}
 
-        <!-- =====================================================
-             ERA 128 BIT
-        ====================================================== -->
 
-        <section class="generation">
+.platform-card__games-list {
+    display: flex;
 
-            <div class="generation__header">
+    flex-wrap: wrap;
 
-                <div class="generation__number">
-                    05
-                </div>
+    gap: 7px;
+}
 
-                <div>
 
-                    <span class="generation__eyebrow">
-                        NOVA GERAÇÃO
-                    </span>
+.platform-game {
+    display: inline-flex;
+    align-items: center;
 
-                    <h2>
-                        A era 128-bit
-                    </h2>
+    padding: 7px 9px;
 
-                    <p>
-                        Uma nova geração de consoles trouxe mundos maiores,
-                        histórias mais cinematográficas e experiências
-                        que definiram uma época.
-                    </p>
+    border: 1px solid rgba(255, 255, 255, 0.065);
 
-                </div>
+    border-radius: 6px;
 
-            </div>
+    color: #aaa;
 
+    background: rgba(255, 255, 255, 0.015);
 
-            <!-- ATHLON -->
+    font-size: 10px;
 
-            <article class="platform-entry">
+    line-height: 1.2;
+}
 
-                <div class="platform-entry__meta">
-                    <span>2001</span>
-                    <span>PC</span>
-                </div>
 
-                <div class="platform-entry__content">
+/* =========================================================
+   ALTERNÂNCIA VISUAL
+========================================================= */
 
-                    <h3>PC Athlon XP + Windows XP</h3>
+.platform-era:nth-child(even) {
+    position: relative;
+}
 
-                    <p>
-                        Foi onde conheci Half-Life e seus mods.
-                        Também foi a época em que comecei a frequentar
-                        as LAN houses.
-                    </p>
 
-                    <div class="games">
+.platform-era:nth-child(even)::before {
+    content: "";
 
-                        <span>Half-Life</span>
-                        <span>Team Fortress</span>
-                        <span>Counter-Strike 1.5</span>
-                        <span>Counter-Strike 1.6</span>
-                        <span>Quake 3</span>
-                        <span>Call of Duty</span>
-                        <span>Max Payne</span>
-                        <span>Age of Mythology</span>
+    position: absolute;
 
-                    </div>
+    left: -25vw;
+    right: -25vw;
 
-                </div>
+    top: 0;
+    bottom: 0;
 
-            </article>
+    z-index: -1;
 
+    background:
+        linear-gradient(
+            180deg,
+            rgba(255, 255, 255, 0.012),
+            rgba(255, 255, 255, 0)
+        );
+}
 
-            <!-- PS2 -->
 
-            <article class="platform-entry">
+/* =========================================================
+   FINAL
+========================================================= */
 
-                <div class="platform-entry__meta">
-                    <span>2002</span>
-                    <span>6ª GERAÇÃO</span>
-                </div>
+.platform-timeline__ending {
+    width: min(1000px, calc(100% - 48px));
 
-                <div class="platform-entry__content">
+    margin: 50px auto 130px;
 
-                    <h3>PlayStation 2</h3>
+    padding: 95px 55px;
 
-                    <div class="games">
+    text-align: center;
 
-                        <span>Black</span>
-                        <span>Need for Speed Underground 2</span>
-                        <span>GTA San Andreas</span>
-                        <span>GTA Vice City</span>
-                        <span>God of War II</span>
-                        <span>Resident Evil 4</span>
-                        <span>Metal Gear Solid 3</span>
+    border: 1px solid rgba(255, 35, 40, 0.17);
 
-                    </div>
+    border-radius: 24px;
 
-                </div>
+    background:
+        radial-gradient(
+            circle at 50% 0%,
+            rgba(255, 30, 35, 0.12),
+            transparent 60%
+        ),
+        #090303;
+}
 
-            </article>
 
-        </section>
+.platform-timeline__ending > span {
+    color: #ff343a;
 
+    font-size: 11px;
+    font-weight: 900;
 
-        <!-- =====================================================
-             ERA HD
-        ====================================================== -->
+    letter-spacing: 2.5px;
 
-        <section class="generation">
+    text-transform: uppercase;
+}
 
-            <div class="generation__header">
 
-                <div class="generation__number">
-                    06
-                </div>
+.platform-timeline__ending h2 {
+    max-width: 800px;
 
-                <div>
+    margin: 22px auto;
 
-                    <span class="generation__eyebrow">
-                        A ERA HD
-                    </span>
+    color: #fff;
 
-                    <h2>
-                        Quando tudo ficou maior
-                    </h2>
+    font-size: clamp(40px, 5vw, 65px);
 
-                    <p>
-                        Alta definição, mundos abertos, multiplayer online
-                        e uma nova maneira de viver os videogames.
-                    </p>
+    line-height: 0.98;
 
-                </div>
+    letter-spacing: -3px;
 
-            </div>
+    font-weight: 900;
+}
 
 
-            <article class="platform-entry">
+.platform-timeline__ending h2 strong {
+    display: block;
 
-                <div class="platform-entry__meta">
-                    <span>2006</span>
-                    <span>7ª GERAÇÃO</span>
-                </div>
+    color: #ff3036;
+}
 
-                <div class="platform-entry__content">
 
-                    <h3>Xbox 360</h3>
+.platform-timeline__ending > p {
+    max-width: 680px;
 
-                    <div class="games">
+    margin: 0 auto;
 
-                        <span>Gears of War</span>
-                        <span>Halo 3</span>
-                        <span>Forza Motorsport 4</span>
-                        <span>Batman: Arkham City</span>
-                        <span>Red Dead Redemption</span>
-                        <span>Call of Duty: Modern Warfare</span>
+    color: #888;
 
-                    </div>
+    font-size: 16px;
 
-                </div>
+    line-height: 1.8;
+}
 
-            </article>
 
+.platform-timeline__ending .platform-timeline__signature {
+    margin-top: 25px;
 
-            <article class="platform-entry">
+    color: #aaa;
 
-                <div class="platform-entry__meta">
-                    <span>2008</span>
-                    <span>7ª GERAÇÃO</span>
-                </div>
+    font-weight: 700;
+}
 
-                <div class="platform-entry__content">
 
-                    <h3>PlayStation 3</h3>
+/* =========================================================
+   RESPONSIVO
+========================================================= */
 
-                    <div class="games">
+@media (max-width: 900px) {
 
-                        <span>The Last of Us</span>
-                        <span>God of War III</span>
-                        <span>Grand Theft Auto V</span>
-                        <span>Assassin's Creed III</span>
-                        <span>Killzone 3</span>
-                        <span>Battlefield 4</span>
-                        <span>Far Cry 3</span>
-                        <span>Ultimate Marvel vs. Capcom 3</span>
+    .platform-timeline__hero {
+        min-height: 600px;
+    }
 
-                    </div>
 
-                </div>
+    .platform-timeline__hero h1 {
+        font-size: clamp(52px, 10vw, 78px);
 
-            </article>
+        letter-spacing: -3px;
+    }
 
 
-            <article class="platform-entry">
+    .platform-era__platforms {
+        grid-template-columns: 1fr;
+    }
 
-                <div class="platform-entry__meta">
-                    <span>2009</span>
-                    <span>PC</span>
-                </div>
 
-                <div class="platform-entry__content">
+    .platform-era__heading {
+        grid-template-columns: 70px minmax(0, 1fr);
 
-                    <h3>PC AMD Phenom II X4 + Windows 7</h3>
+        column-gap: 20px;
+    }
 
-                    <div class="games">
+}
 
-                        <span>Call of Duty: Modern Warfare 2</span>
-                        <span>Left 4 Dead 2</span>
-                        <span>Fallout 3</span>
-                        <span>GTA IV</span>
-                        <span>Age of Empires III</span>
-                        <span>Crysis</span>
-                        <span>The Elder Scrolls V: Skyrim</span>
 
-                    </div>
+@media (max-width: 650px) {
 
-                </div>
+    .platform-timeline__hero-inner,
+    .platform-eras {
+        width: min(100% - 32px, 600px);
+    }
 
-            </article>
 
-        </section>
+    .platform-timeline__hero {
+        min-height: 560px;
+    }
 
 
-        <!-- =====================================================
-             ERA PS4
-        ====================================================== -->
+    .platform-timeline__hero h1 {
+        margin-top: 22px;
 
-        <section class="generation">
+        font-size: 52px;
 
-            <div class="generation__header">
+        letter-spacing: -2.5px;
+    }
 
-                <div class="generation__number">
-                    07
-                </div>
 
-                <div>
+    .platform-timeline__hero-inner > p {
+        font-size: 16px;
+    }
 
-                    <span class="generation__eyebrow">
-                        UMA NOVA ERA
-                    </span>
 
-                    <h2>
-                        Mundos cada vez maiores
-                    </h2>
+    .platform-timeline__stats {
+        gap: 28px;
 
-                    <p>
-                        Histórias cinematográficas, mundos abertos,
-                        experiências online e jogos que passaram a
-                        ocupar um espaço ainda maior na minha vida.
-                    </p>
+        margin-top: 40px;
+    }
 
-                </div>
 
-            </div>
+    .platform-timeline__stats strong {
+        font-size: 28px;
+    }
 
 
-            <article class="platform-entry">
+    .platform-timeline__intro {
+        width: min(100% - 32px, 600px);
 
-                <div class="platform-entry__meta">
-                    <span>2013</span>
-                    <span>8ª GERAÇÃO</span>
-                </div>
+        padding: 90px 0 65px;
+    }
 
-                <div class="platform-entry__content">
 
-                    <h3>PlayStation 4</h3>
+    .platform-timeline__intro h2 {
+        font-size: 40px;
 
-                    <div class="games">
+        letter-spacing: -2px;
+    }
 
-                        <span>Red Dead Redemption 2</span>
-                        <span>Grand Theft Auto V</span>
-                        <span>The Last of Us Part II</span>
-                        <span>God of War</span>
-                        <span>Resident Evil 7</span>
-                        <span>Mortal Kombat X</span>
-                        <span>The Witcher 3</span>
-                        <span>Uncharted 4</span>
-                        <span>Ace Combat 7</span>
 
-                    </div>
+    .platform-era {
+        padding: 80px 0;
+    }
 
-                </div>
 
-            </article>
+    .platform-era__heading {
+        display: block;
 
-        </section>
+        margin-bottom: 40px;
+    }
 
 
-        <!-- =====================================================
-             ERA ATUAL
-        ====================================================== -->
+    .platform-era__number {
+        margin-bottom: 18px;
+    }
 
-        <section class="generation generation--current">
 
-            <div class="generation__header">
+    .platform-era__heading h2 {
+        font-size: 43px;
 
-                <div class="generation__number">
-                    08
-                </div>
+        letter-spacing: -2px;
+    }
 
-                <div>
 
-                    <span class="generation__eyebrow">
-                        FASE ATUAL
-                    </span>
+    .platform-card {
+        padding: 25px;
+    }
 
-                    <h2>
-                        Onde estou hoje
-                    </h2>
 
-                    <p>
-                        A história chegou até aqui, mas continua sendo escrita.
-                        Hoje consoles e PC dividem espaço com a criação
-                        da própria JorgeraTV.
-                    </p>
+    .platform-card h3 {
+        font-size: 24px;
+    }
 
-                </div>
 
-            </div>
+    .platform-card__top {
+        align-items: flex-start;
+    }
 
 
-            <article class="platform-entry">
+    .platform-card__type {
+        max-width: 170px;
+    }
 
-                <div class="platform-entry__meta">
-                    <span>2020</span>
-                    <span>9ª GERAÇÃO</span>
-                </div>
 
-                <div class="platform-entry__content">
+    .platform-timeline__ending {
+        width: min(100% - 32px, 600px);
 
-                    <h3>Xbox Series S</h3>
+        margin-bottom: 80px;
 
-                    <div class="games">
+        padding: 70px 25px;
+    }
 
-                        <span>Gears 5</span>
-                        <span>Doom Eternal</span>
-                        <span>Halo Infinite</span>
-                        <span>Forza Horizon 5</span>
-                        <span>Far Cry 5</span>
 
-                    </div>
+    .platform-timeline__ending h2 {
+        font-size: 43px;
 
-                </div>
+        letter-spacing: -2px;
+    }
 
-            </article>
-
-
-            <article class="platform-entry">
-
-                <div class="platform-entry__meta">
-                    <span>2022</span>
-                    <span>PC GAMER</span>
-                </div>
-
-                <div class="platform-entry__content">
-
-                    <h3>Dell G15</h3>
-
-                    <p>
-                        Meu PC gamer atual e uma das máquinas que fazem
-                        parte da produção da JorgeraTV.
-                    </p>
-
-                    <div class="games">
-
-                        <span>Battlefield 2042</span>
-                        <span>Doom: The Dark Ages</span>
-                        <span>Counter-Strike 2</span>
-                        <span>Cyberpunk 2077</span>
-
-                    </div>
-
-                </div>
-
-            </article>
-
-
-            <article class="platform-entry">
-
-                <div class="platform-entry__meta">
-                    <span>2023</span>
-                    <span>9ª GERAÇÃO</span>
-                </div>
-
-                <div class="platform-entry__content">
-
-                    <h3>PlayStation 5 Slim</h3>
-
-                    <div class="games">
-
-                        <span>God of War Ragnarök</span>
-                        <span>Resident Evil 4 Remake</span>
-                        <span>Battlefield 6</span>
-                        <span>Metal Gear Solid Delta</span>
-                        <span>The Callisto Protocol</span>
-
-                    </div>
-
-                </div>
-
-            </article>
-
-
-            <article class="platform-entry">
-
-                <div class="platform-entry__meta">
-                    <span>2024</span>
-                    <span>NINTENDO</span>
-                </div>
-
-                <div class="platform-entry__content">
-
-                    <h3>Nintendo Switch Lite</h3>
-
-                    <div class="games">
-
-                        <span>Super Mario 3D World + Bowser's Fury</span>
-                        <span>Super Mario Odyssey</span>
-                        <span>Mario Kart 8 Deluxe</span>
-                        <span>Donkey Kong Country: Tropical Freeze</span>
-                        <span>The Legend of Zelda: Tears of the Kingdom</span>
-
-                    </div>
-
-                </div>
-
-            </article>
-
-        </section>
-
-
-        <!-- =====================================================
-             FINAL
-        ====================================================== -->
-
-        <div class="platform-history__ending">
-
-            <span class="platform-history__eyebrow">
-                CONTINUA...
-            </span>
-
-            <h2>
-                A história ainda
-                <span>está sendo escrita.</span>
-            </h2>
-
-            <p>
-                Os consoles mudaram. Os computadores evoluíram.
-                A tecnologia ficou cada vez mais impressionante.
-                Mas uma coisa permaneceu igual desde 1990:
-                a vontade de jogar.
-            </p>
-
-            <strong>
-                E essa história agora também faz parte da JorgeraTV.
-            </strong>
-
-        </div>
-
-    </div>
-
-</section>
+}
