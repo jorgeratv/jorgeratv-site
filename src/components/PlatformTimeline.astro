@@ -1,24 +1,19 @@
 ---
-/*
-   ===========================================
-   PLATFORM TIMELINE - JORGERATV
-   Minha jornada pelos videogames
-   ===========================================
-*/
-
-const generations = [
+const eras = [
   {
     number: "01",
-    era: "GERAÇÃO 8-BIT",
-    title: "Onde tudo começou.",
+    label: "ERA 01",
+    title: "OS PRIMEIROS PIXELS",
     description:
-      "Os primeiros contatos com os videogames. Uma época de descobertas, diversão simples e clássicos que ajudaram a construir a minha paixão pelos games.",
+      "Foi aqui que tudo começou. Os primeiros videogames, os primeiros controles e as primeiras lembranças que ajudaram a construir minha relação com os jogos.",
     platforms: [
       {
         year: "1990",
         name: "ATARI 2600",
+        category: "Console • 8-bit",
         description:
           "Foi aqui que tudo começou. Meu primeiro contato com videogames e a primeira porta para um universo que nunca mais deixou de fazer parte da minha vida.",
+        note: "",
         games: [
           "Pitfall",
           "River Raid",
@@ -32,9 +27,10 @@ const generations = [
       {
         year: "1993",
         name: "MASTER SYSTEM",
-        contact: "Conheci jogando com amigos.",
+        category: "Console • 8-bit",
         description:
           "Eu não tinha um Master System, mas meus amigos tinham. Foi através deles que conheci alguns dos grandes clássicos da Sega.",
+        note: "Experiência através de amigos.",
         games: [
           "Alex Kidd",
           "Sonic",
@@ -46,8 +42,10 @@ const generations = [
       {
         year: "1993",
         name: "NES",
+        category: "Console • 8-bit",
         description:
-          "O Nintendo 8-bit marcou uma nova fase da minha infância e trouxe alguns dos personagens e franquias que continuam comigo até hoje.",
+          "O Nintendo 8-bit marcou uma nova fase da minha infância e trouxe personagens e franquias que continuam comigo até hoje.",
+        note: "",
         games: [
           "Super Mario Bros.",
           "Contra",
@@ -62,17 +60,18 @@ const generations = [
 
   {
     number: "02",
-    era: "GERAÇÃO 16-BIT",
-    title: "A era dos grandes clássicos.",
+    label: "ERA 02",
+    title: "A ERA 16-BIT",
     description:
-      "Os videogames ficaram maiores, mais coloridos e muito mais ambiciosos. Foi uma das épocas mais marcantes da minha infância.",
+      "Uma geração que elevou os videogames a outro nível. Gráficos melhores, trilhas memoráveis e alguns dos jogos que mais marcaram minha infância.",
     platforms: [
       {
         year: "1993",
         name: "MEGA DRIVE",
-        contact: "Conheci jogando com meus primos.",
+        category: "Console • 16-bit",
         description:
           "Assim como o Master System, não tive um Mega Drive. Meus primos tinham e eu aproveitava cada oportunidade para jogar.",
+        note: "Experiência através de primos.",
         games: [
           "Altered Beast",
           "Streets of Rage",
@@ -83,8 +82,10 @@ const generations = [
       {
         year: "1994",
         name: "SUPER NINTENDO",
+        category: "Console • 16-bit",
         description:
           "Uma das fases mais marcantes da minha vida gamer. O Super Nintendo abriu um universo enorme de aventuras, lutas, RPGs, corridas e exploração.",
+        note: "",
         games: [
           "Donkey Kong",
           "Super Mario World",
@@ -108,17 +109,18 @@ const generations = [
 
   {
     number: "03",
-    era: "GERAÇÃO 32-BIT / 64-BIT",
-    title: "Quando os mundos começaram a ganhar outra dimensão.",
+    label: "ERA 03",
+    title: "A REVOLUÇÃO 3D",
     description:
-      "Computadores mais poderosos, novas tecnologias e videogames que começaram a aproximar cada vez mais os jogos daquilo que eu imaginava.",
+      "Foi quando os videogames começaram a ganhar outra dimensão. Ao mesmo tempo, os computadores passaram a ocupar um espaço cada vez maior na minha vida.",
     platforms: [
       {
         year: "1994",
         name: "PC 486 + WINDOWS 3.1",
-        contact: "Conheci através do computador do meu pai.",
+        category: "Computador • PC",
         description:
           "Meu pai tinha o computador, mas deixava eu brincar. Foi quando videogames e tecnologia começaram a andar juntos na minha cabeça.",
+        note: "",
         games: [
           "DOOM",
           "Wolfenstein",
@@ -134,9 +136,10 @@ const generations = [
       {
         year: "1995",
         name: "3DO",
-        contact: "Conheci jogando em uma locadora.",
+        category: "Console • 32-bit",
         description:
           "Não tive um 3DO, mas conheci a plataforma em uma locadora. Eu pagava por hora e aproveitava cada minuto para descobrir aquela tecnologia diferente.",
+        note: "Experiência em locadora.",
         games: [
           "Road Rash",
           "The Need for Speed",
@@ -147,9 +150,10 @@ const generations = [
       {
         year: "1995",
         name: "NEO GEO CD",
-        contact: "Conheci jogando em uma locadora.",
+        category: "Console • Arcade",
         description:
           "Outra experiência de locadora que ficou marcada. O Neo Geo era praticamente um sonho para quem gostava dos arcades.",
+        note: "Experiência em locadora.",
         games: [
           "The King of Fighters '95",
           "The King of Fighters '96",
@@ -162,8 +166,10 @@ const generations = [
       {
         year: "1997",
         name: "NINTENDO 64",
+        category: "Console • 64-bit",
         description:
           "O Nintendo 64 foi uma verdadeira revolução. Foi uma das primeiras vezes em que senti que os mundos dos videogames estavam realmente ganhando outra dimensão.",
+        note: "",
         games: [
           "Super Mario 64",
           "Mario Kart 64",
@@ -176,25 +182,12 @@ const generations = [
         ]
       },
       {
-        year: "1997",
-        name: "PC PENTIUM II + WINDOWS 95",
-        description:
-          "Meu primeiro computador exclusivamente meu. A partir daqui, o PC passou a ocupar um espaço cada vez maior na minha vida.",
-        games: [
-          "DOOM II",
-          "Quake II",
-          "Carmageddon",
-          "Diablo",
-          "Heroes of Might and Magic III",
-          "Age of Empires",
-          "Command & Conquer: Red Alert"
-        ]
-      },
-      {
         year: "1998",
         name: "PLAYSTATION 1",
+        category: "Console • 32-bit",
         description:
-          "O PlayStation marcou uma nova era para mim. Foi quando os jogos começaram a entregar experiências cinematográficas e personagens que ficaram para sempre na memória.",
+          "O PlayStation marcou uma nova fase dos videogames e trouxe alguns dos jogos mais importantes da minha história.",
+        note: "",
         games: [
           "Resident Evil 1",
           "Resident Evil 2",
@@ -212,22 +205,41 @@ const generations = [
 
   {
     number: "04",
-    era: "NOVA GERAÇÃO",
-    title: "Os videogames ficaram gigantes.",
+    label: "ERA 04",
+    title: "A ERA DOS PCs E DOS 128-BIT",
     description:
-      "A chegada de novas gerações trouxe mundos maiores, experiências online, gráficos impressionantes e algumas das maiores franquias da minha história gamer.",
+      "Os computadores ganharam força, as LAN houses entraram na minha vida e os consoles chegaram a uma nova geração de experiências.",
     platforms: [
+      {
+        year: "1997",
+        name: "PC PENTIUM II + WINDOWS 95",
+        category: "Computador • PC",
+        description:
+          "Meu primeiro computador exclusivamente meu. A partir daqui, o PC passou a ocupar um espaço cada vez maior na minha vida.",
+        note: "",
+        games: [
+          "DOOM II",
+          "Quake II",
+          "Carmageddon",
+          "Diablo",
+          "Heroes of Might and Magic III",
+          "Age of Empires",
+          "Command & Conquer: Red Alert"
+        ]
+      },
       {
         year: "2001",
         name: "PC ATHLON XP + WINDOWS XP",
+        category: "Computador • PC",
         description:
-          "Foi aqui que conheci Half-Life e seus mods. Também foi a época em que comecei a frequentar LAN houses e descobri uma nova forma de jogar com outras pessoas.",
+          "Foi onde conheci Half-Life e seus mods. Também foi a época em que comecei a frequentar LAN houses.",
+        note: "",
         games: [
           "Half-Life",
           "Team Fortress",
           "Counter-Strike 1.5",
           "Counter-Strike 1.6",
-          "Quake III",
+          "Quake 3",
           "Call of Duty",
           "Max Payne",
           "Age of Mythology"
@@ -236,8 +248,10 @@ const generations = [
       {
         year: "2002",
         name: "PLAYSTATION 2",
+        category: "Console • 128-bit",
         description:
-          "Uma das plataformas mais importantes da minha vida gamer. O PS2 trouxe uma quantidade absurda de jogos marcantes e experiências que ficaram na memória.",
+          "Uma das gerações mais marcantes dos consoles, com jogos que se tornaram referências e atravessaram gerações.",
+        note: "",
         games: [
           "BLACK",
           "Need for Speed Underground 2",
@@ -247,12 +261,24 @@ const generations = [
           "Resident Evil 4",
           "Metal Gear Solid 3"
         ]
-      },
+      }
+    ]
+  },
+
+  {
+    number: "05",
+    label: "ERA 05",
+    title: "A ERA HD",
+    description:
+      "Os gráficos em alta definição chegaram, os mundos ficaram maiores e a experiência de jogar começou a se aproximar cada vez mais do cinema.",
+    platforms: [
       {
         year: "2006",
         name: "XBOX 360",
+        category: "Console • HD",
         description:
-          "Uma nova geração chegou trazendo alta definição, multiplayer online e experiências que mostravam o potencial dos videogames modernos.",
+          "Uma geração que ajudou a definir a era HD e trouxe experiências que ficaram marcadas na história dos videogames.",
+        note: "",
         games: [
           "Gears of War",
           "Halo 3",
@@ -265,8 +291,10 @@ const generations = [
       {
         year: "2008",
         name: "PLAYSTATION 3",
+        category: "Console • HD",
         description:
-          "Uma geração marcada por grandes aventuras, experiências cinematográficas e jogos que elevaram ainda mais o padrão dos consoles.",
+          "Uma geração de grandes aventuras, mundos abertos e experiências cinematográficas que ajudaram a transformar a indústria.",
+        note: "",
         games: [
           "The Last of Us",
           "God of War III",
@@ -277,22 +305,14 @@ const generations = [
           "Far Cry 3",
           "Ultimate Marvel vs. Capcom 3"
         ]
-      }
-    ]
-  },
-
-  {
-    number: "05",
-    era: "GERAÇÃO HD",
-    title: "Um mundo cada vez maior.",
-    description:
-      "Os jogos passaram a entregar mundos abertos gigantescos, gráficos impressionantes e experiências cada vez mais próximas do cinema.",
-    platforms: [
+      },
       {
         year: "2009",
         name: "PC AMD PHENOM II X4 + WINDOWS 7",
+        category: "Computador • PC",
         description:
-          "Uma nova fase do PC gamer. Mais potência, jogos mais ambiciosos e uma evolução enorme na qualidade visual das experiências.",
+          "Uma fase de evolução do PC gamer, com hardware mais poderoso e uma nova geração de jogos cada vez mais ambiciosos.",
+        note: "",
         games: [
           "Call of Duty: Modern Warfare 2",
           "Left 4 Dead 2",
@@ -302,12 +322,24 @@ const generations = [
           "Crysis",
           "The Elder Scrolls V: Skyrim"
         ]
-      },
+      }
+    ]
+  },
+
+  {
+    number: "06",
+    label: "ERA 06",
+    title: "A NOVA GERAÇÃO",
+    description:
+      "Uma nova fase da minha relação com os videogames, agora com experiências mais cinematográficas, mundos enormes e hardware cada vez mais poderoso.",
+    platforms: [
       {
         year: "2013",
         name: "PLAYSTATION 4",
+        category: "Console • Nova geração",
         description:
-          "O PlayStation 4 trouxe alguns dos jogos que mais marcaram a minha trajetória recente, com mundos abertos enormes e experiências cinematográficas.",
+          "Uma geração que trouxe alguns dos maiores mundos abertos e experiências narrativas da minha história gamer.",
+        note: "",
         games: [
           "Red Dead Redemption 2",
           "Grand Theft Auto V",
@@ -323,8 +355,10 @@ const generations = [
       {
         year: "2020",
         name: "XBOX SERIES S",
+        category: "Console • Nova geração",
         description:
-          "Uma porta de entrada para uma nova geração, trazendo velocidade, retrocompatibilidade e experiências modernas em um formato compacto.",
+          "Uma entrada compacta na nova geração, mantendo acesso a grandes franquias e experiências modernas.",
+        note: "",
         games: [
           "Gears 5",
           "DOOM Eternal",
@@ -332,34 +366,38 @@ const generations = [
           "Forza Horizon 5",
           "Far Cry 5"
         ]
-      }
-    ]
-  },
-
-  {
-    number: "06",
-    era: "GERAÇÃO ATUAL",
-    title: "A história continua.",
-    description:
-      "Hoje, a tecnologia chegou a um nível que parecia impossível quando eu comecei. Mas a essência continua a mesma: jogar, descobrir mundos e viver novas histórias.",
-    platforms: [
+      },
       {
         year: "2022",
         name: "PC DELL G15",
+        category: "Computador • PC Gamer",
         description:
-          "Meu PC gamer atual. Uma máquina que reúne trabalho, criação de conteúdo, transmissões e, principalmente, muitos momentos jogando.",
+          "Meu PC gamer atual. Uma máquina que passou a fazer parte não apenas dos meus jogos, mas também da produção de conteúdo e das transmissões.",
+        note: "",
         games: [
           "Battlefield 2042",
           "DOOM: The Dark Ages",
           "Counter-Strike 2",
           "Cyberpunk 2077"
         ]
-      },
+      }
+    ]
+  },
+
+  {
+    number: "07",
+    label: "ERA 07",
+    title: "A GERAÇÃO ATUAL",
+    description:
+      "Hoje continuo jogando, descobrindo novos mundos e criando histórias em torno dessa paixão que começou décadas atrás.",
+    platforms: [
       {
         year: "2023",
         name: "PLAYSTATION 5 SLIM",
+        category: "Console • Atual",
         description:
-          "Meu console atual. Uma nova geração de velocidade, gráficos e experiências que continuam expandindo a forma como eu vivo os videogames.",
+          "Meu console principal atual. Uma nova geração de experiências que continua escrevendo a história.",
+        note: "",
         games: [
           "God of War Ragnarök",
           "Resident Evil 4 Remake",
@@ -371,8 +409,10 @@ const generations = [
       {
         year: "2024",
         name: "NINTENDO SWITCH LITE",
+        category: "Console • Atual",
         description:
-          "Uma experiência diferente das demais plataformas. Portabilidade, Nintendo e alguns dos mundos mais carismáticos dos videogames.",
+          "Uma experiência diferente, portátil e muito ligada aos grandes personagens e mundos da Nintendo.",
+        note: "",
         games: [
           "Super Mario 3D World + Bowser's Fury",
           "Super Mario Odyssey",
@@ -386,14 +426,14 @@ const generations = [
 ];
 ---
 
-<section class="platform-timeline" id="plataformas">
+<section class="platform-timeline">
 
   <div class="platform-container">
 
-    <!-- CABEÇALHO -->
+    <!-- HERO -->
     <header class="platform-hero">
 
-      <div class="platform-eyebrow">
+      <div class="platform-hero-label">
         JORGERATV • MINHA HISTÓRIA GAMER
       </div>
 
@@ -403,7 +443,7 @@ const generations = [
       </h1>
 
       <p>
-        Do Atari 2600 ao PlayStation 5 e ao PC gamer.
+        De um Atari 2600 ao PlayStation 5 e ao PC gamer.
         Mais de três décadas atravessando gerações,
         tecnologias, amizades e histórias que ficaram para sempre.
       </p>
@@ -430,46 +470,63 @@ const generations = [
     </header>
 
 
-    <!-- GERAÇÕES -->
+    <!-- INTRODUÇÃO -->
+    <div class="platform-intro">
 
-    <div class="generations">
+      <div class="platform-intro-number">
+        01
+      </div>
 
-      {generations.map((generation) => (
+      <div>
 
-        <section class="generation">
+        <span>UMA HISTÓRIA EM GERAÇÕES</span>
 
-          <!-- CABEÇALHO DA GERAÇÃO -->
+        <h2>
+          Cada plataforma conta<br />
+          uma parte da história.
+        </h2>
 
-          <div class="generation-header">
+        <p>
+          Alguns eu tive. Outros pertenciam a amigos, primos,
+          meu pai ou às locadoras que fizeram parte daquela época.
+          Mas todos eles contribuíram de alguma forma para construir
+          a minha relação com os videogames.
+        </p>
 
-            <div class="generation-number">
-              {generation.number}
+      </div>
+
+    </div>
+
+
+    <!-- ERAS -->
+    <div class="platform-eras">
+
+      {eras.map((era, eraIndex) => (
+
+        <section class="platform-era">
+
+          <div class="era-heading">
+
+            <div class="era-number">
+              {era.number}
             </div>
 
-            <div class="generation-heading">
+            <div class="era-heading-content">
 
-              <span class="generation-label">
-                {generation.era}
-              </span>
+              <span>{era.label}</span>
 
-              <h2>
-                {generation.title}
-              </h2>
+              <h2>{era.title}</h2>
 
-              <p>
-                {generation.description}
-              </p>
+              <p>{era.description}</p>
 
             </div>
 
           </div>
 
 
-          <!-- PLATAFORMAS -->
-
           <div class="platform-grid">
 
-            {generation.platforms.map((platform) => (
+            {era.platforms.map((platform) => (
 
               <article class="platform-card">
 
@@ -479,11 +536,9 @@ const generations = [
                     {platform.year}
                   </span>
 
-                  {platform.contact && (
-                    <span class="platform-contact">
-                      {platform.contact}
-                    </span>
-                  )}
+                  <span class="platform-category">
+                    {platform.category}
+                  </span>
 
                 </div>
 
@@ -498,7 +553,14 @@ const generations = [
                 </p>
 
 
-                <div class="games-area">
+                {platform.note && (
+                  <div class="platform-note">
+                    {platform.note}
+                  </div>
+                )}
+
+
+                <div class="games-section">
 
                   <span class="games-label">
                     JOGOS QUE MARCARAM ESSA FASE
@@ -507,7 +569,7 @@ const generations = [
                   <div class="games-list">
 
                     {platform.games.map((game) => (
-                      <span class="game-tag">
+                      <span class="game">
                         {game}
                       </span>
                     ))}
@@ -527,27 +589,6 @@ const generations = [
       ))}
 
     </div>
-
-
-    <!-- ENCERRAMENTO -->
-
-    <section class="platform-ending">
-
-      <span>
-        E A HISTÓRIA CONTINUA
-      </span>
-
-      <h2>
-        A próxima geração<br />
-        ainda está por vir.
-      </h2>
-
-      <p>
-        Porque depois de tantos anos, uma coisa não mudou:
-        eu continuo descobrindo novos mundos para jogar.
-      </p>
-
-    </section>
 
   </div>
 
