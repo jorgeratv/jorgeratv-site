@@ -1,368 +1,386 @@
 ---
-import "../styles/platform-timeline.css";
+/*
+   ===========================================
+   PLATFORM TIMELINE - JORGERATV
+   Minha jornada pelos videogames
+   ===========================================
+*/
 
-const platforms = [
+const generations = [
   {
-    year: "1990",
-    title: "ATARI 2600",
-    type: "Primeiro contato",
+    number: "01",
+    era: "GERAÇÃO 8-BIT",
+    title: "Onde tudo começou.",
     description:
-      "Foi aqui que tudo começou. Meu primeiro contato com videogames e a primeira porta para um universo que nunca mais deixou de fazer parte da minha vida.",
-    games: [
-      "Pitfall!",
-      "River Raid",
-      "Enduro",
-      "Frogger",
-      "Pac-Man",
-      "Adventure",
-      "H.E.R.O."
+      "Os primeiros contatos com os videogames. Uma época de descobertas, diversão simples e clássicos que ajudaram a construir a minha paixão pelos games.",
+    platforms: [
+      {
+        year: "1990",
+        name: "ATARI 2600",
+        description:
+          "Foi aqui que tudo começou. Meu primeiro contato com videogames e a primeira porta para um universo que nunca mais deixou de fazer parte da minha vida.",
+        games: [
+          "Pitfall",
+          "River Raid",
+          "Enduro",
+          "Frogger",
+          "Pac-Man",
+          "Adventure",
+          "H.E.R.O."
+        ]
+      },
+      {
+        year: "1993",
+        name: "MASTER SYSTEM",
+        contact: "Conheci jogando com amigos.",
+        description:
+          "Eu não tinha um Master System, mas meus amigos tinham. Foi através deles que conheci alguns dos grandes clássicos da Sega.",
+        games: [
+          "Alex Kidd",
+          "Sonic",
+          "Shinobi",
+          "Golden Axe",
+          "Double Dragon"
+        ]
+      },
+      {
+        year: "1993",
+        name: "NES",
+        description:
+          "O Nintendo 8-bit marcou uma nova fase da minha infância e trouxe alguns dos personagens e franquias que continuam comigo até hoje.",
+        games: [
+          "Super Mario Bros.",
+          "Contra",
+          "DuckTales",
+          "Mega Man 2",
+          "Castlevania",
+          "Battletoads"
+        ]
+      }
     ]
   },
 
   {
-    year: "1993",
-    title: "MASTER SYSTEM",
-    type: "Primeiros contatos",
-    contact:
-      "Conheci jogando com amigos.",
+    number: "02",
+    era: "GERAÇÃO 16-BIT",
+    title: "A era dos grandes clássicos.",
     description:
-      "Eu não tinha um Master System, mas meus amigos tinham. E foi através deles que conheci alguns dos grandes clássicos da Sega.",
-    games: [
-      "Alex Kidd",
-      "Sonic",
-      "Shinobi",
-      "Golden Axe",
-      "Double Dragon"
+      "Os videogames ficaram maiores, mais coloridos e muito mais ambiciosos. Foi uma das épocas mais marcantes da minha infância.",
+    platforms: [
+      {
+        year: "1993",
+        name: "MEGA DRIVE",
+        contact: "Conheci jogando com meus primos.",
+        description:
+          "Assim como o Master System, não tive um Mega Drive. Meus primos tinham e eu aproveitava cada oportunidade para jogar.",
+        games: [
+          "Altered Beast",
+          "Streets of Rage",
+          "Ghouls 'n Ghosts",
+          "Earthworm Jim"
+        ]
+      },
+      {
+        year: "1994",
+        name: "SUPER NINTENDO",
+        description:
+          "Uma das fases mais marcantes da minha vida gamer. O Super Nintendo abriu um universo enorme de aventuras, lutas, RPGs, corridas e exploração.",
+        games: [
+          "Donkey Kong",
+          "Super Mario World",
+          "Mortal Kombat",
+          "Street Fighter",
+          "Chrono Trigger",
+          "Final Fantasy",
+          "Contra III",
+          "Top Gear",
+          "International Superstar Soccer Deluxe",
+          "Final Fight",
+          "Sunset Riders",
+          "Aladdin",
+          "Legend of Mana",
+          "Super Metroid",
+          "Demon's Crest"
+        ]
+      }
     ]
   },
 
   {
-    year: "1993",
-    title: "NES",
-    type: "Nintendo 8-bit",
+    number: "03",
+    era: "GERAÇÃO 32-BIT / 64-BIT",
+    title: "Quando os mundos começaram a ganhar outra dimensão.",
     description:
-      "O Nintendo 8-bit marcou uma nova fase da minha infância e trouxe alguns dos personagens e franquias que continuam comigo até hoje.",
-    games: [
-      "Super Mario Bros.",
-      "Contra",
-      "DuckTales",
-      "Mega Man 2",
-      "Castlevania",
-      "Battletoads"
+      "Computadores mais poderosos, novas tecnologias e videogames que começaram a aproximar cada vez mais os jogos daquilo que eu imaginava.",
+    platforms: [
+      {
+        year: "1994",
+        name: "PC 486 + WINDOWS 3.1",
+        contact: "Conheci através do computador do meu pai.",
+        description:
+          "Meu pai tinha o computador, mas deixava eu brincar. Foi quando videogames e tecnologia começaram a andar juntos na minha cabeça.",
+        games: [
+          "DOOM",
+          "Wolfenstein",
+          "Duke Nukem",
+          "Hexen",
+          "Blood",
+          "Prince of Persia",
+          "Stunts",
+          "Monkey Island",
+          "Full Throttle"
+        ]
+      },
+      {
+        year: "1995",
+        name: "3DO",
+        contact: "Conheci jogando em uma locadora.",
+        description:
+          "Não tive um 3DO, mas conheci a plataforma em uma locadora. Eu pagava por hora e aproveitava cada minuto para descobrir aquela tecnologia diferente.",
+        games: [
+          "Road Rash",
+          "The Need for Speed",
+          "DOOM",
+          "Super Street Fighter II Turbo"
+        ]
+      },
+      {
+        year: "1995",
+        name: "NEO GEO CD",
+        contact: "Conheci jogando em uma locadora.",
+        description:
+          "Outra experiência de locadora que ficou marcada. O Neo Geo era praticamente um sonho para quem gostava dos arcades.",
+        games: [
+          "The King of Fighters '95",
+          "The King of Fighters '96",
+          "Metal Slug",
+          "Samurai Shodown III",
+          "Fatal Fury Special",
+          "Super Sidekicks 3"
+        ]
+      },
+      {
+        year: "1997",
+        name: "NINTENDO 64",
+        description:
+          "O Nintendo 64 foi uma verdadeira revolução. Foi uma das primeiras vezes em que senti que os mundos dos videogames estavam realmente ganhando outra dimensão.",
+        games: [
+          "Super Mario 64",
+          "Mario Kart 64",
+          "Banjo-Kazooie",
+          "GoldenEye 007",
+          "Donkey Kong 64",
+          "Star Fox 64",
+          "1080 Snowboarding",
+          "Wave Race 64"
+        ]
+      },
+      {
+        year: "1997",
+        name: "PC PENTIUM II + WINDOWS 95",
+        description:
+          "Meu primeiro computador exclusivamente meu. A partir daqui, o PC passou a ocupar um espaço cada vez maior na minha vida.",
+        games: [
+          "DOOM II",
+          "Quake II",
+          "Carmageddon",
+          "Diablo",
+          "Heroes of Might and Magic III",
+          "Age of Empires",
+          "Command & Conquer: Red Alert"
+        ]
+      },
+      {
+        year: "1998",
+        name: "PLAYSTATION 1",
+        description:
+          "O PlayStation marcou uma nova era para mim. Foi quando os jogos começaram a entregar experiências cinematográficas e personagens que ficaram para sempre na memória.",
+        games: [
+          "Resident Evil 1",
+          "Resident Evil 2",
+          "Resident Evil 3",
+          "Dino Crisis",
+          "Medal of Honor",
+          "Gran Turismo 2",
+          "Castlevania: Symphony of the Night",
+          "Metal Gear Solid",
+          "Tekken 3"
+        ]
+      }
     ]
   },
 
   {
-    year: "1993",
-    title: "MEGA DRIVE",
-    type: "Primeiros contatos",
-    contact:
-      "Conheci jogando com meus primos.",
+    number: "04",
+    era: "NOVA GERAÇÃO",
+    title: "Os videogames ficaram gigantes.",
     description:
-      "Assim como o Master System, não tive um Mega Drive. Meus primos tinham e eu aproveitava cada oportunidade para jogar.",
-    games: [
-      "Altered Beast",
-      "Streets of Rage",
-      "Ghouls 'n Ghosts",
-      "Earthworm Jim"
+      "A chegada de novas gerações trouxe mundos maiores, experiências online, gráficos impressionantes e algumas das maiores franquias da minha história gamer.",
+    platforms: [
+      {
+        year: "2001",
+        name: "PC ATHLON XP + WINDOWS XP",
+        description:
+          "Foi aqui que conheci Half-Life e seus mods. Também foi a época em que comecei a frequentar LAN houses e descobri uma nova forma de jogar com outras pessoas.",
+        games: [
+          "Half-Life",
+          "Team Fortress",
+          "Counter-Strike 1.5",
+          "Counter-Strike 1.6",
+          "Quake III",
+          "Call of Duty",
+          "Max Payne",
+          "Age of Mythology"
+        ]
+      },
+      {
+        year: "2002",
+        name: "PLAYSTATION 2",
+        description:
+          "Uma das plataformas mais importantes da minha vida gamer. O PS2 trouxe uma quantidade absurda de jogos marcantes e experiências que ficaram na memória.",
+        games: [
+          "BLACK",
+          "Need for Speed Underground 2",
+          "GTA San Andreas",
+          "GTA Vice City",
+          "God of War II",
+          "Resident Evil 4",
+          "Metal Gear Solid 3"
+        ]
+      },
+      {
+        year: "2006",
+        name: "XBOX 360",
+        description:
+          "Uma nova geração chegou trazendo alta definição, multiplayer online e experiências que mostravam o potencial dos videogames modernos.",
+        games: [
+          "Gears of War",
+          "Halo 3",
+          "Forza Motorsport 4",
+          "Batman: Arkham City",
+          "Red Dead Redemption",
+          "Call of Duty: Modern Warfare"
+        ]
+      },
+      {
+        year: "2008",
+        name: "PLAYSTATION 3",
+        description:
+          "Uma geração marcada por grandes aventuras, experiências cinematográficas e jogos que elevaram ainda mais o padrão dos consoles.",
+        games: [
+          "The Last of Us",
+          "God of War III",
+          "Grand Theft Auto V",
+          "Assassin's Creed III",
+          "Killzone 3",
+          "Battlefield 4",
+          "Far Cry 3",
+          "Ultimate Marvel vs. Capcom 3"
+        ]
+      }
     ]
   },
 
   {
-    year: "1994",
-    title: "SUPER NINTENDO",
-    type: "Uma geração inesquecível",
+    number: "05",
+    era: "GERAÇÃO HD",
+    title: "Um mundo cada vez maior.",
     description:
-      "Uma das fases mais marcantes da minha vida gamer. O Super Nintendo abriu um universo enorme de aventuras, lutas, RPGs, corridas e exploração.",
-    games: [
-      "Donkey Kong",
-      "Super Mario World",
-      "Mortal Kombat",
-      "Street Fighter",
-      "Chrono Trigger",
-      "Final Fantasy",
-      "Contra III",
-      "Top Gear",
-      "International Superstar Soccer Deluxe",
-      "Final Fight",
-      "Sunset Riders",
-      "Aladdin",
-      "Legend of Mana",
-      "Super Metroid",
-      "Demon's Crest"
+      "Os jogos passaram a entregar mundos abertos gigantescos, gráficos impressionantes e experiências cada vez mais próximas do cinema.",
+    platforms: [
+      {
+        year: "2009",
+        name: "PC AMD PHENOM II X4 + WINDOWS 7",
+        description:
+          "Uma nova fase do PC gamer. Mais potência, jogos mais ambiciosos e uma evolução enorme na qualidade visual das experiências.",
+        games: [
+          "Call of Duty: Modern Warfare 2",
+          "Left 4 Dead 2",
+          "Fallout 3",
+          "GTA IV",
+          "Age of Empires III",
+          "Crysis",
+          "The Elder Scrolls V: Skyrim"
+        ]
+      },
+      {
+        year: "2013",
+        name: "PLAYSTATION 4",
+        description:
+          "O PlayStation 4 trouxe alguns dos jogos que mais marcaram a minha trajetória recente, com mundos abertos enormes e experiências cinematográficas.",
+        games: [
+          "Red Dead Redemption 2",
+          "Grand Theft Auto V",
+          "The Last of Us Part II",
+          "God of War",
+          "Resident Evil 7",
+          "Mortal Kombat X",
+          "The Witcher 3",
+          "Uncharted 4",
+          "Ace Combat 7"
+        ]
+      },
+      {
+        year: "2020",
+        name: "XBOX SERIES S",
+        description:
+          "Uma porta de entrada para uma nova geração, trazendo velocidade, retrocompatibilidade e experiências modernas em um formato compacto.",
+        games: [
+          "Gears 5",
+          "DOOM Eternal",
+          "Halo Infinite",
+          "Forza Horizon 5",
+          "Far Cry 5"
+        ]
+      }
     ]
   },
 
   {
-    year: "1994",
-    title: "PC 486 + WINDOWS 3.1",
-    type: "Tecnologia e descoberta",
-    contact:
-      "Conheci através do computador do meu pai.",
+    number: "06",
+    era: "GERAÇÃO ATUAL",
+    title: "A história continua.",
     description:
-      "Meu pai tinha o computador, mas deixava eu brincar. Foi quando videogames e tecnologia começaram a andar juntos na minha cabeça.",
-    games: [
-      "DOOM",
-      "Wolfenstein 3D",
-      "Duke Nukem",
-      "Hexen",
-      "Blood",
-      "Prince of Persia",
-      "Stunts",
-      "Monkey Island",
-      "Full Throttle"
-    ]
-  },
-
-  {
-    year: "1995",
-    title: "3DO",
-    type: "Experiência de locadora",
-    contact:
-      "Conheci jogando em uma locadora, pagando por hora.",
-    description:
-      "Não tive um 3DO, mas conheci a plataforma em uma locadora. Eu pagava por hora e aproveitava cada minuto para descobrir aquela tecnologia diferente.",
-    games: [
-      "Road Rash",
-      "The Need for Speed",
-      "DOOM",
-      "Super Street Fighter II Turbo"
-    ]
-  },
-
-  {
-    year: "1995",
-    title: "NEO GEO CD",
-    type: "Experiência de locadora",
-    contact:
-      "Conheci jogando em uma locadora, pagando por hora.",
-    description:
-      "Outra experiência de locadora que ficou marcada. O Neo Geo era praticamente um sonho para quem gostava dos arcades.",
-    games: [
-      "The King of Fighters '95",
-      "The King of Fighters '96",
-      "Metal Slug",
-      "Samurai Shodown III",
-      "Fatal Fury Special",
-      "Super Sidekicks 3"
-    ]
-  },
-
-  {
-    year: "1997",
-    title: "NINTENDO 64",
-    type: "A chegada do 3D",
-    description:
-      "O Nintendo 64 foi uma verdadeira revolução. Foi uma das primeiras vezes em que senti que os mundos dos videogames estavam realmente ganhando outra dimensão.",
-    games: [
-      "Super Mario 64",
-      "Mario Kart 64",
-      "Banjo-Kazooie",
-      "GoldenEye 007",
-      "Donkey Kong 64",
-      "Star Fox 64",
-      "1080 Snowboarding",
-      "Wave Race 64"
-    ]
-  },
-
-  {
-    year: "1997",
-    title: "PC PENTIUM II + WINDOWS 95",
-    type: "Meu primeiro computador",
-    description:
-      "Foi meu primeiro computador exclusivamente meu. A partir daqui, o PC passou a ocupar um espaço cada vez maior na minha vida.",
-    games: [
-      "DOOM II",
-      "Quake II",
-      "Carmageddon",
-      "Diablo",
-      "Heroes of Might and Magic III",
-      "Age of Empires",
-      "Command & Conquer: Red Alert"
-    ]
-  },
-
-  {
-    year: "1998",
-    title: "PLAYSTATION 1",
-    type: "Uma nova geração",
-    description:
-      "O PlayStation marcou uma transformação enorme na forma como eu enxergava os videogames. Histórias, terror, ação, corrida e aventura ganharam uma nova dimensão.",
-    games: [
-      "Resident Evil",
-      "Resident Evil 2",
-      "Resident Evil 3",
-      "Dino Crisis",
-      "Medal of Honor",
-      "Gran Turismo 2",
-      "Castlevania: Symphony of the Night",
-      "Metal Gear Solid",
-      "Tekken 3"
-    ]
-  },
-
-  {
-    year: "2001",
-    title: "PC ATHLON XP + WINDOWS XP",
-    type: "LAN houses",
-    description:
-      "Foi nessa época que conheci Half-Life e seus mods e comecei a frequentar LAN houses. Foi uma fase que ajudou a definir minha relação com o PC e com os jogos multiplayer.",
-    games: [
-      "Half-Life",
-      "Team Fortress",
-      "Counter-Strike 1.5",
-      "Counter-Strike 1.6",
-      "Quake III Arena",
-      "Call of Duty",
-      "Max Payne",
-      "Age of Mythology"
-    ]
-  },
-
-  {
-    year: "2002",
-    title: "PLAYSTATION 2",
-    type: "Uma geração inesquecível",
-    description:
-      "Uma das gerações mais marcantes para quem cresceu jogando. O PlayStation 2 trouxe mundos enormes, grandes histórias e alguns dos jogos que mais ficaram na memória.",
-    games: [
-      "Black",
-      "Need for Speed Underground 2",
-      "GTA: San Andreas",
-      "GTA: Vice City",
-      "God of War II",
-      "Resident Evil 4",
-      "Metal Gear Solid 3"
-    ]
-  },
-
-  {
-    year: "2006",
-    title: "XBOX 360",
-    type: "Nova geração",
-    description:
-      "Uma geração que trouxe grandes experiências de ação, corrida e multiplayer e consolidou uma nova era dos videogames.",
-    games: [
-      "Gears of War",
-      "Halo 3",
-      "Forza Motorsport 4",
-      "Batman: Arkham City",
-      "Red Dead Redemption",
-      "Call of Duty: Modern Warfare"
-    ]
-  },
-
-  {
-    year: "2008",
-    title: "PLAYSTATION 3",
-    type: "Alta definição",
-    description:
-      "Uma geração marcada por grandes histórias, mundos abertos e experiências cinematográficas que elevaram ainda mais o nível dos videogames.",
-    games: [
-      "The Last of Us",
-      "God of War III",
-      "Grand Theft Auto V",
-      "Assassin's Creed III",
-      "Killzone 3",
-      "Battlefield 4",
-      "Far Cry 3",
-      "Ultimate Marvel vs. Capcom 3"
-    ]
-  },
-
-  {
-    year: "2009",
-    title: "PC AMD PHENOM II X4 + WINDOWS 7",
-    type: "PC gamer",
-    description:
-      "Uma fase importante da minha evolução no PC, com jogos cada vez maiores e experiências que mostravam o potencial que os computadores estavam alcançando.",
-    games: [
-      "Call of Duty: Modern Warfare 2",
-      "Left 4 Dead 2",
-      "Fallout 3",
-      "GTA IV",
-      "Age of Empires III",
-      "Crysis",
-      "The Elder Scrolls V: Skyrim"
-    ]
-  },
-
-  {
-    year: "2013",
-    title: "PLAYSTATION 4",
-    type: "Uma nova era",
-    description:
-      "O PlayStation 4 trouxe uma das fases mais completas da minha jornada, com mundos abertos gigantescos, histórias memoráveis e experiências cinematográficas.",
-    games: [
-      "Red Dead Redemption 2",
-      "Grand Theft Auto V",
-      "The Last of Us Part II",
-      "God of War",
-      "Resident Evil 7",
-      "Mortal Kombat X",
-      "The Witcher 3",
-      "Uncharted 4",
-      "Ace Combat 7"
-    ]
-  },
-
-  {
-    year: "2020",
-    title: "XBOX SERIES S",
-    type: "Nova geração",
-    description:
-      "Uma entrada na geração atual com uma máquina compacta e capaz de entregar experiências modernas em alta qualidade.",
-    games: [
-      "Gears 5",
-      "DOOM Eternal",
-      "Halo Infinite",
-      "Forza Horizon 5",
-      "Far Cry 5"
-    ]
-  },
-
-  {
-    year: "2022",
-    title: "PC DELL G15",
-    type: "Meu PC gamer atual",
-    description:
-      "Uma nova fase no PC gamer. O Dell G15 passou a fazer parte da minha rotina e também se tornou uma peça importante na minha produção de conteúdo.",
-    games: [
-      "Battlefield 2042",
-      "DOOM: The Dark Ages",
-      "Counter-Strike 2",
-      "Cyberpunk 2077"
-    ]
-  },
-
-  {
-    year: "2023",
-    title: "PLAYSTATION 5 SLIM",
-    type: "Geração atual",
-    description:
-      "A geração atual trouxe uma combinação de velocidade, gráficos e grandes experiências. É aqui que minha jornada gamer continua hoje.",
-    games: [
-      "God of War Ragnarök",
-      "Resident Evil 4 Remake",
-      "Battlefield 6",
-      "Metal Gear Solid Delta",
-      "The Callisto Protocol"
-    ]
-  },
-
-  {
-    year: "2024",
-    title: "NINTENDO SWITCH LITE",
-    type: "Uma nova forma de jogar",
-    description:
-      "Uma experiência diferente dentro da minha jornada, trazendo a praticidade do portátil e o universo criativo da Nintendo.",
-    games: [
-      "Super Mario 3D World + Bowser's Fury",
-      "Super Mario Odyssey",
-      "Mario Kart 8 Deluxe",
-      "Donkey Kong Country: Tropical Freeze",
-      "The Legend of Zelda: Tears of the Kingdom"
+      "Hoje, a tecnologia chegou a um nível que parecia impossível quando eu comecei. Mas a essência continua a mesma: jogar, descobrir mundos e viver novas histórias.",
+    platforms: [
+      {
+        year: "2022",
+        name: "PC DELL G15",
+        description:
+          "Meu PC gamer atual. Uma máquina que reúne trabalho, criação de conteúdo, transmissões e, principalmente, muitos momentos jogando.",
+        games: [
+          "Battlefield 2042",
+          "DOOM: The Dark Ages",
+          "Counter-Strike 2",
+          "Cyberpunk 2077"
+        ]
+      },
+      {
+        year: "2023",
+        name: "PLAYSTATION 5 SLIM",
+        description:
+          "Meu console atual. Uma nova geração de velocidade, gráficos e experiências que continuam expandindo a forma como eu vivo os videogames.",
+        games: [
+          "God of War Ragnarök",
+          "Resident Evil 4 Remake",
+          "Battlefield 6",
+          "Metal Gear Solid Delta",
+          "The Callisto Protocol"
+        ]
+      },
+      {
+        year: "2024",
+        name: "NINTENDO SWITCH LITE",
+        description:
+          "Uma experiência diferente das demais plataformas. Portabilidade, Nintendo e alguns dos mundos mais carismáticos dos videogames.",
+        games: [
+          "Super Mario 3D World + Bowser's Fury",
+          "Super Mario Odyssey",
+          "Mario Kart 8 Deluxe",
+          "Donkey Kong Country: Tropical Freeze",
+          "The Legend of Zelda: Tears of the Kingdom"
+        ]
+      }
     ]
   }
 ];
@@ -370,39 +388,39 @@ const platforms = [
 
 <section class="platform-timeline" id="plataformas">
 
-  <div class="platform-timeline-container">
+  <div class="platform-container">
 
     <!-- CABEÇALHO -->
-    <header class="timeline-header">
+    <header class="platform-hero">
 
-      <span class="timeline-eyebrow">
+      <div class="platform-eyebrow">
         JORGERATV • MINHA HISTÓRIA GAMER
-      </span>
+      </div>
 
       <h1>
         MINHA JORNADA<br />
-        <span>PELOS VIDEOGAMES.</span>
+        PELOS VIDEOGAMES.
       </h1>
 
-      <p class="timeline-intro">
-        De um Atari 2600 ao PlayStation 5 e ao PC gamer.
+      <p>
+        Do Atari 2600 ao PlayStation 5 e ao PC gamer.
         Mais de três décadas atravessando gerações,
         tecnologias, amizades e histórias que ficaram para sempre.
       </p>
 
-      <div class="timeline-stats">
+      <div class="platform-stats">
 
-        <div class="timeline-stat">
+        <div>
           <strong>21</strong>
           <span>Plataformas</span>
         </div>
 
-        <div class="timeline-stat">
+        <div>
           <strong>1990</strong>
           <span>Primeiro contato</span>
         </div>
 
-        <div class="timeline-stat">
+        <div>
           <strong>2024</strong>
           <span>Fase atual</span>
         </div>
@@ -412,100 +430,99 @@ const platforms = [
     </header>
 
 
-    <!-- INTRODUÇÃO -->
-    <div class="journey-intro">
+    <!-- GERAÇÕES -->
 
-      <span class="journey-label">
-        UMA JORNADA
-      </span>
+    <div class="generations">
 
-      <h2>
-        Cada plataforma conta
-        uma parte da história.
-      </h2>
+      {generations.map((generation) => (
 
-      <p>
-        Alguns eu tive. Outros pertenciam a amigos, primos,
-        meu pai ou às locadoras que fizeram parte daquela época.
-        Mas todos eles contribuíram de alguma forma para
-        construir a minha relação com os videogames.
-      </p>
+        <section class="generation">
 
-    </div>
+          <!-- CABEÇALHO DA GERAÇÃO -->
 
+          <div class="generation-header">
 
-    <!-- LINHA DO TEMPO -->
-    <div class="timeline">
-
-      {platforms.map((platform, index) => (
-
-        <article
-          class:list={[
-            "timeline-item",
-            index % 2 === 0 ? "timeline-left" : "timeline-right"
-          ]}
-        >
-
-          <!-- MARCADOR -->
-          <div class="timeline-marker">
-            <span>{String(index + 1).padStart(2, "0")}</span>
-          </div>
-
-
-          <!-- CONTEÚDO -->
-          <div class="timeline-card">
-
-            <div class="timeline-card-top">
-
-              <span class="timeline-year">
-                {platform.year}
-              </span>
-
-              <span class="timeline-type">
-                {platform.type}
-              </span>
-
+            <div class="generation-number">
+              {generation.number}
             </div>
 
+            <div class="generation-heading">
 
-            <h3>
-              {platform.title}
-            </h3>
+              <span class="generation-label">
+                {generation.era}
+              </span>
 
+              <h2>
+                {generation.title}
+              </h2>
 
-            {platform.contact && (
-              <p class="timeline-contact">
-                {platform.contact}
+              <p>
+                {generation.description}
               </p>
-            )}
-
-
-            <p class="timeline-description">
-              {platform.description}
-            </p>
-
-
-            <div class="games-section">
-
-              <span class="games-label">
-                JOGOS QUE MARCARAM ESSA FASE
-              </span>
-
-              <div class="games-list">
-
-                {platform.games.map((game) => (
-                  <span class="game-tag">
-                    {game}
-                  </span>
-                ))}
-
-              </div>
 
             </div>
 
           </div>
 
-        </article>
+
+          <!-- PLATAFORMAS -->
+
+          <div class="platform-grid">
+
+            {generation.platforms.map((platform) => (
+
+              <article class="platform-card">
+
+                <div class="platform-card-top">
+
+                  <span class="platform-year">
+                    {platform.year}
+                  </span>
+
+                  {platform.contact && (
+                    <span class="platform-contact">
+                      {platform.contact}
+                    </span>
+                  )}
+
+                </div>
+
+
+                <h3>
+                  {platform.name}
+                </h3>
+
+
+                <p class="platform-description">
+                  {platform.description}
+                </p>
+
+
+                <div class="games-area">
+
+                  <span class="games-label">
+                    JOGOS QUE MARCARAM ESSA FASE
+                  </span>
+
+                  <div class="games-list">
+
+                    {platform.games.map((game) => (
+                      <span class="game-tag">
+                        {game}
+                      </span>
+                    ))}
+
+                  </div>
+
+                </div>
+
+              </article>
+
+            ))}
+
+          </div>
+
+        </section>
 
       ))}
 
@@ -513,23 +530,24 @@ const platforms = [
 
 
     <!-- ENCERRAMENTO -->
-    <div class="timeline-ending">
+
+    <section class="platform-ending">
 
       <span>
-        E A HISTÓRIA CONTINUA...
+        E A HISTÓRIA CONTINUA
       </span>
 
       <h2>
-        Ainda existem muitos
-        capítulos pela frente.
+        A próxima geração<br />
+        ainda está por vir.
       </h2>
 
       <p>
-        Novos jogos, novas plataformas, novas histórias.
-        A jornada continua.
+        Porque depois de tantos anos, uma coisa não mudou:
+        eu continuo descobrindo novos mundos para jogar.
       </p>
 
-    </div>
+    </section>
 
   </div>
 
