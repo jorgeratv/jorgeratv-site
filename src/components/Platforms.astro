@@ -1,191 +1,575 @@
 ---
 import "../styles/platforms.css";
+
+const eras = [
+    {
+        number: "01",
+        label: "ERA 8-BIT",
+        title: "OS PRIMEIROS PIXELS",
+        description:
+            "Os primeiros videogames, os primeiros controles e as primeiras lembranças que ajudaram a construir minha relação com os jogos.",
+        platforms: [
+            {
+                year: "1990",
+                name: "ATARI 2600",
+                type: "Primeiro contato",
+                description:
+                    "Foi aqui que tudo começou. Meu primeiro contato com videogames e a primeira porta para um universo que nunca mais deixou de fazer parte da minha vida.",
+                games: [
+                    "Pitfall",
+                    "River Raid",
+                    "Enduro",
+                    "Frogger",
+                    "Pac-Man",
+                    "Adventure",
+                    "H.E.R.O."
+                ]
+            },
+            {
+                year: "1993",
+                name: "MASTER SYSTEM",
+                type: "Contato através de amigos",
+                description:
+                    "Eu não tinha um Master System, mas meus amigos tinham. Foi através deles que conheci alguns dos grandes clássicos da Sega.",
+                games: [
+                    "Alex Kidd",
+                    "Sonic",
+                    "Shinobi",
+                    "Golden Axe",
+                    "Double Dragon"
+                ],
+                contact: true
+            },
+            {
+                year: "1993",
+                name: "NES",
+                type: "Minha fase Nintendo",
+                description:
+                    "O Nintendo 8-bit marcou uma nova fase da minha infância e trouxe personagens e franquias que continuam comigo até hoje.",
+                games: [
+                    "Super Mario Bros.",
+                    "Contra",
+                    "DuckTales",
+                    "Mega Man 2",
+                    "Castlevania",
+                    "Battletoads"
+                ]
+            }
+        ]
+    },
+
+    {
+        number: "02",
+        label: "ERA 16-BIT",
+        title: "UMA NOVA DIMENSÃO",
+        description:
+            "Uma geração que elevou os videogames a outro nível. Gráficos melhores, trilhas memoráveis e alguns dos jogos que mais marcaram minha infância.",
+        platforms: [
+            {
+                year: "1993",
+                name: "MEGA DRIVE",
+                type: "Contato através de primos",
+                description:
+                    "Meus primos tinham um Mega Drive e eu aproveitava cada oportunidade para jogar. Foi assim que conheci grandes clássicos da Sega.",
+                games: [
+                    "Altered Beast",
+                    "Streets of Rage",
+                    "Ghouls 'n Ghosts",
+                    "Earthworm Jim"
+                ],
+                contact: true
+            },
+            {
+                year: "1994",
+                name: "SUPER NINTENDO",
+                type: "Uma geração inesquecível",
+                description:
+                    "Uma das fases mais marcantes da minha vida gamer. O Super Nintendo abriu um universo enorme de aventuras, lutas, RPGs, corridas e exploração.",
+                games: [
+                    "Donkey Kong",
+                    "Super Mario World",
+                    "Mortal Kombat",
+                    "Street Fighter",
+                    "Chrono Trigger",
+                    "Final Fantasy",
+                    "Contra III",
+                    "Top Gear",
+                    "International Superstar Soccer Deluxe",
+                    "Final Fight",
+                    "Sunset Riders",
+                    "Aladdin",
+                    "Legend of Mana",
+                    "Super Metroid",
+                    "Demon's Crest"
+                ]
+            }
+        ]
+    },
+
+    {
+        number: "03",
+        label: "ERA 32/64-BIT",
+        title: "QUANDO OS MUNDOS GANHARAM DIMENSÃO",
+        description:
+            "Os videogames começaram a abandonar o mundo dos sprites e a entrar de vez em uma nova era de polígonos, CD-ROMs, áudio digital e mundos tridimensionais.",
+        platforms: [
+            {
+                year: "1995",
+                name: "3DO",
+                type: "Contato em locadora",
+                description:
+                    "Eu não tive um 3DO, mas conheci a plataforma em uma locadora. Pagava por hora e aproveitava cada minuto para descobrir aquela tecnologia diferente.",
+                games: [
+                    "Road Rash",
+                    "The Need for Speed",
+                    "DOOM",
+                    "Super Street Fighter II Turbo"
+                ],
+                contact: true
+            },
+            {
+                year: "1995",
+                name: "NEO GEO CD",
+                type: "Contato em locadora",
+                description:
+                    "Outra experiência de locadora que ficou marcada. O Neo Geo era praticamente um sonho para quem gostava dos arcades.",
+                games: [
+                    "The King of Fighters '95",
+                    "The King of Fighters '96",
+                    "Metal Slug",
+                    "Samurai Shodown III",
+                    "Fatal Fury Special",
+                    "Super Sidekicks 3"
+                ],
+                contact: true
+            },
+            {
+                year: "1997",
+                name: "NINTENDO 64",
+                type: "A chegada do 3D",
+                description:
+                    "O Nintendo 64 foi uma verdadeira revolução. Foi uma das primeiras vezes em que senti que os mundos dos videogames estavam realmente ganhando outra dimensão.",
+                games: [
+                    "Super Mario 64",
+                    "Mario Kart 64",
+                    "Banjo-Kazooie",
+                    "GoldenEye 007",
+                    "Donkey Kong 64",
+                    "Star Fox 64",
+                    "1080 Snowboarding",
+                    "Wave Race 64"
+                ]
+            },
+            {
+                year: "1998",
+                name: "PLAYSTATION 1",
+                type: "Uma nova era",
+                description:
+                    "O PlayStation marcou uma transformação enorme na minha relação com os videogames. Foi uma época de experiências mais cinematográficas e jogos que ficaram para sempre.",
+                games: [
+                    "Resident Evil 1",
+                    "Resident Evil 2",
+                    "Resident Evil 3",
+                    "Dino Crisis",
+                    "Medal of Honor",
+                    "Gran Turismo 2",
+                    "Castlevania: Symphony of the Night",
+                    "Metal Gear Solid",
+                    "Tekken 3"
+                ]
+            }
+        ]
+    },
+
+    {
+        number: "04",
+        label: "ERA DOS PCS",
+        title: "QUANDO O COMPUTADOR VIROU PARTE DA HISTÓRIA",
+        description:
+            "Os computadores não foram apenas uma alternativa aos consoles. Eles abriram portas para outros gêneros, experiências online e, principalmente, para a época das LAN houses.",
+        platforms: [
+            {
+                year: "1994",
+                name: "PC 486 + WINDOWS 3.1",
+                type: "Computador do meu pai",
+                description:
+                    "Meu pai tinha o computador, mas deixava eu brincar. Foi quando tecnologia e videogames começaram a andar juntos na minha cabeça.",
+                games: [
+                    "DOOM",
+                    "Wolfenstein 3D",
+                    "Duke Nukem",
+                    "Hexen",
+                    "Blood",
+                    "Prince of Persia",
+                    "Stunts",
+                    "Monkey Island",
+                    "Full Throttle"
+                ]
+            },
+            {
+                year: "1997",
+                name: "PC PENTIUM II + WINDOWS 95",
+                type: "Meu primeiro computador",
+                description:
+                    "Foi meu primeiro computador exclusivamente meu. A partir daqui, o PC passou a ocupar um espaço cada vez maior na minha vida.",
+                games: [
+                    "DOOM II",
+                    "Quake II",
+                    "Carmageddon",
+                    "Diablo",
+                    "Heroes of Might and Magic III",
+                    "Age of Empires",
+                    "Command & Conquer: Red Alert"
+                ]
+            },
+            {
+                year: "2001",
+                name: "PC ATHLON XP + WINDOWS XP",
+                type: "A era das LAN houses",
+                description:
+                    "Foi onde conheci Half-Life e seus mods. Também foi a época em que comecei a frequentar LAN houses e descobri uma nova maneira de jogar com outras pessoas.",
+                games: [
+                    "Half-Life",
+                    "Team Fortress",
+                    "Counter-Strike 1.5",
+                    "Counter-Strike 1.6",
+                    "Quake III",
+                    "Call of Duty",
+                    "Max Payne",
+                    "Age of Mythology"
+                ]
+            }
+        ]
+    },
+
+    {
+        number: "05",
+        label: "ERA 128-BIT",
+        title: "UMA GERAÇÃO DE CLÁSSICOS",
+        description:
+            "Os consoles ganharam mais potência, mundos maiores e experiências que definiram uma geração inteira.",
+        platforms: [
+            {
+                year: "2002",
+                name: "PLAYSTATION 2",
+                type: "Uma geração inesquecível",
+                description:
+                    "Uma das plataformas mais marcantes da minha história gamer. Foi uma época de grandes franquias, mundos abertos e experiências cinematográficas.",
+                games: [
+                    "Black",
+                    "Need for Speed Underground 2",
+                    "GTA San Andreas",
+                    "GTA Vice City",
+                    "God of War II",
+                    "Resident Evil 4",
+                    "Metal Gear Solid 3"
+                ]
+            }
+        ]
+    },
+
+    {
+        number: "06",
+        label: "ERA HD",
+        title: "OS VIDEOGAMES EM ALTA DEFINIÇÃO",
+        description:
+            "A chegada do HD mudou a escala dos jogos. Mundos maiores, gráficos mais detalhados, multiplayer online e experiências cada vez mais cinematográficas.",
+        platforms: [
+            {
+                year: "2006",
+                name: "XBOX 360",
+                type: "A nova geração",
+                description:
+                    "Uma geração que trouxe experiências online e franquias que se tornaram parte importante da história dos videogames.",
+                games: [
+                    "Gears of War",
+                    "Halo 3",
+                    "Forza Motorsport 4",
+                    "Batman: Arkham City",
+                    "Red Dead Redemption",
+                    "Call of Duty: Modern Warfare"
+                ]
+            },
+            {
+                year: "2008",
+                name: "PLAYSTATION 3",
+                type: "Uma nova geração",
+                description:
+                    "Uma época marcada por grandes experiências cinematográficas, mundos abertos e franquias que continuam relevantes até hoje.",
+                games: [
+                    "The Last of Us",
+                    "God of War III",
+                    "Grand Theft Auto V",
+                    "Assassin's Creed III",
+                    "Killzone 3",
+                    "Battlefield 4",
+                    "Far Cry 3",
+                    "Ultimate Marvel vs. Capcom 3"
+                ]
+            },
+            {
+                year: "2009",
+                name: "PC AMD PHENOM II X4 + WINDOWS 7",
+                type: "Uma nova fase no PC",
+                description:
+                    "O PC continuou evoluindo junto comigo, trazendo experiências cada vez mais ambiciosas e mostrando a força dos jogos para computador.",
+                games: [
+                    "Call of Duty: Modern Warfare 2",
+                    "Left 4 Dead 2",
+                    "Fallout 3",
+                    "GTA IV",
+                    "Age of Empires III",
+                    "Crysis",
+                    "The Elder Scrolls V: Skyrim"
+                ]
+            }
+        ]
+    },
+
+    {
+        number: "07",
+        label: "ERA MODERNA",
+        title: "O PRESENTE DA MINHA JORNADA",
+        description:
+            "As plataformas atuais representam mais de três décadas de videogames, tecnologia e histórias que continuam sendo construídas.",
+        platforms: [
+            {
+                year: "2013",
+                name: "PLAYSTATION 4",
+                type: "Uma geração cinematográfica",
+                description:
+                    "Uma das gerações mais completas da minha trajetória, reunindo mundos abertos, aventuras cinematográficas, terror, corrida e ação.",
+                games: [
+                    "Red Dead Redemption 2",
+                    "Grand Theft Auto V",
+                    "The Last of Us Part II",
+                    "God of War",
+                    "Resident Evil 7",
+                    "Mortal Kombat X",
+                    "The Witcher 3",
+                    "Uncharted 4",
+                    "Ace Combat 7"
+                ]
+            },
+            {
+                year: "2020",
+                name: "XBOX SERIES S",
+                type: "A geração atual",
+                description:
+                    "Uma porta de entrada para uma nova geração, com experiências modernas e acesso a grandes franquias da Xbox.",
+                games: [
+                    "Gears 5",
+                    "DOOM Eternal",
+                    "Halo Infinite",
+                    "Forza Horizon 5",
+                    "Far Cry 5"
+                ]
+            },
+            {
+                year: "2022",
+                name: "PC DELL G15",
+                type: "Meu PC gamer atual",
+                description:
+                    "Meu principal computador gamer atual. Uma máquina que reúne jogos, criação de conteúdo, transmissões e toda a parte tecnológica da JorgeraTV.",
+                games: [
+                    "Battlefield 2042",
+                    "DOOM: The Dark Ages",
+                    "Counter-Strike 2",
+                    "Cyberpunk 2077"
+                ]
+            },
+            {
+                year: "2023",
+                name: "PLAYSTATION 5 SLIM",
+                type: "Minha geração atual",
+                description:
+                    "Meu console atual da Sony e uma das plataformas centrais da experiência gamer da JorgeraTV.",
+                games: [
+                    "God of War Ragnarök",
+                    "Resident Evil 4 Remake",
+                    "Battlefield 6",
+                    "Metal Gear Solid Delta",
+                    "The Callisto Protocol"
+                ]
+            },
+            {
+                year: "2024",
+                name: "NINTENDO SWITCH LITE",
+                type: "Nintendo portátil",
+                description:
+                    "Uma experiência diferente dentro da minha jornada, reunindo a tradição da Nintendo com a liberdade de jogar de forma portátil.",
+                games: [
+                    "Super Mario 3D World + Bowser's Fury",
+                    "Super Mario Odyssey",
+                    "Mario Kart 8 Deluxe",
+                    "Donkey Kong Country: Tropical Freeze",
+                    "The Legend of Zelda: Tears of the Kingdom"
+                ]
+            }
+        ]
+    }
+];
 ---
 
 <section class="platforms" id="plataformas">
 
     <div class="container">
 
-        <span class="section-title">
-            ONDE ME ENCONTRAR
-        </span>
+        <!-- CABEÇALHO -->
 
-        <h2>
-            Acompanhe a JorgeraTV em todas as plataformas
-        </h2>
+        <div class="platforms-intro">
 
-        <p class="platform-description">
-            Escolha sua plataforma favorita e venha fazer parte da comunidade.
-            Lives, vídeos, bastidores, novidades e muito conteúdo gamer.
-        </p>
+            <span class="section-title">
+                JORGERATV • MINHA HISTÓRIA GAMER
+            </span>
 
-        <div class="platform-grid">
+            <h1>
+                MINHA JORNADA<br />
+                PELOS VIDEOGAMES.
+            </h1>
 
-            <!-- YouTube -->
+            <p class="intro-text">
+                De um Atari 2600 ao PlayStation 5 e ao PC gamer.
+                Mais de três décadas atravessando gerações,
+                tecnologias, amizades e histórias que ficaram para sempre.
+            </p>
 
-            <a
-                href="https://youtube.com/@JorgeraTV"
-                target="_blank"
-                rel="noopener noreferrer"
-                class="platform-card youtube">
+            <div class="intro-stats">
 
-                <div class="icon">▶</div>
+                <div>
+                    <strong>21</strong>
+                    <span>Plataformas</span>
+                </div>
 
-                <h3>YouTube</h3>
+                <div>
+                    <strong>1990</strong>
+                    <span>Primeiro contato</span>
+                </div>
 
-                <p>
-                    Lives, gameplays, reviews e vídeos completos.
-                </p>
+                <div>
+                    <strong>2024</strong>
+                    <span>Fase atual</span>
+                </div>
 
-                <span class="button">
-                    Acessar Canal
-                </span>
+            </div>
 
-            </a>
+        </div>
 
-            <!-- Twitch -->
 
-            <a
-                href="#"
-                class="platform-card twitch">
+        <!-- INTRODUÇÃO -->
 
-                <div class="icon">🎮</div>
+        <div class="platforms-story">
 
-                <h3>Twitch</h3>
+            <div class="story-label">
+                UMA HISTÓRIA EM GERAÇÕES
+            </div>
 
-                <p>
-                    Em breve transmissões simultâneas.
-                </p>
+            <h2>
+                Cada plataforma conta
+                <span>uma parte da história.</span>
+            </h2>
 
-                <span class="button">
-                    Em Breve
-                </span>
+            <p>
+                Alguns eu tive. Outros pertenciam a amigos, primos,
+                meu pai ou às locadoras que fizeram parte daquela época.
+                Mas todos eles contribuíram de alguma forma para construir
+                a minha relação com os videogames.
+            </p>
 
-            </a>
+        </div>
 
-            <!-- TikTok -->
 
-            <a
-                href="#"
-                class="platform-card tiktok">
+        <!-- ERAS -->
 
-                <div class="icon">🎵</div>
+        <div class="platform-eras">
 
-                <h3>TikTok</h3>
+            {eras.map((era) => (
 
-                <p>
-                    Cortes, momentos engraçados e vídeos curtos.
-                </p>
+                <section class="platform-era">
 
-                <span class="button">
-                    Em Breve
-                </span>
+                    <div class="era-heading">
 
-            </a>
+                        <div class="era-number">
+                            {era.number}
+                        </div>
 
-            <!-- Instagram -->
+                        <div>
 
-            <a
-                href="#"
-                class="platform-card instagram">
+                            <span class="era-label">
+                                {era.label}
+                            </span>
 
-                <div class="icon">📸</div>
+                            <h2>
+                                {era.title}
+                            </h2>
 
-                <h3>Instagram</h3>
+                            <p>
+                                {era.description}
+                            </p>
 
-                <p>
-                    Bastidores, fotos e novidades do canal.
-                </p>
+                        </div>
 
-                <span class="button">
-                    Em Breve
-                </span>
+                    </div>
 
-            </a>
 
-            <!-- Discord -->
+                    <div class="platform-cards">
 
-            <a
-                href="#"
-                class="platform-card discord">
+                        {era.platforms.map((platform) => (
 
-                <div class="icon">💬</div>
+                            <article class="history-card">
 
-                <h3>Discord</h3>
+                                <div class="history-card-top">
 
-                <p>
-                    Entre na comunidade e converse durante as lives.
-                </p>
+                                    <span class="platform-year">
+                                        {platform.year}
+                                    </span>
 
-                <span class="button">
-                    Entrar
-                </span>
+                                    <span class="platform-type">
+                                        {platform.type}
+                                    </span>
 
-            </a>
+                                </div>
 
-            <!-- Linktree -->
 
-            <a
-                href="https://linktr.ee/jorgeratv"
-                target="_blank"
-                rel="noopener noreferrer"
-                class="platform-card linktree">
+                                <h3>
+                                    {platform.name}
+                                </h3>
 
-                <div class="icon">🌐</div>
 
-                <h3>Linktree</h3>
+                                <p class="platform-text">
+                                    {platform.description}
+                                </p>
 
-                <p>
-                    Todos os links oficiais da JorgeraTV.
-                </p>
 
-                <span class="button">
-                    Abrir
-                </span>
+                                <div class="games">
 
-            </a>
+                                    <span class="games-label">
+                                        JOGOS QUE MARCARAM ESSA FASE
+                                    </span>
 
-            <!-- LivePix -->
+                                    <ul>
 
-            <a
-                href="https://livepix.gg/jorgeratv"
-                target="_blank"
-                rel="noopener noreferrer"
-                class="platform-card livepix">
+                                        {platform.games.map((game) => (
 
-                <div class="icon">❤️</div>
+                                            <li>
+                                                {game}
+                                            </li>
 
-                <h3>LivePix</h3>
+                                        ))}
 
-                <p>
-                    Apoie o canal durante as lives.
-                </p>
+                                    </ul>
 
-                <span class="button">
-                    Apoiar
-                </span>
+                                </div>
 
-            </a>
+                            </article>
 
-            <!-- Site -->
+                        ))}
 
-            <a
-                href="/"
-                class="platform-card website">
+                    </div>
 
-                <div class="icon">🚀</div>
+                </section>
 
-                <h3>Site Oficial</h3>
-
-                <p>
-                    Notícias, setup, blog e tudo sobre a JorgeraTV.
-                </p>
-
-                <span class="button">
-                    Você está aqui
-                </span>
-
-            </a>
+            ))}
 
         </div>
 
