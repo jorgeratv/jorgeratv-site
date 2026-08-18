@@ -1,1 +1,1221 @@
+/* =========================================================
+   JORGERATV
+   PLATFORM TIMELINE
+   Uma vida inteira através dos games
+========================================================= */
 
+.platform-timeline {
+
+    position: relative;
+
+    padding: 150px 0 160px;
+
+    overflow: hidden;
+
+    color: #f5f5f5;
+
+    background:
+        radial-gradient(
+            circle at 15% 10%,
+            rgba(214, 31, 38, .10),
+            transparent 30%
+        ),
+        radial-gradient(
+            circle at 85% 70%,
+            rgba(214, 31, 38, .07),
+            transparent 30%
+        ),
+        linear-gradient(
+            180deg,
+            #050505 0%,
+            #090909 50%,
+            #050505 100%
+        );
+}
+
+
+/* =========================================================
+   EFEITOS DE FUNDO
+========================================================= */
+
+.platform-timeline::before {
+
+    content: "";
+
+    position: absolute;
+
+    width: 650px;
+    height: 650px;
+
+    top: -300px;
+    left: -300px;
+
+    border-radius: 50%;
+
+    border: 1px solid rgba(255,255,255,.035);
+
+    box-shadow:
+        0 0 0 80px rgba(255,255,255,.012),
+        0 0 0 160px rgba(255,255,255,.008);
+
+    pointer-events: none;
+}
+
+
+.platform-timeline::after {
+
+    content: "";
+
+    position: absolute;
+
+    width: 500px;
+    height: 500px;
+
+    right: -250px;
+    bottom: -250px;
+
+    border-radius: 50%;
+
+    background:
+        radial-gradient(
+            circle,
+            rgba(214,31,38,.12),
+            transparent 70%
+        );
+
+    filter: blur(60px);
+
+    pointer-events: none;
+}
+
+
+/* =========================================================
+   CONTAINER
+========================================================= */
+
+.platform-timeline__container {
+
+    width: min(
+        1200px,
+        calc(100% - 48px)
+    );
+
+    margin: 0 auto;
+
+    position: relative;
+
+    z-index: 2;
+}
+
+
+/* =========================================================
+   INTRODUÇÃO
+========================================================= */
+
+.platform-timeline__intro {
+
+    max-width: 900px;
+
+    margin: 0 auto 120px;
+
+    text-align: center;
+}
+
+
+.platform-timeline__eyebrow {
+
+    display: inline-flex;
+
+    align-items: center;
+
+    gap: 10px;
+
+    margin-bottom: 22px;
+
+    color: #ff343a;
+
+    font-size: 13px;
+
+    font-weight: 800;
+
+    letter-spacing: 3px;
+
+    text-transform: uppercase;
+}
+
+
+.platform-timeline__eyebrow::before,
+.platform-timeline__eyebrow::after {
+
+    content: "";
+
+    width: 30px;
+
+    height: 1px;
+
+    background: rgba(255,52,58,.55);
+}
+
+
+.platform-timeline__intro h1 {
+
+    margin: 0 0 30px;
+
+    color: #fff;
+
+    font-size: clamp(
+        54px,
+        8vw,
+        105px
+    );
+
+    line-height: .9;
+
+    letter-spacing: -5px;
+
+    font-weight: 900;
+}
+
+
+.platform-timeline__intro h1 span {
+
+    display: block;
+
+    color: #ff3036;
+}
+
+
+.platform-timeline__intro p {
+
+    max-width: 760px;
+
+    margin: 0 auto;
+
+    color: #999;
+
+    font-size: 19px;
+
+    line-height: 1.8;
+}
+
+
+/* =========================================================
+   LINHA DO TEMPO
+========================================================= */
+
+.platform-timeline__track {
+
+    position: relative;
+
+    padding: 20px 0 40px;
+}
+
+
+/*
+   LINHA CENTRAL
+*/
+
+.platform-timeline__track::before {
+
+    content: "";
+
+    position: absolute;
+
+    top: 0;
+    bottom: 0;
+
+    left: 50%;
+
+    width: 2px;
+
+    transform: translateX(-50%);
+
+    background:
+        linear-gradient(
+            180deg,
+            transparent 0%,
+            rgba(214,31,38,.35) 5%,
+            #d61f26 20%,
+            #d61f26 80%,
+            rgba(214,31,38,.35) 95%,
+            transparent 100%
+        );
+
+    box-shadow:
+        0 0 18px rgba(214,31,38,.15);
+}
+
+
+/* =========================================================
+   ITEM
+========================================================= */
+
+.platform-era {
+
+    position: relative;
+
+    width: 50%;
+
+    padding-bottom: 100px;
+}
+
+
+.platform-era:last-child {
+
+    padding-bottom: 20px;
+}
+
+
+/* ESQUERDA */
+
+.platform-era:nth-child(odd) {
+
+    padding-right: 65px;
+
+    text-align: right;
+}
+
+
+/* DIREITA */
+
+.platform-era:nth-child(even) {
+
+    margin-left: 50%;
+
+    padding-left: 65px;
+
+    text-align: left;
+}
+
+
+/* =========================================================
+   MARCADOR CENTRAL
+========================================================= */
+
+.platform-era__marker {
+
+    position: absolute;
+
+    top: 5px;
+
+    width: 24px;
+    height: 24px;
+
+    border-radius: 50%;
+
+    background: #080808;
+
+    border: 2px solid #d61f26;
+
+    box-shadow:
+        0 0 0 6px rgba(214,31,38,.08),
+        0 0 25px rgba(214,31,38,.25);
+
+    z-index: 5;
+
+    transition:
+        transform .35s ease,
+        box-shadow .35s ease,
+        background .35s ease;
+}
+
+
+/* ESQUERDA */
+
+.platform-era:nth-child(odd)
+.platform-era__marker {
+
+    right: -12px;
+}
+
+
+/* DIREITA */
+
+.platform-era:nth-child(even)
+.platform-era__marker {
+
+    left: -12px;
+}
+
+
+.platform-era:hover
+.platform-era__marker {
+
+    transform: scale(1.35);
+
+    background: #d61f26;
+
+    box-shadow:
+        0 0 0 8px rgba(214,31,38,.10),
+        0 0 35px rgba(214,31,38,.55);
+}
+
+
+/* =========================================================
+   ANO
+========================================================= */
+
+.platform-era__year {
+
+    display: inline-block;
+
+    margin-bottom: 12px;
+
+    color: #ff343a;
+
+    font-size: 15px;
+
+    font-weight: 900;
+
+    letter-spacing: 2px;
+}
+
+
+/* =========================================================
+   STATUS
+========================================================= */
+
+.platform-era__status {
+
+    display: inline-flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    min-height: 26px;
+
+    padding: 6px 10px;
+
+    margin-bottom: 15px;
+
+    border-radius: 5px;
+
+    color: #aaa;
+
+    background: rgba(255,255,255,.035);
+
+    border: 1px solid rgba(255,255,255,.07);
+
+    font-size: 9px;
+
+    font-weight: 800;
+
+    letter-spacing: 1.2px;
+
+    text-transform: uppercase;
+}
+
+
+/* =========================================================
+   TÍTULO
+========================================================= */
+
+.platform-era h2 {
+
+    margin: 0 0 14px;
+
+    color: #fff;
+
+    font-size: clamp(
+        30px,
+        4vw,
+        46px
+    );
+
+    line-height: .98;
+
+    letter-spacing: -1.5px;
+
+    font-weight: 900;
+
+    transition: color .3s ease;
+}
+
+
+.platform-era:hover h2 {
+
+    color: #ff343a;
+}
+
+
+/* =========================================================
+   DESCRIÇÃO
+========================================================= */
+
+.platform-era__description {
+
+    margin: 0 0 25px;
+
+    color: #888;
+
+    font-size: 14px;
+
+    line-height: 1.7;
+}
+
+
+/* =========================================================
+   CARD
+========================================================= */
+
+.platform-era__card {
+
+    position: relative;
+
+    overflow: hidden;
+
+    padding: 25px;
+
+    border-radius: 18px;
+
+    background:
+        linear-gradient(
+            145deg,
+            rgba(255,255,255,.045),
+            rgba(255,255,255,.012)
+        );
+
+    border: 1px solid rgba(255,255,255,.07);
+
+    backdrop-filter: blur(12px);
+
+    transition:
+        transform .4s ease,
+        border-color .4s ease,
+        box-shadow .4s ease;
+}
+
+
+.platform-era__card::before {
+
+    content: "";
+
+    position: absolute;
+
+    inset: 0;
+
+    background:
+        radial-gradient(
+            circle at 50% 0%,
+            rgba(214,31,38,.12),
+            transparent 60%
+        );
+
+    opacity: 0;
+
+    transition: opacity .4s ease;
+
+    pointer-events: none;
+}
+
+
+.platform-era:hover
+.platform-era__card {
+
+    transform: translateY(-5px);
+
+    border-color:
+        rgba(214,31,38,.35);
+
+    box-shadow:
+        0 25px 70px rgba(0,0,0,.45),
+        0 0 35px rgba(214,31,38,.07);
+}
+
+
+.platform-era:hover
+.platform-era__card::before {
+
+    opacity: 1;
+}
+
+
+/* =========================================================
+   CABEÇALHO DO CARD
+========================================================= */
+
+.platform-era__card-header {
+
+    position: relative;
+
+    z-index: 2;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: space-between;
+
+    gap: 15px;
+
+    margin-bottom: 20px;
+}
+
+
+.platform-era__type {
+
+    color: #666;
+
+    font-size: 9px;
+
+    font-weight: 800;
+
+    letter-spacing: 1.5px;
+
+    text-transform: uppercase;
+}
+
+
+/* =========================================================
+   LISTA DE JOGOS
+========================================================= */
+
+.platform-games {
+
+    position: relative;
+
+    z-index: 2;
+
+    display: flex;
+
+    flex-wrap: wrap;
+
+    justify-content: flex-start;
+
+    gap: 10px;
+}
+
+
+/* Quando o card está do lado esquerdo,
+   os jogos ficam alinhados à direita */
+
+.platform-era:nth-child(odd)
+.platform-games {
+
+    justify-content: flex-end;
+}
+
+
+/* =========================================================
+   MINIATURA
+========================================================= */
+
+.platform-game {
+
+    position: relative;
+
+    width: 82px;
+
+    height: 112px;
+
+    overflow: hidden;
+
+    flex-shrink: 0;
+
+    border-radius: 8px;
+
+    background: #111;
+
+    border: 1px solid rgba(255,255,255,.08);
+
+    box-shadow:
+        0 8px 18px rgba(0,0,0,.35);
+
+    transition:
+        transform .3s ease,
+        border-color .3s ease,
+        box-shadow .3s ease;
+}
+
+
+.platform-game img {
+
+    display: block;
+
+    width: 100%;
+    height: 100%;
+
+    object-fit: cover;
+
+    transition:
+        transform .4s ease,
+        filter .4s ease;
+}
+
+
+.platform-game:hover {
+
+    transform:
+        translateY(-7px)
+        scale(1.04);
+
+    border-color:
+        rgba(255,52,58,.65);
+
+    box-shadow:
+        0 15px 35px rgba(0,0,0,.55),
+        0 0 20px rgba(214,31,38,.12);
+
+    z-index: 4;
+}
+
+
+.platform-game:hover img {
+
+    transform: scale(1.06);
+
+    filter:
+        brightness(1.08);
+}
+
+
+/* =========================================================
+   NOME DO JOGO
+========================================================= */
+
+.platform-game__name {
+
+    position: absolute;
+
+    left: 0;
+    right: 0;
+    bottom: 0;
+
+    padding: 8px 5px;
+
+    color: #fff;
+
+    background:
+        linear-gradient(
+            180deg,
+            transparent,
+            rgba(0,0,0,.95)
+        );
+
+    font-size: 8px;
+
+    line-height: 1.2;
+
+    font-weight: 700;
+
+    text-align: center;
+
+    opacity: 0;
+
+    transform: translateY(5px);
+
+    transition:
+        opacity .25s ease,
+        transform .25s ease;
+}
+
+
+.platform-game:hover
+.platform-game__name {
+
+    opacity: 1;
+
+    transform: translateY(0);
+}
+
+
+/* =========================================================
+   CONTAGEM DE JOGOS
+========================================================= */
+
+.platform-era__count {
+
+    color: #555;
+
+    font-size: 10px;
+
+    font-weight: 700;
+
+    letter-spacing: 1px;
+
+    text-transform: uppercase;
+}
+
+
+/* =========================================================
+   DIFERENCIAÇÃO DE STATUS
+========================================================= */
+
+/* TIVE */
+
+.platform-era[data-status="owned"]
+.platform-era__status {
+
+    color: #ff4a50;
+
+    border-color:
+        rgba(255,52,58,.22);
+
+    background:
+        rgba(214,31,38,.08);
+}
+
+
+/* CONHECI */
+
+.platform-era[data-status="friend"]
+.platform-era__status {
+
+    color: #d2a85a;
+
+    border-color:
+        rgba(210,168,90,.20);
+
+    background:
+        rgba(210,168,90,.06);
+}
+
+
+/* LOCADORA */
+
+.platform-era[data-status="arcade"]
+.platform-era__status {
+
+    color: #62a9ff;
+
+    border-color:
+        rgba(98,169,255,.20);
+
+    background:
+        rgba(98,169,255,.06);
+}
+
+
+/* =========================================================
+   SEPARADOR DE ÉPOCA
+========================================================= */
+
+.platform-era__connector {
+
+    position: absolute;
+
+    top: 16px;
+
+    width: 65px;
+
+    height: 1px;
+
+    background:
+        linear-gradient(
+            90deg,
+            rgba(214,31,38,.05),
+            rgba(214,31,38,.45)
+        );
+
+    opacity: .7;
+}
+
+
+.platform-era:nth-child(odd)
+.platform-era__connector {
+
+    right: 0;
+}
+
+
+.platform-era:nth-child(even)
+.platform-era__connector {
+
+    left: 0;
+
+    transform: rotate(180deg);
+}
+
+
+/* =========================================================
+   FINAL DA JORNADA
+========================================================= */
+
+.platform-timeline__ending {
+
+    position: relative;
+
+    max-width: 900px;
+
+    margin: 70px auto 0;
+
+    padding: 90px 50px;
+
+    text-align: center;
+
+    overflow: hidden;
+
+    border-radius: 24px;
+
+    border: 1px solid
+        rgba(214,31,38,.20);
+
+    background:
+        radial-gradient(
+            circle at 50% 0%,
+            rgba(214,31,38,.13),
+            transparent 65%
+        ),
+        rgba(255,255,255,.018);
+
+    box-shadow:
+        0 25px 80px rgba(0,0,0,.30);
+}
+
+
+.platform-timeline__ending::before {
+
+    content: "";
+
+    position: absolute;
+
+    top: -100px;
+    left: 50%;
+
+    width: 200px;
+    height: 200px;
+
+    transform: translateX(-50%);
+
+    border-radius: 50%;
+
+    border: 1px solid
+        rgba(214,31,38,.12);
+
+    box-shadow:
+        0 0 0 35px rgba(214,31,38,.025),
+        0 0 0 70px rgba(214,31,38,.015);
+}
+
+
+.platform-timeline__ending small {
+
+    position: relative;
+
+    color: #ff343a;
+
+    font-size: 11px;
+
+    font-weight: 900;
+
+    letter-spacing: 3px;
+
+    text-transform: uppercase;
+}
+
+
+.platform-timeline__ending h2 {
+
+    position: relative;
+
+    margin: 20px 0;
+
+    color: #fff;
+
+    font-size: clamp(
+        38px,
+        6vw,
+        70px
+    );
+
+    line-height: .95;
+
+    letter-spacing: -3px;
+
+    font-weight: 900;
+}
+
+
+.platform-timeline__ending h2 span {
+
+    display: block;
+
+    color: #ff3036;
+}
+
+
+.platform-timeline__ending p {
+
+    position: relative;
+
+    max-width: 650px;
+
+    margin: 0 auto;
+
+    color: #888;
+
+    font-size: 16px;
+
+    line-height: 1.8;
+}
+
+
+/* =========================================================
+   RESPONSIVO
+========================================================= */
+
+@media (max-width: 900px) {
+
+    .platform-timeline {
+
+        padding: 110px 0 120px;
+
+    }
+
+
+    .platform-timeline__intro {
+
+        margin-bottom: 80px;
+
+    }
+
+
+    .platform-timeline__intro h1 {
+
+        letter-spacing: -3px;
+
+    }
+
+
+    .platform-era {
+
+        width: 100%;
+
+        padding-bottom: 70px;
+
+        padding-left: 55px !important;
+
+        padding-right: 0 !important;
+
+        margin-left: 0 !important;
+
+        text-align: left !important;
+
+    }
+
+
+    .platform-timeline__track::before {
+
+        left: 14px;
+
+        transform: none;
+
+    }
+
+
+    .platform-era__marker {
+
+        left: 2px !important;
+
+        right: auto !important;
+
+    }
+
+
+    .platform-era__connector {
+
+        left: 14px !important;
+
+        right: auto !important;
+
+        width: 40px;
+
+        transform: none !important;
+
+    }
+
+
+    .platform-games,
+
+    .platform-era:nth-child(odd)
+    .platform-games {
+
+        justify-content: flex-start;
+
+    }
+
+
+    .platform-era__card {
+
+        padding: 20px;
+
+    }
+
+}
+
+
+@media (max-width: 600px) {
+
+    .platform-timeline {
+
+        padding: 85px 0 90px;
+
+    }
+
+
+    .platform-timeline__container {
+
+        width:
+            min(
+                100% - 30px,
+                550px
+            );
+
+    }
+
+
+    .platform-timeline__intro {
+
+        margin-bottom: 60px;
+
+    }
+
+
+    .platform-timeline__eyebrow {
+
+        font-size: 10px;
+
+        letter-spacing: 2px;
+
+    }
+
+
+    .platform-timeline__eyebrow::before,
+    .platform-timeline__eyebrow::after {
+
+        width: 18px;
+
+    }
+
+
+    .platform-timeline__intro h1 {
+
+        font-size: 53px;
+
+        letter-spacing: -3px;
+
+    }
+
+
+    .platform-timeline__intro p {
+
+        font-size: 16px;
+
+    }
+
+
+    .platform-era {
+
+        padding-left: 45px !important;
+
+        padding-bottom: 60px;
+
+    }
+
+
+    .platform-era__marker {
+
+        width: 20px;
+        height: 20px;
+
+        left: 4px !important;
+
+    }
+
+
+    .platform-timeline__track::before {
+
+        left: 14px;
+
+    }
+
+
+    .platform-era h2 {
+
+        font-size: 32px;
+
+    }
+
+
+    .platform-era__description {
+
+        font-size: 13px;
+
+    }
+
+
+    .platform-game {
+
+        width: 68px;
+
+        height: 94px;
+
+    }
+
+
+    .platform-game__name {
+
+        display: none;
+
+    }
+
+
+    .platform-era__card-header {
+
+        align-items: flex-start;
+
+        flex-direction: column;
+
+        gap: 8px;
+
+    }
+
+
+    .platform-timeline__ending {
+
+        margin-top: 40px;
+
+        padding: 65px 22px;
+
+        border-radius: 18px;
+
+    }
+
+
+    .platform-timeline__ending h2 {
+
+        font-size: 42px;
+
+        letter-spacing: -2px;
+
+    }
+
+
+    .platform-timeline__ending p {
+
+        font-size: 14px;
+
+    }
+
+}
+
+
+/* =========================================================
+   REDUÇÃO DE MOVIMENTO
+========================================================= */
+
+@media (prefers-reduced-motion: reduce) {
+
+    .platform-era,
+    .platform-era__marker,
+    .platform-era__card,
+    .platform-game,
+    .platform-game img,
+    .platform-game__name {
+
+        transition: none !important;
+
+    }
+
+}
