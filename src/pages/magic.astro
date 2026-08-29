@@ -1,22 +1,29 @@
 ---
 import Layout from "../layouts/Layout.astro";
-
 import Header from "../components/Header.astro";
 import Footer from "../components/Footer.astro";
+
+import "../styles/magic.css";
 ---
 
 <Layout
     title="Magic: The Gathering | JorgeraTV"
-    description="A história de George com Magic: The Gathering, desde os primeiros anos no Brasil até Magic: The Gathering Arena."
+    description="A história de George com Magic: The Gathering — da infância e das primeiras cartas ao Magic: The Gathering Arena."
 >
 
     <Header />
 
-    <main>
+    <main class="magic-page">
 
-        <section class="magic-page">
+        <!-- =========================================
+             HERO
+        ========================================== -->
 
-            <div class="magic-intro">
+        <section class="magic-hero">
+
+            <div class="magic-hero-overlay"></div>
+
+            <div class="magic-hero-content">
 
                 <span class="magic-kicker">
                     UMA HISTÓRIA ALÉM DAS CARTAS
@@ -28,10 +35,988 @@ import Footer from "../components/Footer.astro";
                     THE GATHERING
                 </h1>
 
-                <p class="magic-lead">
+                <p>
                     Uma história de amizade, descobertas, cartas,
-                    partidas intermináveis e uma paixão que atravessou
-                    décadas.
+                    partidas intermináveis e uma paixão que atravessou décadas.
+                </p>
+
+                <div class="magic-scroll">
+                    <span>ROLE PARA CONHECER A HISTÓRIA</span>
+                    <span class="scroll-line"></span>
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- =========================================
+             INTRODUÇÃO
+        ========================================== -->
+
+        <section class="magic-section magic-introduction">
+
+            <div class="magic-container narrow">
+
+                <span class="section-kicker">
+                    ANTES DE SER UM JOGO
+                </span>
+
+                <h2>
+                    Algumas paixões começam
+                    <span>sem que a gente perceba.</span>
+                </h2>
+
+                <p class="magic-text">
+                    Eu sou um entusiasta, grande fã e jogador de
+                    <strong>Magic: The Gathering</strong>.
+                </p>
+
+                <p class="magic-text">
+                    Conheci Magic quando ele ainda era uma novidade
+                    chegando ao Brasil. Eu não sabia, naquele momento,
+                    que aquelas cartas fariam parte da minha vida por
+                    tantos anos.
+                </p>
+
+            </div>
+
+        </section>
+
+
+        <!-- =========================================
+             ESCOLA
+        ========================================== -->
+
+        <section class="magic-section school-section">
+
+            <div class="magic-container split">
+
+                <div class="magic-copy">
+
+                    <span class="section-kicker">
+                        CAPÍTULO 01
+                    </span>
+
+                    <h2>
+                        Tudo começou
+                        <span>na escola.</span>
+                    </h2>
+
+                    <p>
+                        Naquela época eu morava em Osasco e estudava
+                        em um colégio particular católico, onde cursei
+                        da primeira à oitava série.
+                    </p>
+
+                    <p>
+                        Não lembro exatamente o ano, mas foi ali que
+                        conheci Magic através de outros coleguinhas
+                        da escola.
+                    </p>
+
+                    <p>
+                        E foi assim, quase por acaso, que um simples
+                        baralho de cartas entrou na minha vida.
+                    </p>
+
+                </div>
+
+                <figure class="magic-image portrait">
+
+                    <img
+                        src="/magic/COLEGIO1.PNG"
+                        alt="Alunos reunidos em uma escola"
+                        loading="lazy"
+                    />
+
+                    <figcaption>
+                        O lugar onde tudo começou.
+                    </figcaption>
+
+                </figure>
+
+            </div>
+
+            <div class="magic-container school-secondary">
+
+                <figure class="magic-image wide">
+
+                    <img
+                        src="/magic/COLEGIO4.PNG"
+                        alt="Grupo de alunos reunidos na escola"
+                        loading="lazy"
+                    />
+
+                </figure>
+
+            </div>
+
+        </section>
+
+
+        <!-- =========================================
+             PRIMEIRAS CARTAS
+        ========================================== -->
+
+        <section class="magic-section first-cards">
+
+            <div class="magic-container">
+
+                <div class="center-heading">
+
+                    <span class="section-kicker">
+                        CAPÍTULO 02
+                    </span>
+
+                    <h2>
+                        O primeiro contato
+                        <span>com Magic.</span>
+                    </h2>
+
+                    <p>
+                        E então vieram as primeiras cartas.
+                    </p>
+
+                </div>
+
+                <figure class="magic-image cinematic">
+
+                    <img
+                        src="/magic/MAGIC10.PNG"
+                        alt="Coleção de cartas de Magic: The Gathering"
+                        loading="lazy"
+                    />
+
+                </figure>
+
+            </div>
+
+        </section>
+
+
+        <!-- =========================================
+             DINHEIRO DO LANCHE
+        ========================================== -->
+
+        <section class="magic-section sacrifice-section">
+
+            <div class="magic-container split reverse">
+
+                <figure class="magic-image">
+
+                    <img
+                        src="/magic/MAGIC11.PNG"
+                        alt="Cartas e objetos de Magic sobre uma mesa"
+                        loading="lazy"
+                    />
+
+                </figure>
+
+                <div class="magic-copy">
+
+                    <span class="section-kicker">
+                        A PRIMEIRA PAIXÃO
+                    </span>
+
+                    <h2>
+                        O dinheiro do lanche
+                        <span>virava Magic.</span>
+                    </h2>
+
+                    <p>
+                        Depois disso, toda vez que eu tinha algum
+                        dinheiro para o lanche, eu fazia uma escolha:
+                        ficava sem comer para guardar o dinheiro.
+                    </p>
+
+                    <p>
+                        Meu objetivo era ir até uma loja específica
+                        de RPGs que ficava na Vila Romana, em São Paulo,
+                        para comprar meus boosters e decks.
+                    </p>
+
+                    <p class="highlight">
+                        Naquela época, uma carta nova valia mais
+                        para mim do que um lanche.
+                    </p>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- =========================================
+             LOJA DE RPG
+        ========================================== -->
+
+        <section class="magic-section store-section">
+
+            <div class="magic-container">
+
+                <div class="center-heading">
+
+                    <span class="section-kicker">
+                        VILA ROMANA • SÃO PAULO
+                    </span>
+
+                    <h2>
+                        A loja onde eu descobri
+                        <span>um universo inteiro.</span>
+                    </h2>
+
+                </div>
+
+                <figure class="magic-image full">
+
+                    <img
+                        src="/magic/MAGIC24.PNG"
+                        alt="Loja especializada em jogos e RPG"
+                        loading="lazy"
+                    />
+
+                </figure>
+
+                <div class="magic-store-text">
+
+                    <p>
+                        A loja era incrível. Ali eu encontrava
+                        tudo relacionado aos RPGs de tabuleiro,
+                        jogos e ao universo geek.
+                    </p>
+
+                    <p>
+                        Foi também onde vi algumas das primeiras
+                        miniaturas ultra-realistas de personagens
+                        daquele mundo que eu começava a descobrir.
+                    </p>
+
+                </div>
+
+                <figure class="magic-image store-detail">
+
+                    <img
+                        src="/magic/MAGIC23.PNG"
+                        alt="Produtos e jogos em uma loja especializada"
+                        loading="lazy"
+                    />
+
+                </figure>
+
+            </div>
+
+        </section>
+
+
+        <!-- =========================================
+             FICHÁRIO
+        ========================================== -->
+
+        <section class="magic-section collection-section">
+
+            <div class="magic-container split">
+
+                <div class="magic-copy">
+
+                    <span class="section-kicker">
+                        MINHA PRIMEIRA COLEÇÃO
+                    </span>
+
+                    <h2>
+                        As cartas começaram
+                        <span>a ganhar uma casa.</span>
+                    </h2>
+
+                    <p>
+                        Lembro que comprei uma pasta tipo fichário,
+                        daquelas com páginas de plástico transparente,
+                        onde eu colocava cuidadosamente minhas cartas
+                        de Magic.
+                    </p>
+
+                    <p>
+                        Para mim aquilo já parecia uma coleção de
+                        verdade.
+                    </p>
+
+                </div>
+
+                <figure class="magic-image">
+
+                    <img
+                        src="/magic/MAGIC3.PNG"
+                        alt="Fichário com cartas de Magic: The Gathering"
+                        loading="lazy"
+                    />
+
+                </figure>
+
+            </div>
+
+        </section>
+
+
+        <!-- =========================================
+             AS CINCO CORES
+        ========================================== -->
+
+        <section class="magic-section colors-section">
+
+            <div class="magic-container narrow">
+
+                <div class="center-heading">
+
+                    <span class="section-kicker">
+                        MAS EU TINHA UMA COR PREFERIDA
+                    </span>
+
+                    <h2>
+                        Eu escolhi
+                        <span>o preto.</span>
+                    </h2>
+
+                    <p>
+                        Como as condições financeiras eram limitadas,
+                        eu não conseguia montar decks fortes de todas
+                        as cores.
+                    </p>
+
+                    <p>
+                        Então escolhi uma.
+                    </p>
+
+                    <p class="color-statement">
+                        PRETO.
+                    </p>
+
+                    <p>
+                        Todas as cartas de outras cores que eu
+                        conseguia acabavam sendo trocadas por cartas
+                        pretas.
+                    </p>
+
+                </div>
+
+            </div>
+
+            <div class="magic-color-grid">
+
+                <figure class="color-card black">
+
+                    <img
+                        src="/magic/MAGIC3.PNG"
+                        alt="Cartas pretas de Magic"
+                        loading="lazy"
+                    />
+
+                    <figcaption>PRETO</figcaption>
+
+                </figure>
+
+                <figure class="color-card">
+
+                    <img
+                        src="/magic/MAGIC4.PNG"
+                        alt="Cartas verdes de Magic"
+                        loading="lazy"
+                    />
+
+                    <figcaption>VERDE</figcaption>
+
+                </figure>
+
+                <figure class="color-card">
+
+                    <img
+                        src="/magic/MAGIC5.PNG"
+                        alt="Cartas azuis de Magic"
+                        loading="lazy"
+                    />
+
+                    <figcaption>AZUL</figcaption>
+
+                </figure>
+
+                <figure class="color-card">
+
+                    <img
+                        src="/magic/MAGIC6.PNG"
+                        alt="Cartas brancas de Magic"
+                        loading="lazy"
+                    />
+
+                    <figcaption>BRANCO</figcaption>
+
+                </figure>
+
+                <figure class="color-card">
+
+                    <img
+                        src="/magic/MAGIC7.PNG"
+                        alt="Cartas vermelhas de Magic"
+                        loading="lazy"
+                    />
+
+                    <figcaption>VERMELHO</figcaption>
+
+                </figure>
+
+            </div>
+
+        </section>
+
+
+        <!-- =========================================
+             AMIZADE
+        ========================================== -->
+
+        <section class="magic-section friends-section">
+
+            <div class="magic-container narrow">
+
+                <div class="center-heading">
+
+                    <span class="section-kicker">
+                        CAPÍTULO 03
+                    </span>
+
+                    <h2>
+                        Magic não era apenas
+                        <span>um jogo.</span>
+                    </h2>
+
+                    <p>
+                        Era uma desculpa para estar junto.
+                    </p>
+
+                </div>
+
+            </div>
+
+            <div class="magic-container gallery-two">
+
+                <figure class="magic-image">
+
+                    <img
+                        src="/magic/MAGIC14.PNG"
+                        alt="Pessoas jogando Magic: The Gathering"
+                        loading="lazy"
+                    />
+
+                </figure>
+
+                <figure class="magic-image">
+
+                    <img
+                        src="/magic/MAGIC8.PNG"
+                        alt="Amigos jogando cartas"
+                        loading="lazy"
+                    />
+
+                </figure>
+
+            </div>
+
+        </section>
+
+
+        <!-- =========================================
+             TARDES NA CASA DOS AMIGOS
+        ========================================== -->
+
+        <section class="magic-section memory-section">
+
+            <div class="magic-container split reverse">
+
+                <figure class="magic-image">
+
+                    <img
+                        src="/magic/MAGIC21.PNG"
+                        alt="Partida de Magic em uma mesa"
+                        loading="lazy"
+                    />
+
+                </figure>
+
+                <div class="magic-copy">
+
+                    <span class="section-kicker">
+                        UMA ÉPOCA ESPECIAL
+                    </span>
+
+                    <h2>
+                        A gente jogava
+                        <span>a tarde inteira.</span>
+                    </h2>
+
+                    <p>
+                        Depois da escola, às vezes íamos para a casa
+                        de algum colega e passávamos a tarde jogando.
+                    </p>
+
+                    <p>
+                        A mãe dele dava pão com mortadela e Tubaina
+                        para a gente comer.
+                    </p>
+
+                    <p class="highlight">
+                        É estranho como algumas lembranças simples
+                        conseguem ficar guardadas por décadas.
+                    </p>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- =========================================
+             VIDA FORA DO MAGIC
+        ========================================== -->
+
+        <section class="magic-section era-section">
+
+            <div class="magic-container split">
+
+                <div class="magic-copy">
+
+                    <span class="section-kicker">
+                        AQUELE TEMPO
+                    </span>
+
+                    <h2>
+                        A vida também era
+                        <span>futsal, rua e desenhos.</span>
+                    </h2>
+
+                    <p>
+                        Com aqueles mesmos colegas eu jogava futsal,
+                        brincava na rua e assistia Cavaleiros do Zodíaco.
+                    </p>
+
+                    <p>
+                        Quase ninguém tinha videogame naquele tempo.
+                    </p>
+
+                    <p>
+                        Os adultos diziam que videogame estragava
+                        a televisão. Era o argumento deles para não
+                        comprar um.
+                    </p>
+
+                    <p class="highlight">
+                        Hoje é engraçado lembrar disso.
+                    </p>
+
+                </div>
+
+                <figure class="magic-image">
+
+                    <img
+                        src="/magic/COLEGIO2.PNG"
+                        alt="Quadra de uma escola"
+                        loading="lazy"
+                    />
+
+                </figure>
+
+            </div>
+
+        </section>
+
+
+        <!-- =========================================
+             O FIM DA PRIMEIRA FASE
+        ========================================== -->
+
+        <section class="magic-section dark-break">
+
+            <div class="magic-container narrow center-heading">
+
+                <span class="section-kicker">
+                    E ENTÃO...
+                </span>
+
+                <h2>
+                    Magic saiu
+                    <span>da minha vida.</span>
+                </h2>
+
+                <p>
+                    Os videogames evoluíram.
+                    Eu perdi contato com os colegas da escola.
+                    E outras coisas passaram a ocupar meu tempo.
+                </p>
+
+            </div>
+
+        </section>
+
+
+        <!-- =========================================
+             AS CARTAS PERDIDAS
+        ========================================== -->
+
+        <section class="magic-section loss-section">
+
+            <div class="magic-container narrow center-heading">
+
+                <span class="section-kicker">
+                    UMA LEMBRANÇA QUE DÓI
+                </span>
+
+                <h2>
+                    Em uma mudança,
+                    <span>eu joguei todas as cartas fora.</span>
+                </h2>
+
+                <p>
+                    Ninguém mais jogava.
+                    Eu não conhecia ninguém que sequer soubesse
+                    o que era aquilo.
+                </p>
+
+                <p class="large-memory">
+                    Cheguei a achar que era o fim do Magic no Brasil.
+                </p>
+
+            </div>
+
+        </section>
+
+
+        <!-- =========================================
+             MAGIC NO PC
+        ========================================== -->
+
+        <section class="magic-section return-section">
+
+            <div class="magic-container split">
+
+                <figure class="magic-image">
+
+                    <img
+                        src="/magic/MAGIC17.PNG"
+                        alt="Magic: The Gathering em versão digital"
+                        loading="lazy"
+                    />
+
+                </figure>
+
+                <div class="magic-copy">
+
+                    <span class="section-kicker">
+                        CAPÍTULO 04
+                    </span>
+
+                    <h2>
+                        Então Magic
+                        <span>voltou pelo PC.</span>
+                    </h2>
+
+                    <p>
+                        Algum tempo depois descobri que existia
+                        uma versão de Magic para computador.
+                    </p>
+
+                    <p>
+                        Instalei e joguei bastante.
+                    </p>
+
+                    <p>
+                        Mas era offline. Eu jogava contra a inteligência
+                        artificial e a quantidade de cartas disponíveis
+                        era bastante limitada.
+                    </p>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- =========================================
+             O RETORNO
+        ========================================== -->
+
+        <section class="magic-section arena-section">
+
+            <div class="magic-container narrow center-heading">
+
+                <span class="section-kicker">
+                    CERCA DE DOIS ANOS ATRÁS
+                </span>
+
+                <h2>
+                    Eu descobri
+                    <span>Magic Arena.</span>
+                </h2>
+
+                <p>
+                    E dessa vez foi diferente.
+                </p>
+
+            </div>
+
+            <div class="magic-container">
+
+                <figure class="magic-image arena-hero">
+
+                    <img
+                        src="/magic/MAGIC19.PNG"
+                        alt="Partida de Magic: The Gathering Arena"
+                        loading="lazy"
+                    />
+
+                </figure>
+
+            </div>
+
+        </section>
+
+
+        <!-- =========================================
+             DOIS ANOS
+        ========================================== -->
+
+        <section class="magic-section current-section">
+
+            <div class="magic-container split reverse">
+
+                <figure class="magic-image">
+
+                    <img
+                        src="/magic/MAGIC13.PNG"
+                        alt="Cartas de Magic sobre uma mesa"
+                        loading="lazy"
+                    />
+
+                </figure>
+
+                <div class="magic-copy">
+
+                    <span class="section-kicker">
+                        DESDE ENTÃO
+                    </span>
+
+                    <h2>
+                        Jogo quase
+                        <span>todos os dias.</span>
+                    </h2>
+
+                    <p>
+                        Há cerca de dois anos Magic voltou para a minha
+                        vida — e desta vez para ficar.
+                    </p>
+
+                    <p>
+                        Hoje eu consigo experimentar estratégias,
+                        conhecer cartas, enfrentar jogadores e
+                        acompanhar um universo que continua crescendo.
+                    </p>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- =========================================
+             A COMUNIDADE
+        ========================================== -->
+
+        <section class="magic-section community-section">
+
+            <div class="magic-container narrow center-heading">
+
+                <span class="section-kicker">
+                    DE UMA MESA PARA O MUNDO
+                </span>
+
+                <h2>
+                    O jogo ficou
+                    <span>muito maior.</span>
+                </h2>
+
+                <p>
+                    Aquilo que começou entre alguns colegas
+                    de escola se transformou em uma comunidade
+                    espalhada pelo mundo.
+                </p>
+
+            </div>
+
+            <div class="magic-container gallery-two">
+
+                <figure class="magic-image">
+
+                    <img
+                        src="/magic/MAGIC1.PNG"
+                        alt="Grande evento de Magic: The Gathering"
+                        loading="lazy"
+                    />
+
+                </figure>
+
+                <figure class="magic-image">
+
+                    <img
+                        src="/magic/MAGIC2.PNG"
+                        alt="Jogadores reunidos em um evento de Magic"
+                        loading="lazy"
+                    />
+
+                </figure>
+
+            </div>
+
+        </section>
+
+
+        <!-- =========================================
+             O UNIVERSO
+        ========================================== -->
+
+        <section class="magic-section universe-section">
+
+            <div class="magic-container split">
+
+                <div class="magic-copy">
+
+                    <span class="section-kicker">
+                        O QUE ME ENCANTA
+                    </span>
+
+                    <h2>
+                        Cartas, arte,
+                        <span>mecânicas e mundos.</span>
+                    </h2>
+
+                    <p>
+                        Acho incrível tudo o que essa versão do jogo
+                        conseguiu reunir.
+                    </p>
+
+                    <p>
+                        A tradução, as artes das cartas, as mecânicas
+                        inovadoras, o sistema online e a possibilidade
+                        de enfrentar pessoas reais do mundo inteiro.
+                    </p>
+
+                </div>
+
+                <figure class="magic-image">
+
+                    <img
+                        src="/magic/MAGIC12.PNG"
+                        alt="Cartas de Magic: The Gathering em um fichário"
+                        loading="lazy"
+                    />
+
+                </figure>
+
+            </div>
+
+        </section>
+
+
+        <!-- =========================================
+             LOJAS / UNIVERSO ATUAL
+        ========================================== -->
+
+        <section class="magic-section modern-section">
+
+            <div class="magic-container split reverse">
+
+                <figure class="magic-image">
+
+                    <img
+                        src="/magic/MAGIC22.PNG"
+                        alt="Produtos modernos de Magic: The Gathering em uma loja"
+                        loading="lazy"
+                    />
+
+                </figure>
+
+                <div class="magic-copy">
+
+                    <span class="section-kicker">
+                        UM UNIVERSO QUE CONTINUA CRESCENDO
+                    </span>
+
+                    <h2>
+                        Temporadas,
+                        <span>coleções e histórias.</span>
+                    </h2>
+
+                    <p>
+                        O jogo continua se reinventando, trazendo
+                        novas temporadas, novas coleções e cartas
+                        dentro de diferentes temáticas.
+                    </p>
+
+                    <p>
+                        Para mim, essa versão representa a forma
+                        definitiva de viver Magic.
+                    </p>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- =========================================
+             GRANDE ENCERRAMENTO
+        ========================================== -->
+
+        <section class="magic-final">
+
+            <div class="magic-final-background">
+
+                <img
+                    src="/magic/MAGIC20.PNG"
+                    alt=""
+                    loading="lazy"
+                />
+
+            </div>
+
+            <div class="magic-final-overlay"></div>
+
+            <div class="magic-final-content">
+
+                <span class="section-kicker">
+                    JORGERATV • MAGIC
+                </span>
+
+                <h2>
+                    Algumas paixões
+                    <br />
+                    <span>atravessam gerações.</span>
+                </h2>
+
+                <p>
+                    Para mim, Magic: The Gathering é mais do que
+                    um jogo de cartas.
+                </p>
+
+                <p>
+                    É uma lembrança da infância.
+                    É amizade.
+                    É descoberta.
+                    É estratégia.
+                    É arte.
+                </p>
+
+                <p class="final-tribute">
+                    E é uma obra que merece ser celebrada.
                 </p>
 
             </div>
@@ -41,53 +1026,3 @@ import Footer from "../components/Footer.astro";
     </main>
 
     <Footer />
-
-</Layout>
-
-<style>
-    .magic-page {
-        min-height: 80vh;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        padding: 140px 24px;
-        background:
-            radial-gradient(
-                circle at 50% 30%,
-                rgba(180, 0, 0, 0.14),
-                transparent 45%
-            );
-    }
-
-    .magic-intro {
-        width: min(1100px, 100%);
-        text-align: center;
-    }
-
-    .magic-kicker {
-        display: inline-block;
-        margin-bottom: 24px;
-        color: #ff3038;
-        font-size: 0.8rem;
-        font-weight: 700;
-        letter-spacing: 0.22em;
-        text-transform: uppercase;
-    }
-
-    h1 {
-        margin: 0;
-        color: #f2eee8;
-        font-size: clamp(4rem, 10vw, 9rem);
-        line-height: 0.88;
-        font-weight: 900;
-        letter-spacing: -0.05em;
-    }
-
-    .magic-lead {
-        max-width: 760px;
-        margin: 40px auto 0;
-        color: #aaa4a0;
-        font-size: clamp(1.1rem, 2vw, 1.4rem);
-        line-height: 1.7;
-    }
-</style>
