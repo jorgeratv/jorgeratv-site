@@ -535,31 +535,37 @@ import "../styles/magic.css";
              PERDA
         ====================================================== -->
 
-        <section class="magic-section loss-section">
+        <section class="magic-loss-cinematic">
 
-            <div class="magic-container narrow center-heading">
+            <div class="magic-loss-content">
 
                 <span class="section-kicker">
                     UMA MEMÓRIA DIFÍCIL
                 </span>
 
                 <h2>
-                    Eu achei que
-                    <span>tinha acabado.</span>
+                    E então, sem perceber,
+                    <span>eu me desfiz de uma parte daquela história.</span>
                 </h2>
 
-                <p class="large-memory">
-                    Em uma das mudanças de casa da minha família,
-                    acabei jogando fora todas as minhas cartas.
+                <div class="magic-loss-divider"></div>
+
+                <p class="magic-loss-main">
+                    Todas as minhas cartas de Magic foram embora.
                 </p>
 
-                <p>
+                <p class="magic-loss-secondary">
+                    Em uma das mudanças de casa da minha família,
+                    acabei jogando fora toda a minha coleção.
+                </p>
+
+                <p class="magic-loss-secondary">
                     Ninguém mais jogava.
                     Eu não conhecia ninguém que sequer soubesse
                     o que era aquilo.
                 </p>
 
-                <p>
+                <p class="magic-loss-secondary">
                     Durante um tempo, cheguei a pensar que Magic
                     tinha simplesmente acabado no Brasil.
                 </p>
@@ -900,5 +906,214 @@ import "../styles/magic.css";
     </main>
 
     <Footer />
+
+
+    <!-- =========================================================
+         AJUSTES CINEMATOGRÁFICOS
+    ========================================================== -->
+
+    <style>
+
+        .magic-loss-cinematic {
+
+            position:relative;
+
+            min-height:78vh;
+
+            display:flex;
+
+            align-items:center;
+
+            justify-content:center;
+
+            overflow:hidden;
+
+            padding:150px 24px 170px;
+
+            background:
+
+                radial-gradient(
+                    ellipse at 50% 45%,
+                    rgba(120,0,0,.13) 0%,
+                    rgba(30,0,0,.07) 28%,
+                    rgba(0,0,0,0) 65%
+                ),
+
+                #050505;
+
+        }
+
+
+        .magic-loss-cinematic::before {
+
+            content:"";
+
+            position:absolute;
+
+            inset:0;
+
+            pointer-events:none;
+
+            background:
+
+                linear-gradient(
+                    to bottom,
+                    rgba(0,0,0,.72) 0%,
+                    rgba(0,0,0,0) 25%,
+                    rgba(0,0,0,0) 75%,
+                    rgba(0,0,0,.82) 100%
+                );
+
+        }
+
+
+        .magic-loss-content {
+
+            position:relative;
+
+            z-index:1;
+
+            width:min(900px,100%);
+
+            text-align:center;
+
+        }
+
+
+        .magic-loss-content h2 {
+
+            max-width:850px;
+
+            margin:22px auto 0;
+
+        }
+
+
+        .magic-loss-content h2 span {
+
+            display:block;
+
+        }
+
+
+        .magic-loss-divider {
+
+            width:1px;
+
+            height:72px;
+
+            margin:48px auto 42px;
+
+            background:
+
+                linear-gradient(
+                    to bottom,
+                    rgba(255,35,35,0),
+                    rgba(255,35,35,.8),
+                    rgba(255,35,35,0)
+                );
+
+        }
+
+
+        .magic-loss-main {
+
+            max-width:760px;
+
+            margin:0 auto 42px;
+
+            font-size:clamp(1.55rem,3vw,2.35rem);
+
+            line-height:1.35;
+
+            font-weight:600;
+
+            letter-spacing:-.02em;
+
+        }
+
+
+        .magic-loss-secondary {
+
+            max-width:650px;
+
+            margin:0 auto 24px;
+
+            opacity:.78;
+
+        }
+
+
+        .magic-loss-secondary:last-child {
+
+            margin-bottom:0;
+
+        }
+
+
+        .magic-page section {
+
+            scroll-margin-top:90px;
+
+        }
+
+
+        .magic-final {
+
+            min-height:92vh;
+
+        }
+
+
+        .magic-final-content {
+
+            padding-top:clamp(100px,14vh,180px);
+
+            padding-bottom:clamp(100px,14vh,180px);
+
+        }
+
+
+        /* =====================================================
+           RESPONSIVO
+        ====================================================== */
+
+        @media(max-width:768px){
+
+            .magic-loss-cinematic {
+
+                min-height:82vh;
+
+                padding:120px 22px 140px;
+
+            }
+
+
+            .magic-loss-content h2 span {
+
+                display:inline;
+
+            }
+
+
+            .magic-loss-divider {
+
+                height:55px;
+
+                margin:38px auto 34px;
+
+            }
+
+
+            .magic-loss-main {
+
+                margin-bottom:34px;
+
+            }
+
+        }
+
+    </style>
+
 
 </Layout>
